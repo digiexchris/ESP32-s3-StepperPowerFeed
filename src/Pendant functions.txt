@@ -1,0 +1,16 @@
+Green - rapid any current movement
+left switch - 
+off = off
+X = manual, .001 per pulse
+Y = manual, .0001 per pulse
+Z = power feed, stop at end stop
+4 = power feed, stop at end and return to other stop
+
+right switch
+x1 = move left
+x2 = off, ignored in any manual mode
+x3 = move right
+
+estop = stop, disable stepper
+
+Pot1 = speed adjustment for power feed modes
