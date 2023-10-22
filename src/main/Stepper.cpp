@@ -14,23 +14,26 @@ namespace StepperDriver {
 
 // #define STEP_MOTOR_RESOLUTION_HZ 1000000 // 1MHz resolution
 
+//NOTE pullups disabled. Use appropriate resistors.
 Stepper::Stepper(
     gpio_num_t enPin, 
-    gpio_num_t dirPin, 
+    gpio_num_t dirPin,
     gpio_num_t stepPin, 
-    StepperDriver::Level enableLevel, 
+    StepperDriver::Level enableLevel, //Is enable high or low on your driver?
     uint32_t motorResolutionHz, 
-    StepperDriver::Direction startupMotorDirection, 
-    StepperDriver::Level dirCWLevel
-)
+    StepperDriver::StepperDirection startupMotorDirection // default motor direction and level. inverting this reverses direction (and by extension, level of the dir pin)
+    ) : defaultMotorDirection(startupMotorDirection)
 {
     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
     en_dir_gpio_config = {
         .pin_bit_mask = 1ULL << dirPin | 1ULL << enPin,
         .mode = GPIO_MODE_OUTPUT,
+        .pull_up_en = GPIO_PULLUP_DISABLE,
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+
         .intr_type = GPIO_INTR_DISABLE,
-        
     };
+
     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
 
     ESP_LOGI(TAG, "Create RMT TX channel");
@@ -41,12 +44,13 @@ Stepper::Stepper(
         .resolution_hz = motorResolutionHz,
         .mem_block_symbols = 64,
         .trans_queue_depth = 10, // set the number of transactions that can be pending in the background
+        .flags = {}
     };
 
     ESP_ERROR_CHECK(rmt_new_tx_channel(&tx_chan_config, &motor_chan));
 
     ESP_LOGI(TAG, "Set spin direction");
-    gpio_set_level(dirPin, (startupMotorDirection == dirCWLevel)? dirCWLevel : !dirCWLevel);
+    gpio_set_level(dirPin, defaultMotorDirection);
     ESP_LOGI(TAG, "Disable step motor");
     gpio_set_level(stepPin, !enableLevel);
 
@@ -81,6 +85,7 @@ Stepper::Stepper(
     //rmt_transmit config
     tx_config = {
         .loop_count = 0,
+        .flags = {}
     };
 
     // const static uint32_t accel_samples = 500;

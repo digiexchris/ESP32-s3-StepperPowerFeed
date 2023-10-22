@@ -15,47 +15,45 @@ namespace StepperDriver {
             HIGH = 1
     };
 
-    class Direction {
+    enum Direction {
+        CW,
+        CCW
+    };
+
+    class StepperDirection {
         public:
 
-        Direction() {
-            value = LOW;
+        StepperDirection() {
+            level = LOW;
+
         }
-        Direction(Level level) {
-            value = level;
+        
+        StepperDirection(Direction aDir, Level aLevel) {
+            level = aLevel;
+            dir = aDir;
         }
 
         // Overloading the == operator
-        bool operator==(const Direction &other) const {
-            return value == other.value;
+        bool operator==(const StepperDirection &other) const {
+            return level == other.level && dir == other.dir;
         }
 
         // Overloading the != operator
-        bool operator!=(const Direction &other) const {
-            return !(*this == other); // Reusing the == operator
-        }
-
-        operator int() const {
-            return static_cast<int>(value);
-        }
-
-        // Overloading the == operator
-        bool operator==(const int &other) const {
-            return static_cast<int>(value) == other;
-        }
-
-        // Overloading the != operator
-        bool operator!=(const int &other) const {
+        bool operator!=(const StepperDirection &other) const {
             return !(*this == other); // Reusing the == operator
         }
 
         operator Level() {
-            return value;
+            return level;
+        }
+
+        operator uint32_t() {
+            return static_cast<uint32_t>(level);
         }
 
         // Overloading the == operator
         bool operator==(const Level &other) const {
-            return static_cast<int>(value) == other;
+            return static_cast<int>(level) == other;
         }
 
         // Overloading the != operator
@@ -64,7 +62,8 @@ namespace StepperDriver {
         }
 
         private:
-            Level value;
+            Level level;
+            Direction dir;
     };
 
     class Stepper {
@@ -77,11 +76,11 @@ namespace StepperDriver {
             gpio_num_t stepPin, 
             StepperDriver::Level enableLevel, 
             uint32_t motorResolutionHz, 
-            StepperDriver::Direction startupMotorDirection, 
-            StepperDriver::Level dirCWLevel
+            StepperDriver::StepperDirection startupMotorDirection
         );
 
     private:
+        StepperDirection defaultMotorDirection;
         gpio_config_t en_dir_gpio_config;
         rmt_channel_handle_t motor_chan;
         rmt_tx_channel_config_t tx_chan_config;
