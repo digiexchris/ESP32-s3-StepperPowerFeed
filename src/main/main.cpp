@@ -4,6 +4,8 @@
 #include "freertos/task.h"
 #include "Stepper.h"
 
+#define SUPPORT_SELECT_DRIVER_TYPE
+//#define SUPPORT_ESP32_RMT
 extern "C" void app_main(void)
 {
     const static uint32_t accel_samples = 500; //number of pulses to send?
@@ -14,9 +16,9 @@ extern "C" void app_main(void)
         GPIO_NUM_0,
         GPIO_NUM_1,
         GPIO_NUM_2,
-        StepperDriver::Level::LOW, 
+        StepperDriver::Level::GPIO_LOW, 
         1000000, 
-        StepperDriver::StepperDirection(StepperDriver::Direction::CW, StepperDriver::Level::LOW)
+        StepperDriver::StepperDirection(StepperDriver::Direction::CW, StepperDriver::Level::GPIO_LOW)
     );
 
     //todo: Translate samples and uniform_speed_hz into pulses (I think), or distance.

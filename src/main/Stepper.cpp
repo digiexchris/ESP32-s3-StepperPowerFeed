@@ -1,9 +1,63 @@
-#include "driver/rmt_tx.h"
+// #include "driver/rmt_tx.h"
 #include "driver/gpio.h"
 #include "esp_log.h"
-#include "RmtStepper.h"
+#include "FastAccelStepper.h"
 #include "Stepper.h"
+#include <exception>
+
 namespace StepperDriver {
+
+    class InvalidStepperException : std::exception {
+        public:
+            InvalidStepperException(char* aMsg) {
+                msg = aMsg;
+                delete(aMsg);
+            }
+            virtual const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
+                return msg;
+            };
+            private:
+                char* msg;
+    };
+
+    StepperDirection::StepperDirection() {
+        level = Level::GPIO_LOW;
+        dir = Direction::CW;
+    }
+
+    StepperDirection::StepperDirection(Direction aDir, Level aLevel) {
+        level = aLevel;
+        dir = aDir;
+    }
+
+    // Overloading the == operator
+    bool StepperDirection::operator==(const StepperDirection &other) const {
+        return level == other.level && dir == other.dir;
+    }
+
+    // Overloading the != operator
+    bool StepperDirection::operator!=(const StepperDirection &other) const {
+        return !(*this == other); // Reusing the == operator
+    }
+
+    StepperDirection::operator Level() {
+        return level;
+    }
+
+    StepperDirection::operator uint32_t() {
+        return static_cast<uint32_t>(level);
+    }
+
+    // Overloading the == operator
+    bool StepperDirection::operator==(const Level &other) const {
+        return static_cast<int>(level) == other;
+    }
+
+    // Overloading the != operator
+    bool StepperDirection::operator!=(const Level &other) const {
+        return !(*this == other); // Reusing the == operator
+    }
+
 ///////////////////////////////Change the following configurations according to your board//////////////////////////////
 // #define STEP_MOTOR_GPIO_EN       0
 // #define STEP_MOTOR_GPIO_DIR      2
@@ -24,69 +78,32 @@ Stepper::Stepper(
     StepperDriver::StepperDirection startupMotorDirection // default motor direction and level. inverting this reverses direction (and by extension, level of the dir pin)
     ) : defaultMotorDirection(startupMotorDirection)
 {
-    ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
-    en_dir_gpio_config = {
-        .pin_bit_mask = 1ULL << dirPin | 1ULL << enPin,
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
 
-        .intr_type = GPIO_INTR_DISABLE,
-    };
+//     #define dirPinStepper 18
+// #define enablePinStepper 26
+// #define stepPinStepper 17
 
-    ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+    engine = FastAccelStepperEngine();
+    stepper = NULL;
 
-    ESP_LOGI(TAG, "Create RMT TX channel");
-    motor_chan = NULL;
-    tx_chan_config = {
-        .gpio_num = stepPin,
-        .clk_src = RMT_CLK_SRC_DEFAULT, // select clock source
-        .resolution_hz = motorResolutionHz,
-        .mem_block_symbols = 64,
-        .trans_queue_depth = 10, // set the number of transactions that can be pending in the background
-        .flags = {}
-    };
+    stepper = engine.stepperConnectToPin(stepPin);
+    
+    if(!stepper) {
+        throw InvalidStepperException("Could not connect to stepper pin");
+    }
 
-    ESP_ERROR_CHECK(rmt_new_tx_channel(&tx_chan_config, &motor_chan));
+    stepper->setDirectionPin(dirPin);
+    stepper->setEnablePin(enPin);
+    stepper->setAutoEnable(true);
 
-    ESP_LOGI(TAG, "Set spin direction");
-    gpio_set_level(dirPin, defaultMotorDirection);
-    ESP_LOGI(TAG, "Disable step motor");
-    gpio_set_level(stepPin, !enableLevel);
+    // If auto enable/disable need delays, just add (one or both):
+    // stepper->setDelayToEnable(50);
+    // stepper->setDelayToDisable(1000);
 
-    ESP_LOGI(TAG, "Create motor encoders");
-    accel_encoder_config = {
-        .resolution = motorResolutionHz,
-        .sample_points = 500,
-        .start_freq_hz = 500,
-        .end_freq_hz = 1500,
-    };
-    accel_motor_encoder = NULL;
-    ESP_ERROR_CHECK(rmt_new_stepper_motor_curve_encoder(&accel_encoder_config, &accel_motor_encoder));
+    // speed up in ~0.025s, which needs 625 steps without linear mode
+    stepper->setSpeedInHz(50000);
+    stepper->setAcceleration(2000000);
 
-    uniform_encoder_config = {
-        .resolution = motorResolutionHz,
-    };
-    uniform_motor_encoder = NULL;
-    ESP_ERROR_CHECK(rmt_new_stepper_motor_uniform_encoder(&uniform_encoder_config, &uniform_motor_encoder));
-
-    decel_encoder_config = {
-        .resolution = motorResolutionHz,
-        .sample_points = 500,
-        .start_freq_hz = 1500,
-        .end_freq_hz = 500,
-    };
-    decel_motor_encoder = NULL;
-    ESP_ERROR_CHECK(rmt_new_stepper_motor_curve_encoder(&decel_encoder_config, &decel_motor_encoder));
-
-    ESP_LOGI(TAG, "Enable RMT channel");
-    ESP_ERROR_CHECK(rmt_enable(motor_chan));
-
-    //rmt_transmit config
-    tx_config = {
-        .loop_count = 0,
-        .flags = {}
-    };
 }
 
 } //namespace StepperDriver

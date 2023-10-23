@@ -1,1 +1,0 @@
-Based on https://github.com/espressif/esp-idf/tree/8fc8f3f47997aadba21facabc66004c1d22de181/examples/peripherals/rmt/stepper_motor
