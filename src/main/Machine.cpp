@@ -4,7 +4,7 @@
 #include "Axis.h"
 #include "Machine.h"
 #include <exception>
-#include <format>
+#include <fmt/core.h>
 
 Machine::Machine() {
     engine = std::make_shared<FastAccelStepperEngine>();
