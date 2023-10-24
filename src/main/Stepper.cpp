@@ -1,21 +1,136 @@
-#include "driver/rmt_tx.h"
+// #include "driver/rmt_tx.h"
 #include "driver/gpio.h"
 #include "esp_log.h"
-#include "RmtStepper.h"
+#include "FastAccelStepper.h"
 #include "Stepper.h"
-namespace StepperDriver {
-///////////////////////////////Change the following configurations according to your board//////////////////////////////
-// #define STEP_MOTOR_GPIO_EN       0
-// #define STEP_MOTOR_GPIO_DIR      2
-// #define STEP_MOTOR_GPIO_STEP     4
-// #define STEP_MOTOR_ENABLE_LEVEL  0 // DRV8825 is enabled on low level
-// #define STEP_MOTOR_SPIN_DIR_CLOCKWISE 0
-// #define STEP_MOTOR_SPIN_DIR_COUNTERCLOCKWISE !STEP_MOTOR_SPIN_DIR_CLOCKWISE
+#include <exception>
+#include <memory>
 
-// #define STEP_MOTOR_RESOLUTION_HZ 1000000 // 1MHz resolution
+namespace StepperDriver {
+
+class InvalidStepperException : std::exception {
+    public:
+        InvalidStepperException(char* aMsg) {
+            msg = aMsg;
+            delete(aMsg);
+        }
+        const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
+            return msg;
+        };
+        private:
+            char* msg;
+};
+class InvalidDistancePerTimeUnitException : std::exception {
+
+};
+
+StepperDirection::StepperDirection() {
+    level = Level::GPIO_LOW;
+    dir = Direction::CW;
+}
+
+StepperDirection::StepperDirection(Direction aDir, Level aLevel) {
+    level = aLevel;
+    dir = aDir;
+}
+
+// Overloading the == operator
+bool StepperDirection::operator==(const StepperDirection &other) const {
+    return level == other.level && dir == other.dir;
+}
+
+// Overloading the != operator
+bool StepperDirection::operator!=(const StepperDirection &other) const {
+    return !(*this == other); // Reusing the == operator
+}
+
+StepperDirection::operator Level() {
+    return level;
+}
+
+StepperDirection::operator uint32_t() {
+    return static_cast<uint32_t>(level);
+}
+
+// Overloading the == operator
+bool StepperDirection::operator==(const Level &other) const {
+    return static_cast<int>(level) == other;
+}
+
+// Overloading the != operator
+bool StepperDirection::operator!=(const Level &other) const {
+    return !(*this == other); // Reusing the == operator
+}
+
+/**
+ * @brief set motor acceleration/deceleration
+ * Note: this is linear acceleration.
+ * @param uint32_t steps #the number of steps to accelerate up to speed. 
+ * A closed loop stepper may be able to set this to 0 if all moves are slow enough.
+ * A servo may not need any acceleration for any moves, the closed loop driver
+ * may handle it.
+*/
+void Stepper::SetAcceleration(uint32_t steps){
+    stepper->setLinearAcceleration(steps);
+}
+
+// void Stepper::SetDirection(Direction aDir) {
+//     //todo not needed, run forward is fine.
+// }
+
+void Stepper::Run(Direction aDir) {
+    if(aDir == Direction::CW) {
+        stepper->runForward();
+    } else {
+        stepper->runBackward();
+    }
+    
+}
+
+void Stepper::Stop() {
+    stepper->stopMove();
+}
+
+/**
+ * @brief Set the continuous speed that the stepper will ramp up to in distance per unit of time, eg inches per minute
+ * NOTE: This will execute in mm per minute and all other units will convert to it.
+*/
+void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
+    switch(aUnit) {
+        case DistancePerTimeUnit::IPM:
+            stepper->setSpeedInHz(PrivIPMToHz(aDistancePerTime));
+            break;
+        case DistancePerTimeUnit::MMPM:
+            stepper->setSpeedInHz(PrivMMPMToHz(aDistancePerTime));
+            break;
+        default:
+            throw InvalidDistancePerTimeUnitException();
+            return;
+    }
+
+    //if it's running continuously, set the new speed immediately
+    //useful for rapids or changing IPM during a cut.
+    stepper->applySpeedAcceleration();
+}
+
+/**
+ * @brief convert inches per minute to hz
+*/
+uint32_t Stepper::PrivIPMToHz(uint32_t aIPM) {
+    return (aIPM * 25.4 * 60);
+}
+
+/**
+ * @brief convert mm per minute to hz
+*/
+uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
+    return (aMMPM * 60);
+}
+
 
 //NOTE pullups disabled. Use appropriate resistors.
 Stepper::Stepper(
+    std::shared_ptr<FastAccelStepperEngine> engine,
     gpio_num_t enPin, 
     gpio_num_t dirPin,
     gpio_num_t stepPin, 
@@ -24,69 +139,31 @@ Stepper::Stepper(
     StepperDriver::StepperDirection startupMotorDirection // default motor direction and level. inverting this reverses direction (and by extension, level of the dir pin)
     ) : defaultMotorDirection(startupMotorDirection)
 {
-    ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
-    en_dir_gpio_config = {
-        .pin_bit_mask = 1ULL << dirPin | 1ULL << enPin,
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
 
-        .intr_type = GPIO_INTR_DISABLE,
-    };
+//     #define dirPinStepper 18
+// #define enablePinStepper 26
+// #define stepPinStepper 17
 
-    ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+    stepper = NULL;
 
-    ESP_LOGI(TAG, "Create RMT TX channel");
-    motor_chan = NULL;
-    tx_chan_config = {
-        .gpio_num = stepPin,
-        .clk_src = RMT_CLK_SRC_DEFAULT, // select clock source
-        .resolution_hz = motorResolutionHz,
-        .mem_block_symbols = 64,
-        .trans_queue_depth = 10, // set the number of transactions that can be pending in the background
-        .flags = {}
-    };
+    stepper = engine->stepperConnectToPin(stepPin);
+    
+    if(!stepper) {
+        throw InvalidStepperException("Could not connect to stepper pin");
+    }
 
-    ESP_ERROR_CHECK(rmt_new_tx_channel(&tx_chan_config, &motor_chan));
+    stepper->setDirectionPin(dirPin);
+    stepper->setEnablePin(enPin);
+    stepper->setAutoEnable(true);
 
-    ESP_LOGI(TAG, "Set spin direction");
-    gpio_set_level(dirPin, defaultMotorDirection);
-    ESP_LOGI(TAG, "Disable step motor");
-    gpio_set_level(stepPin, !enableLevel);
+    // If auto enable/disable need delays, just add (one or both):
+    // stepper->setDelayToEnable(50);
+    // stepper->setDelayToDisable(1000);
 
-    ESP_LOGI(TAG, "Create motor encoders");
-    accel_encoder_config = {
-        .resolution = motorResolutionHz,
-        .sample_points = 500,
-        .start_freq_hz = 500,
-        .end_freq_hz = 1500,
-    };
-    accel_motor_encoder = NULL;
-    ESP_ERROR_CHECK(rmt_new_stepper_motor_curve_encoder(&accel_encoder_config, &accel_motor_encoder));
+    // speed up in ~0.025s, which needs 625 steps without linear mode
+    stepper->setSpeedInHz(50000);
+    stepper->setAcceleration(2000000);
 
-    uniform_encoder_config = {
-        .resolution = motorResolutionHz,
-    };
-    uniform_motor_encoder = NULL;
-    ESP_ERROR_CHECK(rmt_new_stepper_motor_uniform_encoder(&uniform_encoder_config, &uniform_motor_encoder));
-
-    decel_encoder_config = {
-        .resolution = motorResolutionHz,
-        .sample_points = 500,
-        .start_freq_hz = 1500,
-        .end_freq_hz = 500,
-    };
-    decel_motor_encoder = NULL;
-    ESP_ERROR_CHECK(rmt_new_stepper_motor_curve_encoder(&decel_encoder_config, &decel_motor_encoder));
-
-    ESP_LOGI(TAG, "Enable RMT channel");
-    ESP_ERROR_CHECK(rmt_enable(motor_chan));
-
-    //rmt_transmit config
-    tx_config = {
-        .loop_count = 0,
-        .flags = {}
-    };
 }
 
 } //namespace StepperDriver

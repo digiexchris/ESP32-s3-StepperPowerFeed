@@ -1,18 +1,16 @@
-
-#include "driver/rmt_tx.h"
-#include "RmtStepper.h"
-
-#define STEPPER_CW true
-#define STEPPER_CCW !STEPPER_CW
-
-#define LEVEL_LOW false
-#define LEVEL_HIGH !LEVEL_LOW
+#pragma once
+#include "driver/gpio.h"
+// #define CONFIG_IDF_TARGET_ESP32S2
+#define SUPPORT_SELECT_DRIVER_TYPE
+//#define SUPPORT_ESP32_RMT
+#include <FastAccelStepper.h>
+#include <memory>
 
 namespace StepperDriver {
 
     enum Level {
-            LOW = 0,
-            HIGH = 1
+            GPIO_LOW,
+            GPIO_HIGH
     };
 
     enum Direction {
@@ -23,43 +21,24 @@ namespace StepperDriver {
     class StepperDirection {
         public:
 
-        StepperDirection() {
-            level = LOW;
+        StepperDirection();
 
-        }
-        
-        StepperDirection(Direction aDir, Level aLevel) {
-            level = aLevel;
-            dir = aDir;
-        }
+        StepperDirection(Direction aDir, Level aLevel);
 
         // Overloading the == operator
-        bool operator==(const StepperDirection &other) const {
-            return level == other.level && dir == other.dir;
-        }
-
+        bool operator==(const StepperDirection &other) const;
         // Overloading the != operator
-        bool operator!=(const StepperDirection &other) const {
-            return !(*this == other); // Reusing the == operator
-        }
+        bool operator!=(const StepperDirection &other) const;
 
-        operator Level() {
-            return level;
-        }
+        operator Level();
 
-        operator uint32_t() {
-            return static_cast<uint32_t>(level);
-        }
+        operator uint32_t();
 
         // Overloading the == operator
-        bool operator==(const Level &other) const {
-            return static_cast<int>(level) == other;
-        }
+        bool operator==(const Level &other) const;
 
         // Overloading the != operator
-        bool operator!=(const Level &other) const {
-            return !(*this == other); // Reusing the == operator
-        }
+        bool operator!=(const Level &other) const;
 
         private:
             Level level;
@@ -70,7 +49,13 @@ namespace StepperDriver {
     public:
         const char *TAG = "Stepper";
 
+        enum DistancePerTimeUnit {
+            IPM,
+            MMPM
+        };
+
         Stepper(
+            std::shared_ptr<FastAccelStepperEngine> engine,
             gpio_num_t enPin, 
             gpio_num_t dirPin, 
             gpio_num_t stepPin, 
@@ -79,18 +64,22 @@ namespace StepperDriver {
             StepperDriver::StepperDirection startupMotorDirection
         );
 
+        void SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit);
+        void SetAcceleration(uint32_t anAcceleration);
+        //don't need to set direction, move and run handle direction
+        //void SetDirection(StepperDriver::Direction aDir);
+        void MoveDistance();
+        void Run(Direction aDir);
+        void Stop();
+
     private:
         StepperDirection defaultMotorDirection;
         gpio_config_t en_dir_gpio_config;
-        rmt_channel_handle_t motor_chan;
-        rmt_tx_channel_config_t tx_chan_config;
-        stepper_motor_curve_encoder_config_t accel_encoder_config;
-        rmt_encoder_handle_t accel_motor_encoder;
-        stepper_motor_uniform_encoder_config_t uniform_encoder_config;
-        rmt_encoder_handle_t uniform_motor_encoder;
-        stepper_motor_curve_encoder_config_t decel_encoder_config;
-        rmt_encoder_handle_t decel_motor_encoder;
-        rmt_transmit_config_t tx_config;
+        FastAccelStepperEngine engine;
+        FastAccelStepper *stepper;
+        
+        uint32_t PrivIPMToHz(uint32_t aIPM);
+        uint32_t PrivMMPMToHz(uint32_t aMMPM);
 };
 }
 
