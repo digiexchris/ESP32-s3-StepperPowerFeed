@@ -80,5 +80,6 @@
   "idf.customExtraVars": {
     "OPENOCD_SCRIPTS": "c:\\Espressif4.4.6\\tools\\openocd-esp32\\v0.12.0-esp32-20230419/openocd-esp32/share/openocd/scripts",
     "IDF_CCACHE_ENABLE": "1"
-  }
+  },
+  "C_Cpp.default.compilerPath": "c:\\Espressif4.4.6\\tools\\xtensa-esp32s3-elf\\esp-2021r2-patch5-8.4.0\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe"
 }
