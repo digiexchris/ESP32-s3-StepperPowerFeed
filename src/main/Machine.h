@@ -1,9 +1,10 @@
-#pragma once
+#ifndef MACHINE_H
+#define MACHINE_H
+
 #include <mutex>
 #include "Axis.h"
 #include <memory>
 #include <unordered_map>
-
 class Machine
 {
 public:
@@ -28,7 +29,7 @@ public:
      */
     Machine(Machine &other) = delete;
 
-    Axis& AddAxis(
+    Axis AddAxis(
         const char aLabel,
         gpio_num_t enPin, 
         gpio_num_t dirPin, 
@@ -49,12 +50,7 @@ public:
      */
 
     static Machine *GetInstance();
-    Axes* GetAxes() const;
+    std::shared_ptr<Machine::Axes> GetAxes() const;
 };
 
-/**
- * Static methods should be defined outside the class.
- */
-
-Machine* Machine::instance{nullptr};
-std::mutex Machine::mutex;
+#endif

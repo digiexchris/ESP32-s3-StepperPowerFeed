@@ -1,5 +1,7 @@
-#pragma once
-#include "driver/gpio.h"
+#ifndef STEPPER_H
+#define STEPPER_H
+
+#include <hal/gpio_types.h>
 // #define CONFIG_IDF_TARGET_ESP32S2
 #define SUPPORT_SELECT_DRIVER_TYPE
 //#define SUPPORT_ESP32_RMT
@@ -83,3 +85,4 @@ namespace StepperDriver {
 };
 }
 
+#endif

@@ -1,4 +1,6 @@
 build/
 sdkconfig
 sdkconfig.old
-toolchain/
+managed_components/
+.vscode/
+src.code-workspace

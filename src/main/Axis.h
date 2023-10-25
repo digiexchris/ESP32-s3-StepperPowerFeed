@@ -1,4 +1,5 @@
-#pragma once
+#ifndef AXIS_H
+#define AXIS_H
 
 #include <memory>
 #include "Stepper.h"
@@ -18,3 +19,5 @@ class Axis {
         char label;
         StepperDriver::Stepper* stepper;
 };
+
+#endif

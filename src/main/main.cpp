@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "driver/gpio.h"
+// #include <stdio.h>
+#include <hal/gpio_types.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "Stepper.h"
@@ -7,8 +7,10 @@
 #include "Machine.h"
 #include "Axis.h"
 
+#define ESP_PLATFORM
+#define SUPPORT_ESP32
 #define SUPPORT_SELECT_DRIVER_TYPE
-//#define SUPPORT_ESP32_RMT
+#define SUPPORT_ESP32_RMT
 
 using namespace StepperDriver;
 
@@ -37,7 +39,7 @@ void vTaskFunction( void * pvParameters ) {
     const TickType_t xDelay = 2500 / portTICK_PERIOD_MS; 
     for( ;; ) 
     { 
-        Machine::Axes* axes = Machine::GetInstance()->GetAxes();
+        auto axes = Machine::GetInstance()->GetAxes();
         //todo this find is clunky, make a Machine::GetInstance()->GetAxis(const char*) func instead
         Axis xAxis = axes->find('x')->second;
 
