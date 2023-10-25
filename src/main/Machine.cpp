@@ -70,9 +70,7 @@ Axis Machine::AddAxis(
     }
     else
     {
-        //todo throw a not found exception here
-        ESP_ERROR_CHECK(false);
-        //throw std::exception("Unable to insert Axis");
+        throw MachineException("Unable to insert Axis");
         abort();
     }
 }

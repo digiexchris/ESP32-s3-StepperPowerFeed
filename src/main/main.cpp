@@ -1,16 +1,9 @@
-// #include <stdio.h>
 #include <hal/gpio_types.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "Stepper.h"
-#include <memory>
 #include "Machine.h"
 #include "Axis.h"
-
-#define ESP_PLATFORM
-#define SUPPORT_ESP32
-#define SUPPORT_SELECT_DRIVER_TYPE
-#define SUPPORT_ESP32_RMT
 
 using namespace StepperDriver;
 

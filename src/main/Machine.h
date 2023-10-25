@@ -53,4 +53,16 @@ public:
     std::shared_ptr<Machine::Axes> GetAxes() const;
 };
 
+class MachineException : std::exception {
+    public:
+        std::string myMsg;
+        MachineException(const char* aMsg) {
+            myMsg = aMsg;
+        }
+        virtual const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT override {
+            return myMsg.c_str();
+        }
+
+};
+
 #endif
