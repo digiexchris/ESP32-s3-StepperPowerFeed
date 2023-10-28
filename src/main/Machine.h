@@ -14,6 +14,7 @@ private:
     static Machine * instance;
     static std::mutex mutex;
     std::shared_ptr<FastAccelStepperEngine> engine;
+    long init;
 
 protected:
     Machine();

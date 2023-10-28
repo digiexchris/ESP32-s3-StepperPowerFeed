@@ -18,8 +18,10 @@
                     "${config:idf.espAdfPathWin}/components/**",
                     "${workspaceFolder}"
                 ],
-                "limitSymbolsToIncludedHeaders": false
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
             },
+            
             "compileCommands": "${workspaceFolder}\\build\\compile_commands.json"
         }
     ],

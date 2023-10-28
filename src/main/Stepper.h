@@ -3,7 +3,7 @@
 
 #include <hal/gpio_types.h>
 // #define CONFIG_IDF_TARGET_ESP32S2
-#define SUPPORT_SELECT_DRIVER_TYPE
+// #define SUPPORT_SELECT_DRIVER_TYPE
 //#define SUPPORT_ESP32_RMT
 #include <FastAccelStepper.h>
 #include <memory>
@@ -50,6 +50,7 @@ namespace StepperDriver {
     class Stepper {
     public:
         const char *TAG = "Stepper";
+        long init;
 
         enum DistancePerTimeUnit {
             IPM,
@@ -70,7 +71,7 @@ namespace StepperDriver {
         void SetAcceleration(uint32_t anAcceleration);
         //don't need to set direction, move and run handle direction
         //void SetDirection(StepperDriver::Direction aDir);
-        void MoveDistance();
+        void MoveDistance(uint32_t distance);
         void Run(Direction aDir);
         void Stop();
 

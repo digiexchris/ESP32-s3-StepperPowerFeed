@@ -62,6 +62,11 @@ bool StepperDirection::operator!=(const Level &other) const {
     return !(*this == other); // Reusing the == operator
 }
 
+void Stepper::MoveDistance(uint32_t distance) {
+    //TODO turn off blocking here
+    stepper->move(distance, false);
+}
+
 /**
  * @brief set motor acceleration/deceleration
  * Note: this is linear acceleration.
@@ -98,7 +103,8 @@ void Stepper::Stop() {
 void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
     switch(aUnit) {
         case DistancePerTimeUnit::IPM:
-            stepper->setSpeedInHz(PrivIPMToHz(aDistancePerTime));
+        stepper->setSpeedInUs(1000);
+            //stepper->setSpeedInHz(PrivIPMToHz(aDistancePerTime));
             break;
         case DistancePerTimeUnit::MMPM:
             stepper->setSpeedInHz(PrivMMPMToHz(aDistancePerTime));
@@ -143,7 +149,7 @@ Stepper::Stepper(
 //     #define dirPinStepper 18
 // #define enablePinStepper 26
 // #define stepPinStepper 17
-
+    init = random();
     stepper = NULL;
 
     stepper = engine->stepperConnectToPin(stepPin);
@@ -161,8 +167,8 @@ Stepper::Stepper(
     // stepper->setDelayToDisable(1000);
 
     // speed up in ~0.025s, which needs 625 steps without linear mode
-    stepper->setSpeedInHz(50000);
-    stepper->setAcceleration(2000000);
+    stepper->setSpeedInHz(100);
+    stepper->setAcceleration(100);
 
 }
 
