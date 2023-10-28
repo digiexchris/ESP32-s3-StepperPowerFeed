@@ -1,7 +1,7 @@
 // #include "driver/rmt_tx.h"
 #include <driver/gpio.h>
 #include "esp_log.h"
-#include "FastAccelStepper.h"
+#include "RMTStepper.h"
 #include "Stepper.h"
 #include <exception>
 #include <memory>
@@ -64,7 +64,7 @@ bool StepperDirection::operator!=(const Level &other) const {
 
 void Stepper::MoveDistance(uint32_t distance) {
     //TODO turn off blocking here
-    stepper->move(distance, false);
+    // stepper->move(distance, false);
 }
 
 /**
@@ -76,7 +76,7 @@ void Stepper::MoveDistance(uint32_t distance) {
  * may handle it.
 */
 void Stepper::SetAcceleration(uint32_t steps){
-    stepper->setLinearAcceleration(steps);
+    // stepper->setLinearAcceleration(steps);
 }
 
 // void Stepper::SetDirection(Direction aDir) {
@@ -85,15 +85,15 @@ void Stepper::SetAcceleration(uint32_t steps){
 
 void Stepper::Run(Direction aDir) {
     if(aDir == Direction::CW) {
-        stepper->runForward();
+        //stepper->runForward();
     } else {
-        stepper->runBackward();
+        //stepper->runBackward();
     }
     
 }
 
 void Stepper::Stop() {
-    stepper->stopMove();
+    //stepper->stopMove();
 }
 
 /**
@@ -103,11 +103,11 @@ void Stepper::Stop() {
 void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
     switch(aUnit) {
         case DistancePerTimeUnit::IPM:
-        stepper->setSpeedInUs(1000);
+        //stepper->setSpeedInUs(1000);
             //stepper->setSpeedInHz(PrivIPMToHz(aDistancePerTime));
             break;
         case DistancePerTimeUnit::MMPM:
-            stepper->setSpeedInHz(PrivMMPMToHz(aDistancePerTime));
+            //stepper->setSpeedInHz(PrivMMPMToHz(aDistancePerTime));
             break;
         default:
             throw InvalidDistancePerTimeUnitException();
@@ -116,7 +116,7 @@ void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
 
     //if it's running continuously, set the new speed immediately
     //useful for rapids or changing IPM during a cut.
-    stepper->applySpeedAcceleration();
+    //stepper->applySpeedAcceleration();
 }
 
 /**
@@ -136,7 +136,7 @@ uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
 
 //NOTE pullups disabled. Use appropriate resistors.
 Stepper::Stepper(
-    std::shared_ptr<FastAccelStepperEngine> engine,
+    //std::shared_ptr<FastAccelStepperEngine> engine,
     gpio_num_t enPin, 
     gpio_num_t dirPin,
     gpio_num_t stepPin, 
@@ -150,25 +150,25 @@ Stepper::Stepper(
 // #define enablePinStepper 26
 // #define stepPinStepper 17
     init = random();
-    stepper = NULL;
+    // stepper = NULL;
 
-    stepper = engine->stepperConnectToPin(stepPin);
+    // stepper = engine->stepperConnectToPin(stepPin);
     
-    if(!stepper) {
-        throw InvalidStepperException("Could not connect to stepper pin");
-    }
+    // if(!stepper) {
+    //     throw InvalidStepperException("Could not connect to stepper pin");
+    // }
 
-    stepper->setDirectionPin(dirPin);
-    stepper->setEnablePin(enPin);
-    stepper->setAutoEnable(true);
+    // stepper->setDirectionPin(dirPin);
+    // stepper->setEnablePin(enPin);
+    // stepper->setAutoEnable(true);
 
     // If auto enable/disable need delays, just add (one or both):
     // stepper->setDelayToEnable(50);
     // stepper->setDelayToDisable(1000);
 
     // speed up in ~0.025s, which needs 625 steps without linear mode
-    stepper->setSpeedInHz(100);
-    stepper->setAcceleration(100);
+    // stepper->setSpeedInHz(100);
+    // stepper->setAcceleration(100);
 
 }
 

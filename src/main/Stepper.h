@@ -5,7 +5,7 @@
 // #define CONFIG_IDF_TARGET_ESP32S2
 // #define SUPPORT_SELECT_DRIVER_TYPE
 //#define SUPPORT_ESP32_RMT
-#include <FastAccelStepper.h>
+#include "RMTStepper.h"
 #include <memory>
 
 namespace StepperDriver {
@@ -58,7 +58,7 @@ namespace StepperDriver {
         };
 
         Stepper(
-            std::shared_ptr<FastAccelStepperEngine> engine,
+            //std::shared_ptr<FastAccelStepperEngine> engine,
             gpio_num_t enPin, 
             gpio_num_t dirPin, 
             gpio_num_t stepPin, 
@@ -77,9 +77,9 @@ namespace StepperDriver {
 
     private:
         StepperDirection defaultMotorDirection;
-        gpio_config_t en_dir_gpio_config;
-        FastAccelStepperEngine engine;
-        FastAccelStepper *stepper;
+        // gpio_config_t en_dir_gpio_config;
+        // FastAccelStepperEngine engine;
+        // FastAccelStepper *stepper;
         
         uint32_t PrivIPMToHz(uint32_t aIPM);
         uint32_t PrivMMPMToHz(uint32_t aMMPM);

@@ -18,4 +18,4 @@ if ("${idf_version}")
 endif()
 
 idf_component_register(SRCS "Stepper.cpp" "main.cpp" "Axis.cpp" "Machine.cpp"
-                    INCLUDE_DIRS "." REQUIRES "FastAccelStepper" "driver" "fmt")
+                    INCLUDE_DIRS "." REQUIRES "RMTAccelerationStepper" "hal" "driver" "fmt")

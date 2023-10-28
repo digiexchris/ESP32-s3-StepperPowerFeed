@@ -8,7 +8,7 @@ class Axis {
     public:
         Axis(
             char aLabel, 
-            std::shared_ptr<FastAccelStepperEngine> engine,
+            //std::shared_ptr<FastAccelStepperEngine> engine,
             gpio_num_t enPin, 
             gpio_num_t dirPin, 
             gpio_num_t stepPin, 

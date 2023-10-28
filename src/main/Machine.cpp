@@ -15,7 +15,7 @@ std::mutex Machine::mutex;
 
 Machine::Machine() {
     init = random();
-    engine = std::make_shared<FastAccelStepperEngine>();
+    // engine = std::make_shared<FastAccelStepperEngine>();
     axes = std::make_shared<Axes>();
 }
 
@@ -53,7 +53,7 @@ Axis Machine::AddAxis(
 
     Axis newAxis(
         aLabel,
-        engine,
+        // engine,
         enPin, 
         dirPin, 
         stepPin, 
