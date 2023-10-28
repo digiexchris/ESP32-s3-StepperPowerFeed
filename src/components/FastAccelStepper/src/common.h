@@ -8,6 +8,14 @@
 #define MOVE_ERR_SPEED_IS_UNDEFINED -2
 #define MOVE_ERR_ACCELERATION_IS_UNDEFINED -3
 
+#if __has_include(<sdkconfig.h>)  
+#include <sdkconfig.h>
+#endif
+
+#ifdef CONFIG_IDF_TARGET_ESP32
+#define ESP_PLATFORM
+#endif
+
 //	ticks is multiplied by (1/TICKS_PER_S) in s
 //	If steps is 0, then a pause is generated
 struct stepper_command_s {
@@ -234,9 +242,24 @@ struct queue_end_s {
 #define SUPPORT_ESP32
 
 // esp32 specific includes
+// #if __has_include(<driver/gpio.h>)  
 #include <driver/gpio.h>
-#include <driver/mcpwm.h>
+// #elseif __has_include(<hal/gpio.h>)
+// #include <hal/gpio.h>
+// #endif
+
+// #if __has_include(<driver/gpio.h>)  
 #include <driver/pcnt.h>
+// #elseif __has_include(<hal/gpio.h>)
+// #include <hal/pcnt.h>
+// #endif
+
+// #if __has_include(<driver/gpio.h>)  
+#include <driver/mcpwm.h>
+// #elseif __has_include(<hal/gpio.h>)
+// #include <hal/mcpwm.h>
+// #endif
+
 #include <esp_task_wdt.h>
 #include <math.h>
 #include <soc/mcpwm_reg.h>
@@ -248,6 +271,9 @@ struct queue_end_s {
 //
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
+#include <soc/rmt_reg.h>
+#include <driver/rmt.h>
+
 #define fasDisableInterrupts portDISABLE_INTERRUPTS
 #define fasEnableInterrupts portENABLE_INTERRUPTS
 
@@ -285,9 +311,18 @@ struct queue_end_s {
 
 // have support for pulse counter
 #define SUPPORT_ESP32_PULSE_COUNTER
+// #define SUPPORT_ESP32_RMT
+#define SUPPORT_ESP32_MCPWM_PCNT
+#define SUPPORT_EXTERNAL_DIRECTION_PIN
 
 // have more than one core
 #define SUPPORT_CPU_AFFINITY
+
+#define SUPPORT_ESP32S3_MCPWM_PCNT
+#define QUEUES_MCPWM_PCNT 4
+#define QUEUES_RMT 0
+
+//#define FAS_RMT_MEM(channel) ((uint32_t *)RMT_CHANNEL_MEM(channel))
 
 //==========================================================================
 //

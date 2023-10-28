@@ -6,7 +6,15 @@
 #include <exception>
 #include <fmt/core.h>
 
+/**
+ * Static methods should be defined outside the class.
+ */
+
+Machine* Machine::instance{nullptr};
+std::mutex Machine::mutex;
+
 Machine::Machine() {
+    init = random();
     engine = std::make_shared<FastAccelStepperEngine>();
     axes = std::make_shared<Axes>();
 }
@@ -18,7 +26,7 @@ Machine::Machine() {
  */
 Machine *Machine::GetInstance()
 {
-    std::lock_guard<std::mutex> lock(mutex_);
+    std::lock_guard<std::mutex> lock(mutex);
     if (instance == nullptr)
     {
         instance = new Machine();
@@ -26,7 +34,7 @@ Machine *Machine::GetInstance()
     return instance;
 }
 
-Axes* Machine::GetAxes() const{
+std::shared_ptr<Machine::Axes> Machine::GetAxes() const{
         return axes;
     } 
 
@@ -39,31 +47,32 @@ Axis Machine::AddAxis(
     uint32_t motorResolutionHz, 
     StepperDriver::StepperDirection startupMotorDirection
 ) {
-    if(axes.find(aLabel) != axes.end()) {
-        throw std::invalid_argument(std::format("Axis {} already exists", aLabel));
+    if(axes->find(aLabel) != axes->end()) {
+        throw std::invalid_argument(fmt::format("Axis {} already exists", aLabel));
     }
 
-    axes.insert(Axes::value_type(aLabel,
-        new Axis(
-            aLabel,
-            engine,
-            enPin, 
-            dirPin, 
-            stepPin, 
-            enableLevel, 
-            motorResolutionHz, 
-            startupMotorDirection
-        ))
+    Axis newAxis(
+        aLabel,
+        engine,
+        enPin, 
+        dirPin, 
+        stepPin, 
+        enableLevel, 
+        motorResolutionHz, 
+        startupMotorDirection
     );
 
-    //Find a better way, there are 2 lookups and an insert in here. Sloppy.
-    if (Axis axis = axes.find(aLabel); axis != axes.end()) {
-        return axis;
+    //todo this mem for newAxis might be going out of scope after this returns, check that it copies or moves instead of nothing...
+    //if it copies, returning newAxis not valid but from the returned iterator might be.
+    auto result = axes->insert(Axes::value_type(aLabel, newAxis));
+
+    if (result.second) {
+        return result.first->second;
     }
     else
     {
-        //todo throw a not found exception here
-        throw std::exception("Unable to insert Axis")
+        throw MachineException("Unable to insert Axis");
+        abort();
     }
 }
 

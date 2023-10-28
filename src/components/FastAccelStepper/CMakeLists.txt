@@ -1,6 +1,6 @@
 idf_component_register(
     SRC_DIRS "src"
     INCLUDE_DIRS "src"
-    REQUIRES arduino
-    PRIV_REQUIRES driver soc 
+    #REQUIRES arduino
+    PRIV_REQUIRES driver hal soc 
 )

@@ -2,7 +2,7 @@
 #include "StepperISR.h"
 
 #if defined(SUPPORT_ESP32)
-
+#include <soc/gpio_sig_map.h>
 #ifdef __ESP32_IDF_V44__
 #include <driver/periph_ctrl.h>
 #include <soc/periph_defs.h>

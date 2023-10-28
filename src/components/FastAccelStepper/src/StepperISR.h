@@ -1,8 +1,15 @@
 #include <stdint.h>
 
+
+
 #include "FastAccelStepper.h"
 #include "common.h"
 
+#ifdef ESP_PLATFORM
+#ifdef SUPPORT_ESP32_RMT
+#include <driver/rmt.h>
+#endif
+#endif
 // Here are the global variables to interface with the interrupts
 
 // These variables control the stepper timing behaviour

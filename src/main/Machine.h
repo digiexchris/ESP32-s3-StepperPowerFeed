@@ -1,9 +1,10 @@
-#pragma once
+#ifndef MACHINE_H
+#define MACHINE_H
+
 #include <mutex>
 #include "Axis.h"
 #include <memory>
 #include <unordered_map>
-
 class Machine
 {
 public:
@@ -13,6 +14,7 @@ private:
     static Machine * instance;
     static std::mutex mutex;
     std::shared_ptr<FastAccelStepperEngine> engine;
+    long init;
 
 protected:
     Machine();
@@ -28,7 +30,7 @@ public:
      */
     Machine(Machine &other) = delete;
 
-    Axis& AddAxis(
+    Axis AddAxis(
         const char aLabel,
         gpio_num_t enPin, 
         gpio_num_t dirPin, 
@@ -49,12 +51,19 @@ public:
      */
 
     static Machine *GetInstance();
-    Axes* GetAxes() const;
+    std::shared_ptr<Machine::Axes> GetAxes() const;
 };
 
-/**
- * Static methods should be defined outside the class.
- */
+class MachineException : std::exception {
+    public:
+        std::string myMsg;
+        MachineException(const char* aMsg) {
+            myMsg = aMsg;
+        }
+        virtual const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT override {
+            return myMsg.c_str();
+        }
 
-Machine* Machine::instance{nullptr};
-std::mutex Machine::mutex;
+};
+
+#endif

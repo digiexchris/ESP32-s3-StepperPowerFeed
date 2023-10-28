@@ -1,6 +1,10 @@
 #include "StepperISR.h"
 #if defined(SUPPORT_ESP32_RMT) && !defined(SUPPORT_ESP32C3_RMT)
-
+#ifdef ESP_PLATFORM
+// #include <driver/rmt_types_legacy.h>
+#include <driver/rmt.h>
+#include <soc/rmt_reg.h>
+#endif
 //#define TEST_MODE
 
 #include "test_probe.h"
@@ -406,7 +410,16 @@ void StepperQueue::startQueue_rmt() {
 #endif
   rmt_tx_stop(channel);
   // rmt_rx_stop(channel);
+
+  //mem handled by driver automatically in 5.x
+  #ifdef ESP_IDF_VERSION_MAJOR
+  #if ESP_IDF_VERSION_MAJOR != 5
+    rmt_memory_rw_rst(channel);
+  #endif
+  #else
   rmt_memory_rw_rst(channel);
+  #endif
+  
   // the following assignment should not be needed;
   // RMT.data_ch[channel] = 0;
   uint32_t *mem = FAS_RMT_MEM(channel);
