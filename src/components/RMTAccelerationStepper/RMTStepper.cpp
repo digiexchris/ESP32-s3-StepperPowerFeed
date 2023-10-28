@@ -1,9 +1,3 @@
-/*
- * SPDX-FileCopyrightText: 2021-2022 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: Unlicense OR CC0-1.0
- */
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/rmt_tx.h"
@@ -14,20 +8,33 @@
 
 const char* RMTStepper::TAG = "RMTStepper";
 
+/**
+ * Ideas:
+ * use the RMT sync manager for multiple axis synchronization
+ * I think the reset function is not implemented in stepper_motor_encoder.c, might be required for a stop command
+*/
+
 RMTStepper::RMTStepper(
         gpio_num_t aStepPin, 
         gpio_num_t aDirPin, 
         gpio_num_t anEnPin, 
-        uint8_t aCWDirLevel = 0,
+        uint8_t aCWDir = 0,
         uint8_t anEnableLevel = 1, 
         uint32_t aResolution = 1000000
     ) : myStepPin(aStepPin),
         myDirPin(aDirPin),
         myEnPin(anEnPin),
-        myCWDirLevel(aCWDirLevel),
-        myCCWDirLevel(!aCWDirLevel),
+        myCWDir(aCWDir),
+        myCCWDir(!aCWDir),
         myEnableLevel(anEnableLevel),
-        myResolution(aResolution)
+        myResolution(aResolution),
+        myTargetPosition(0),
+        myCurrentPosition(0),
+        myTargetSpeed(0),
+        myCurrentSpeed(0),
+        myAccelerationRate(0),
+        myDecelerationRate(0),
+        myDirection(0)
 {
     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
     gpio_config_t en_dir_gpio_config = {
@@ -50,9 +57,10 @@ RMTStepper::RMTStepper(
     ESP_ERROR_CHECK(rmt_new_tx_channel(&tx_chan_config, &motor_chan));
 
     ESP_LOGI(TAG, "Set spin direction");
-    gpio_set_level(myDirPin, myCCWDirLevel);
-    ESP_LOGI(TAG, "Enable step motor");
-    gpio_set_level(myEnPin, myEnableLevel);
+    gpio_set_level(myDirPin, myCWDir);
+    ESP_LOGI(TAG, "Disable step motor");
+    gpio_set_level(myEnPin, !myEnableLevel);
+    myIsEnabled = false;
 
     ESP_LOGI(TAG, "Create motor encoders");
     stepper_motor_curve_encoder_config_t accel_encoder_config = {
@@ -88,7 +96,7 @@ RMTStepper::RMTStepper(
     };
 
     const static uint32_t accel_samples = 500;
-    const static uint32_t uniform_speed_hz = 1500;
+    const static uint32_t uniform_speed_hz = 1500; //eg steps per second
     const static uint32_t decel_samples = 500;
 
     while (1) {
