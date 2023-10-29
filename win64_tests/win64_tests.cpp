@@ -29,10 +29,29 @@ void test_GenerateMove(void) {
 	TEST_ASSERT_EQUAL_UINT32(200, decSamples);
 	TEST_ASSERT_EQUAL_UINT32(10000 - 2000 - 200, uniformSamples);
 
-	MovePlanner::GenerateMove(*accSamples, *decSamples, *uniformSamples, 200, 0, 10, 100, 10000);
-	TEST_ASSERT_EQUAL_UINT32(2000, accSamples);
+
+	//Decelerate only
+	MovePlanner::GenerateMove(*accSamples, *decSamples, *uniformSamples, 200, 0, 0, 100, 10000);
+	TEST_ASSERT_EQUAL_UINT32(0, accSamples);
 	TEST_ASSERT_EQUAL_UINT32(200, decSamples);
-	TEST_ASSERT_EQUAL_UINT32(10000 - 2000 - 200, uniformSamples);
+	TEST_ASSERT_EQUAL_UINT32(10000 - 0 - 200, uniformSamples);
+
+	//negative speed delta, positive accel rate, but zero decel rate. The delta suggests decelerate only, but there is no rate.
+	//this is probably an error.
+	MovePlanner::GenerateMove(*accSamples, *decSamples, *uniformSamples, 200, 0, 10, 0, 10000);
+	TEST_ASSERT_EQUAL_UINT32(0, accSamples);
+	TEST_ASSERT_EQUAL_UINT32(200, decSamples);
+	TEST_ASSERT_EQUAL_UINT32(10000 - 2000 - 0, uniformSamples);
+
+	MovePlanner::GenerateMove(*accSamples, *decSamples, *uniformSamples, 200, 200, 10, 0, 10000);
+	TEST_ASSERT_EQUAL_UINT32(0, accSamples);
+	TEST_ASSERT_EQUAL_UINT32(0, decSamples);
+	TEST_ASSERT_EQUAL_UINT32(10000 - 0 - 0, uniformSamples);
+
+	MovePlanner::GenerateMove(*accSamples, *decSamples, *uniformSamples, 200, 200, 10, 0, 10000);
+	TEST_ASSERT_EQUAL_UINT32(0, accSamples);
+	TEST_ASSERT_EQUAL_UINT32(0, decSamples);
+	TEST_ASSERT_EQUAL_UINT32(10000 - 0 - 0, uniformSamples);
 }
 
 int main(void)
