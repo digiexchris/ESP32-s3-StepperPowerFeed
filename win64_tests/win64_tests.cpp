@@ -23,6 +23,7 @@ void test_GenerateMove(void) {
 	uint32_t* decSamples = 0;
 	uint32_t* uniformSamples = 0;
 
+	//accelerate, move, decelerate
 	MovePlanner::GenerateMove(*accSamples, *decSamples, *uniformSamples, 200, 0, 10, 100, 10000);
 	TEST_ASSERT_EQUAL_UINT32(2000, accSamples);
 	TEST_ASSERT_EQUAL_UINT32(200, decSamples);

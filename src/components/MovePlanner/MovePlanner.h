@@ -30,7 +30,7 @@ class MovePlanner {
     /// @param anOutUniformSteps 
     /// @param aTargetSpeed 
     /// @param aCurrentSpeed 
-    /// @param anAccelRate 
+    /// @param anAccelRate
     /// @param aDecelRate 
     /// @param aStepsAvailable The total number of steps in the move
     static void GenerateMove(
@@ -43,5 +43,10 @@ class MovePlanner {
         uint16_t aDecelRate,
         uint16_t aStepsAvailable
     );
+
+private:
+    static bool PrivCanAccelerate(uint16_t aCurrentSpeed, uint16_t aTargetSpeed, uint16_t anAccelRate);
+
+    static bool PrivCanDecelerate(uint16_t aCurrentSpeed, uint16_t aTargetSpeed, uint16_t aDecellRate);
 
 };
