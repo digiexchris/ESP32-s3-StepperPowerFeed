@@ -1,0 +1,7 @@
+if(SDKCONFIG)
+    idf_component_register( SRC "Exception.cpp" INCLUDE_DIRS ".")
+else()
+    add_library(Exception Exception.cpp)
+    set(Exception_PUBLIC_HEADERS Exception.h)
+    # target_include_directories(${PROJECT_NAME} PUBLIC .)
+endif()

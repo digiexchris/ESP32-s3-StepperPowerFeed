@@ -1,0 +1,6 @@
+[submodule "win64_tests/libs/Unity"]
+	path = win64_tests/libs/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "win64_tests/lib/Unity"]
+	path = win64_tests/lib/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git

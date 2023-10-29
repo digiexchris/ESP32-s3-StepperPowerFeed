@@ -1,9 +1,14 @@
 #pragma once
 #include <hal/gpio_types.h>
+#include <driver/gpio.h>
 #include "stepper_motor_encoder.h"
 #include "driver/rmt_tx.h"
 #include "RMTStepper.h"
-
+#include <string>
+#include <exception>
+#include <esp_log.h>
+#include "Exception.h"
+#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 class RMTStepper {
 public:
     RMTStepper(
@@ -25,46 +30,15 @@ public:
         myDecelerationRate = aDecelerationRate;
     }
 
-    void SetDirection(uint8_t aDirection) {
-        //use the FSM to coordinate this properly. Shouldn't reverse if not stopped first.
-        myDirection = aDirection;
-        ESP_LOGI(TAG, "Set spin direction");
-        gpio_set_level(myDirPin, myDirection);
-    }
+    void SetDirection(uint8_t aDirection);
 
-    void Move(uint64_t aStepsToMove) {
-        //if this is < current position, use the FSM to reverse it.
-        //calculate number of required samples for acceleration
-        //currently is just from 0 speed to target and back to zero.
-        //make it go to a new target speed instead of 0
-        Accelerate(#);
-        MoveUniformSteps(#);
-        Decelerate(#);
-    }
+    void Move(uint64_t aStepsToMove);
 
-    /**
-     * @brief calculate the number of samples required to go from the current speed
-     * to the target speed, if possible within the number of samples available
-     * keeping it bound within the available acceleration/deceleration rate available.
-     * eg. if we can accelerate 10s^2, and we only have 2 samples available, and we're starting at
-     * 0 speed, and the target speed is 100, we'll only reach 20/sec speed. Number of samples is therefore 
-     * capped at 2. NOTE: this is probably an error condition, since there are no moves available to
-     * decelerate. detect that in the calling function.
-     * 
-     * If we can do the same acceleration, but we have 1500 steps available,
-     * we will require 10 steps to get up to speed, so return 10. 
-     * //todo, check that math,
-     * it's late right now.
-    */
-    void CalculateSamples(uint32_t aSpeedDelta, uint32_t aRate, uint32_t aTotalAvailableSteps);
+    //keep adding to the queue as the queue gets consumed I guess?
+    void Run();
 
-    void Run() {
-        //keep adding to the queue as the queue gets consumed I guess?
-    }
-
-    void Stop() {
-        //empty the uniform queue and decelerate using the FSM
-    }
+    //empty the uniform queue and decelerate using the FSM
+    void Stop();
 
     void Enable() {
         ESP_LOGI(TAG, "Enable step motor");
@@ -80,6 +54,7 @@ public:
 
 private:
 
+    
     /**
      * @brief accelerate to the target speed across the number of steps passed
      * @param uint32_t inSteps // The number of steps to spread the acceleration over

@@ -5,6 +5,9 @@
 #include "esp_log.h"
 #include "stepper_motor_encoder.h"
 #include "RMTStepper.h"
+#include <cmath>
+#include <exception>
+#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 
 const char* RMTStepper::TAG = "RMTStepper";
 
@@ -116,4 +119,24 @@ RMTStepper::RMTStepper(
 
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
+}
+
+void RMTStepper::SetDirection(uint8_t aDirection) {
+        //use the FSM to coordinate this properly. Shouldn't reverse if not stopped first.
+        myDirection = aDirection;
+        ESP_LOGI(TAG, "Set spin direction");
+        gpio_set_level(myDirPin, myDirection);
+    }
+
+void RMTStepper::Move(uint64_t aStepsToMove) {
+    //if this is < current position, use the FSM to reverse it.
+    //calculate number of required samples for acceleration
+    //currently is just from 0 speed to target and back to zero.
+    //make it go to a new target speed instead of 0
+    
+
+
+    // Accelerate(#);
+    // MoveUniformSteps(#);
+    // Decelerate(#);
 }

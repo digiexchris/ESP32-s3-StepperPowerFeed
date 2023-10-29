@@ -1,0 +1,9 @@
+build/
+sdkconfig
+sdkconfig.old
+managed_components/
+.vscode/
+src.code-workspace
+debug.log
+.vs/
+out/
