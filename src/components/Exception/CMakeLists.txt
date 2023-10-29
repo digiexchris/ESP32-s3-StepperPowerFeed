@@ -3,5 +3,11 @@ if(SDKCONFIG)
 else()
     add_library(Exception Exception.cpp)
     set(Exception_PUBLIC_HEADERS Exception.h)
-    # target_include_directories(${PROJECT_NAME} PUBLIC .)
+
+    message("Current Source Directory for Exception: ${CMAKE_CURRENT_SOURCE_DIR}")
+
+    target_include_directories(Exception PUBLIC .)
+    get_property(dirs TARGET Exception PROPERTY INCLUDE_DIRECTORIES)
+
+    message("Include directories for Exception are: ${dirs}")
 endif()

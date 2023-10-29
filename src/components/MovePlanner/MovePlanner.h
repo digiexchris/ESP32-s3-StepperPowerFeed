@@ -1,6 +1,7 @@
 #pragma once
-#include "stdint.h"
+//#include "stdint.h"
 #include "Exception.h"
+
 class MovePlanner {
     public:
 
@@ -11,28 +12,16 @@ class MovePlanner {
 
     /**
      * @brief calculate the number of samples required to go from the current speed
-     * to the target speed, if possible within the number of samples available
-     * keeping it bound within the available acceleration/deceleration rate available.
-     * eg. if we can accelerate 10s^2, and we only have 2 samples available, and we're starting at
-     * 0 speed, and the target speed is 100, we'll only reach 20/sec speed. Number of samples is therefore 
-     * capped at 2. NOTE: this is probably an error condition, since there are no moves available to
-     * decelerate. detect that in the calling function.
-     * 
-     * If we can do the same acceleration, but we have 1500 steps available,
-     * we will require 10 steps to get up to speed, so return 10. 
-     * //todo, check that math,
-     * it's late right now.
+     * to the target speed, using the stated acceleration
      * 
      * @param uint32_t anInitialSpeed, 
        param uint32_t aTargetSpeed, 
-       param uint32_t aRate, 
-       param uint32_t aTotalAvailableSteps
+       param uint32_t aRate
     */
     static uint16_t CalculateSamples(
         uint32_t anInitialSpeed, 
         uint32_t aTargetSpeed, 
-        uint32_t aRate, 
-        uint32_t aTotalAvailableSteps
+        uint32_t aRate
         );
 
     /// @brief Generate the 3 sets of stepping parameters used for linear accel/decel

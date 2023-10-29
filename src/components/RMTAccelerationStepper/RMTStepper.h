@@ -8,6 +8,7 @@
 #include <exception>
 #include <esp_log.h>
 #include "Exception.h"
+#include "Moveplanner.h"
 #define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 class RMTStepper {
 public:
@@ -28,6 +29,8 @@ public:
         myTargetSpeed = aSpeed;
         myAccelerationRate = anAccelerationRate;
         myDecelerationRate = aDecelerationRate;
+        myFullSpeedAccelerationSteps = MovePlanner::CalculateSamples(0, myTargetSpeed, myAccelerationRate);
+        myFullSpeedDecellerationSteps = MovePlanner::CalculateSamples(0, myTargetSpeed, myDecelerationRate);
     }
 
     void SetDirection(uint8_t aDirection);
@@ -88,7 +91,8 @@ private:
     uint16_t myDecelerationRate;
     uint8_t myDirection;
     bool myIsEnabled;
-    
+    uint32_t myFullSpeedAccelerationSteps; //Stores how many steps it takes to go from 0 to the current target speed
+    uint32_t myFullSpeedDecellerationSteps; //Stores how many steps it takes to go from the current target speed to a full stop
     
     rmt_channel_handle_t myMotorChan;
     rmt_tx_channel_config_t myTxChanConfig;

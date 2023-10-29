@@ -9,7 +9,12 @@ else()
     add_library(MovePlanner
         MovePlanner.cpp
     )
-    
-    #target_include_directories(${PROJECT_NAME} PUBLIC . "${component_dir}/Exception/")
-    target_include_directories(MovePlanner PUBLIC . "../Exception/")
+
+    message("Current Source Directory for MovePlanner: ${CMAKE_CURRENT_SOURCE_DIR}")
+    get_filename_component(Exception_ABSOLUTE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../Exception" ABSOLUTE)
+    target_include_directories(MovePlanner PUBLIC . ${Exception_ABSOLUTE_DIR})
+    get_property(dirs TARGET MovePlanner PROPERTY INCLUDE_DIRECTORIES)
+    message("Include directories for MovePlanner are: ${dirs}")
+
+    target_link_libraries(MovePlanner Exception)
 endif()

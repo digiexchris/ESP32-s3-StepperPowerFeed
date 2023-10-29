@@ -6,8 +6,8 @@ class GenericException : std::exception {
 public:
     std::string msg;
     GenericException(const char* aMsg);
-    
-#ifdef IDF_PATH
+
+#ifdef ESP_PLATFORM
     virtual const char*
     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT override {
 #else
