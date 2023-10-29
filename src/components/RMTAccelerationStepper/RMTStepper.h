@@ -9,8 +9,9 @@
 #include <esp_log.h>
 #include "Exception.h"
 #include "Moveplanner.h"
+
 #define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
-class RMTStepper {
+class RMTStepper  {
 public:
     RMTStepper(
         gpio_num_t aStepPin, 

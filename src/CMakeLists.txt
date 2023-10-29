@@ -5,4 +5,15 @@
 cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+set(EXTRA_COMPONENT_DIRS
+"components/espp/components"
+)
+
+set(
+  COMPONENTS
+  "main state_machine"
+  CACHE STRING
+  "List of components to include"
+  )
+
 project(StepperPowerFeed)

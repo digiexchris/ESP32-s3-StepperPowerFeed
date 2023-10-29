@@ -24,29 +24,6 @@ class MovePlanner {
         uint32_t aRate
         );
 
-    /// @brief Generate the 3 sets of stepping parameters used for linear accel/decel
-    /// @param anOutAccelSamples 
-    /// @param anOutDecelSamples 
-    /// @param anOutUniformSteps 
-    /// @param aTargetSpeed 
-    /// @param aCurrentSpeed 
-    /// @param anAccelRate
-    /// @param aDecelRate 
-    /// @param aStepsAvailable The total number of steps in the move
-    static void GenerateMove(
-        uint32_t& anOutAccelSamples, 
-        uint32_t& anOutDecelSamples, 
-        uint32_t& anOutUniformSteps,
-        uint16_t aTargetSpeed,
-        uint16_t aCurrentSpeed,
-        uint16_t anAccelRate,
-        uint16_t aDecelRate,
-        uint16_t aStepsAvailable
-    );
-
 private:
-    static bool PrivCanAccelerate(uint16_t aCurrentSpeed, uint16_t aTargetSpeed, uint16_t anAccelRate);
-
-    static bool PrivCanDecelerate(uint16_t aCurrentSpeed, uint16_t aTargetSpeed, uint16_t aDecellRate);
 
 };

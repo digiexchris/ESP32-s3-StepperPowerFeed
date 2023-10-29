@@ -4,3 +4,6 @@
 [submodule "win64_tests/lib/Unity"]
 	path = win64_tests/lib/Unity
 	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "src/lib/espp"]
+	path = src/lib/espp
+	url = https://github.com/esp-cpp/espp.git
