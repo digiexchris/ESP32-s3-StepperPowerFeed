@@ -7,3 +7,6 @@
 [submodule "src/lib/espp"]
 	path = src/lib/espp
 	url = https://github.com/esp-cpp/espp.git
+[submodule "src/lib/espp/external/fmt"]
+	path = external/fmt
+	url = git@github.com:fmtlib/fmt

@@ -6,7 +6,7 @@
 #pragma once
 
 #include <stdint.h>
-#include "driver/rmt_encoder.h"
+#include "rmt_encoder.hpp"
 
 #ifdef __cplusplus
 extern "C" {

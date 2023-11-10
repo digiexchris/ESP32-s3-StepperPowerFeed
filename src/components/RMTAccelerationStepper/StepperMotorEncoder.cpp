@@ -5,7 +5,7 @@
  */
 
 #include "esp_check.h"
-#include "stepper_motor_encoder.h"
+#include "StepperMotorEncoder.h"
 
 static const char *TAG = "stepper_motor_encoder";
 
