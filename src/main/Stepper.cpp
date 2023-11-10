@@ -44,9 +44,9 @@ bool StepperDirection::operator!=(const StepperDirection &other) const {
     return !(*this == other); // Reusing the == operator
 }
 
-StepperDirection::operator Level() {
-    return level;
-}
+// StepperDirection::operator Level() {
+//     return level;
+// }
 
 StepperDirection::operator uint32_t() {
     return static_cast<uint32_t>(level);
@@ -65,17 +65,18 @@ bool StepperDirection::operator!=(const Level &other) const {
 void Stepper::MoveDistance(uint32_t distance) {
     //TODO turn off blocking here
     // stepper->move(distance, false);
+    rmtStepper->Move(1000);
 }
 
 /**
  * @brief set motor acceleration/deceleration
- * Note: this is linear acceleration.
+ * Note: this is linear acceleration, from zero to full speed and back to zero.
  * @param uint32_t steps #the number of steps to accelerate up to speed. 
  * A closed loop stepper may be able to set this to 0 if all moves are slow enough.
  * A servo may not need any acceleration for any moves, the closed loop driver
  * may handle it.
 */
-void Stepper::SetAcceleration(uint32_t steps){
+void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
     // stepper->setLinearAcceleration(steps);
 }
 
@@ -145,30 +146,14 @@ Stepper::Stepper(
     StepperDriver::StepperDirection startupMotorDirection // default motor direction and level. inverting this reverses direction (and by extension, level of the dir pin)
     ) : defaultMotorDirection(startupMotorDirection)
 {
-
-//     #define dirPinStepper 18
-// #define enablePinStepper 26
-// #define stepPinStepper 17
-    init = random();
-    // stepper = NULL;
-
-    // stepper = engine->stepperConnectToPin(stepPin);
-    
-    // if(!stepper) {
-    //     throw InvalidStepperException("Could not connect to stepper pin");
-    // }
-
-    // stepper->setDirectionPin(dirPin);
-    // stepper->setEnablePin(enPin);
-    // stepper->setAutoEnable(true);
-
-    // If auto enable/disable need delays, just add (one or both):
-    // stepper->setDelayToEnable(50);
-    // stepper->setDelayToDisable(1000);
-
-    // speed up in ~0.025s, which needs 625 steps without linear mode
-    // stepper->setSpeedInHz(100);
-    // stepper->setAcceleration(100);
+    rmtStepper = new RMTStepper(
+        stepPin, 
+        dirPin, 
+        enPin, 
+        startupMotorDirection, 
+        enableLevel,
+        motorResolutionHz
+    );
 
 }
 

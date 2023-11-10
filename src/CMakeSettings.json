@@ -1,0 +1,59 @@
+﻿{
+  "configurations": [
+    {
+      "name": "esp32",
+      "generator": "Ninja",
+      "configurationType": "None",
+      //"buildRoot": "${projectDir}\\out\\build\\${name}",
+      //"installRoot": "${projectDir}\\out\\install\\${name}",
+      //"cmakeCommandArgs": "",
+      //"buildCommandArgs": "",
+      //"ctestCommandArgs": "",
+      //"variables": [
+      //  {
+      //    "name": "IDF_PATH",
+      //    "value": "c:\\Espressif5.1.1\\frameworks\\esp-idf",
+      //    "type": "STRING"
+      //  },
+      //  {
+      //    "name": "PYTHON",
+      //    "value": "c:\\Espressif5.1.1\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
+      //    "type": "STRING"
+      //  },
+      //  {
+      //    "name": "IDF_TOOLS_PATH",
+      //    "value": "c:\\Espressif5.1.1",
+      //    "type": "STRING"
+      //  },
+      //  {
+      //    "name": "CXX",
+      //    "value": "C:\\Espressif5.1.1\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-g++.exe",
+      //    "type": "STRING"
+      //  },
+      //  {
+      //    "name": "CC",
+      //    "value": "C:\\Espressif5.1.1\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe",
+      //    "type": "STRING"
+      //  },
+      //  {
+      //    "name": "ASM",
+      //    "value": "C:\\Espressif5.1.1\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe",
+      //    "type": "STRING"
+      //  },
+      //  {
+      //    "name": "CMAKE_MAKE_PROGRAM",
+      //    "value": "C:\\Espressif5.1.1\\tools\\ninja\\1.10.2\\ninja.exe",
+      //    "type": "FILEPATH"
+      //  },
+      //  {
+      //    "name": "CMAKE_TOOLCHAIN_FILE",
+      //    "value": "C:\\Espressif5.1.1\\frameworks\\esp-idf\\tools\\cmake\\toolchain-esp32s3.cmake",
+      //    "type": "STRING"
+      //  }
+      //],
+      //"inheritEnvironments": [],
+      //"cmakeExecutable": "C:/Espressif5.1.1/tools/cmake/3.24.0/bin/cmake.exe",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ]
+}

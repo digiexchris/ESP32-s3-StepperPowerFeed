@@ -2,5 +2,6 @@ build/
 sdkconfig
 sdkconfig.old
 .vscode/
+.vs/
 src.code-workspace
 debug.log

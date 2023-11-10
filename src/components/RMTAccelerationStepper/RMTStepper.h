@@ -63,7 +63,7 @@ private:
      * @brief accelerate to the target speed across the number of steps passed
      * @param uint32_t inSteps // The number of steps to spread the acceleration over
     */
-    void Accelerate(uint32_t inSteps);
+    void Accelerate(uint32_t inSteps, uint16_t toTargetSpeed);
 
     /**
      * @brief execute the passed number of steps at the current speed
@@ -75,7 +75,7 @@ private:
      * @brief accelerate to the target speed across the number of steps passed
      * @param uint32_t inSteps // The number of steps to spread the acceleration over
     */
-    void Decelerate(uint32_t inSteps);
+    void Decelerate(uint32_t inSteps, uint16_t toTargetSpeed);
 
     gpio_num_t myStepPin;
     gpio_num_t myDirPin;

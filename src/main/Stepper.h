@@ -32,7 +32,7 @@ namespace StepperDriver {
         // Overloading the != operator
         bool operator!=(const StepperDirection &other) const;
 
-        operator Level();
+        // operator Level();
 
         operator uint32_t();
 
@@ -68,9 +68,9 @@ namespace StepperDriver {
         );
 
         void SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit);
-        void SetAcceleration(uint32_t anAcceleration);
-        //don't need to set direction, move and run handle direction
-        //void SetDirection(StepperDriver::Direction aDir);
+        void SetMaxSpeed(uint16_t aMaxSpeed);
+        void SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond);
+
         void MoveDistance(uint32_t distance);
         void Run(Direction aDir);
         void Stop();
@@ -80,7 +80,7 @@ namespace StepperDriver {
         // gpio_config_t en_dir_gpio_config;
         // FastAccelStepperEngine engine;
         // FastAccelStepper *stepper;
-        
+        RMTStepper* rmtStepper;
         uint32_t PrivIPMToHz(uint32_t aIPM);
         uint32_t PrivMMPMToHz(uint32_t aMMPM);
 };
