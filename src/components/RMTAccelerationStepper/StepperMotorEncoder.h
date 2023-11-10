@@ -6,7 +6,7 @@
 #pragma once
 
 #include <stdint.h>
-#include "rmt_encoder.hpp"
+#include <rmt_encoder.hpp>
 
 #ifdef __cplusplus
 extern "C" {

@@ -3,11 +3,11 @@
 #include "driver/rmt_tx.h"
 #include "driver/gpio.h"
 #include "esp_log.h"
-#include "stepper_motor_encoder.h"
+#include "StepperMotorEncoder.h"
 #include "RMTStepper.h"
 #include <cmath>
 #include <exception>
-#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
+//#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 
 const char* RMTStepper::TAG = "RMTStepper";
 

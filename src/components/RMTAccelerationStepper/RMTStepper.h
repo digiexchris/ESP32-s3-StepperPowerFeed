@@ -1,7 +1,7 @@
 #pragma once
 #include <hal/gpio_types.h>
 #include <driver/gpio.h>
-#include "stepper_motor_encoder.h"
+#include "StepperMotorEncoder.h"
 #include "driver/rmt_tx.h"
 #include "RMTStepper.h"
 #include <string>
@@ -9,8 +9,11 @@
 #include <esp_log.h>
 #include "Exception.h"
 #include "Moveplanner.h"
+#include <memory>
+#include <rmt.hpp>
+#include <rmt_encoder.hpp>
 
-#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
+//#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 class RMTStepper  {
 public:
     RMTStepper(
@@ -95,14 +98,17 @@ private:
     uint32_t myFullSpeedAccelerationSteps; //Stores how many steps it takes to go from 0 to the current target speed
     uint32_t myFullSpeedDecellerationSteps; //Stores how many steps it takes to go from the current target speed to a full stop
     
+    espp::Rmt myRmt;
     rmt_channel_handle_t myMotorChan;
     rmt_tx_channel_config_t myTxChanConfig;
-    stepper_motor_curve_encoder_config_t myAccelEncoderConfig;
-    rmt_encoder_handle_t myAccelEncoder;
-    stepper_motor_uniform_encoder_config_t myUniformEncoderConfig;
-    rmt_encoder_handle_t myUniformEncoder;
-    stepper_motor_curve_encoder_config_t myDecelEncoderConfig;
-    rmt_encoder_handle_t myDecelEncoder;
+    //stepper_motor_curve_encoder_config_t myAccelEncoderConfig;
+    //std::make_unique<espp::RmtEncoder>(espp::RmtEncoder::Config
+    std::unique_ptr<espp::RmtEncoder::Config> myAccelEncoderConfig;
+    std::unique_ptr<espp::RmtEncoder> myAccelEncoder;
+    std::unique_ptr<espp::RmtEncoder::Config> myUniformEncoderConfig;
+    std::unique_ptr<espp::RmtEncoder> myUniformEncoder;
+    std::unique_ptr<espp::RmtEncoder::Config> myDecelEncoderConfig;
+    std::unique_ptr<espp::RmtEncoder> myDecelEncoder;
     rmt_transmit_config_t myTxConfig;
     //todo calculate these based off of speed and accel per time unit
     uint32_t myAccelSamples;

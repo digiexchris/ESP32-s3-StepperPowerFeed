@@ -79,7 +79,12 @@
 			"strstream": "cpp",
 			"optional": "cpp",
 			"typeindex": "cpp",
-			"variant": "cpp"
+			"variant": "cpp",
+			"charconv": "cpp",
+			"forward_list": "cpp",
+			"ranges": "cpp",
+			"span": "cpp",
+			"valarray": "cpp"
 		},
 		"idf.espIdfPathWin": "c:\\Espressif5.1.1\\frameworks\\esp-idf",
 		"idf.pythonBinPathWin": "c:\\Espressif5.1.1\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",

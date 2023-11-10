@@ -1,2 +1,2 @@
 idf_component_register(SRCS "Stepper.cpp" "main.cpp" "Axis.cpp" "Machine.cpp"
-                    INCLUDE_DIRS "." PRIV_REQUIRES "RMTAccelerationStepper" "MovePlanner" "Exception" "hal" "driver" "fmt")
+                    INCLUDE_DIRS "." PRIV_REQUIRES "RMTAccelerationStepper" "MovePlanner" "Exception" "rmt" "hal" "driver" "fmt")
