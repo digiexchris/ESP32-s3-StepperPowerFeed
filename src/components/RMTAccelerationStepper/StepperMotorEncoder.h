@@ -19,7 +19,7 @@
 // } stepper_motor_uniform_encoder_config_t;
 
 
-class StepperMotorEncoder : public espp::RmtEncoder {
+class StepperMotorEncoder {
     public:
 
     //size_t EncodeFn(rmt_channel_handle_t channel, const void *primary_data, size_t data_size, rmt_encode_state_t *ret_state)

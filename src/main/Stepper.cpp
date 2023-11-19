@@ -71,9 +71,7 @@ bool StepperDirection::operator!=(const Direction& other) const {
 };
 
 void Stepper::MoveDistance(uint32_t distance) {
-    //TODO turn off blocking here
-    // stepper->move(distance, false);
-    rmtStepper->Move(1000);
+    //rmtStepper->Move(1000);
 }
 
 /**

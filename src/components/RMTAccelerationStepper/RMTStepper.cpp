@@ -7,9 +7,23 @@
 // #include <exception>
 // #include <memory>
 #include <condition_variable>
+#include "RMTStepperStateMachineStates.hpp"
+#include <StateMachine.hpp>
 //#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 
 const char* RMTStepper::TAG = "RMTStepper";
+
+void RMTStepper::HandleEvent(const SM::Event& anEvent) {
+    // if(myTransitionMap->find(typeid(anEvent)) == myTransitionMap->end()) {
+    //     ESP_LOGE(TAG, "Event not found in transition map");
+    //     return;
+    // }
+    // if(myTransitionMap->at(typeid(anEvent)).find(typeid(*myCurrentState)) == myTransitionMap->at(typeid(anEvent)).end()) {
+    //     ESP_LOGE(TAG, "Event not valid for current state");
+    //     return;
+    // }
+    // myTransitionMap->at(typeid(anEvent)).at(typeid(*myCurrentState))(*myCurrentState, anEvent);
+}
 
 /**
  * Ideas:
@@ -31,18 +45,22 @@ RMTStepper::RMTStepper(
         myCWDir(aCWDir),
         myCCWDir(!aCWDir),
         myEnableLevel(anEnableLevel),
-        myTargetPosition(0),
-        myCurrentPosition(0),
+        // myTargetPosition(0),
+        // myCurrentPosition(0),
         myTargetSpeed(0),
         myCurrentSpeed(0),
-        myAccelerationRate(0),
-        myDecelerationRate(0),
+        // myAccelerationRate(0),
+        // myDecelerationRate(0),
         myDirection(0),
         myMaxStepperFreq(aMaxStepperFreq),
         myResolution(aResolution),
     
         myUniformQueue(0)
 {
+    //auto transitionMap = std::make_unique<StateMachine::TransitionMap>();
+    myTransitionMap = std::make_unique<SM::TransitionMap>();
+    myCurrentState = std::make_unique<StoppedState>();
+
     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
     const gpio_config_t en_dir_gpio_config = {
         .pin_bit_mask = 1ULL << myDirPin | 1ULL << myEnPin,
@@ -52,57 +70,11 @@ RMTStepper::RMTStepper(
     
     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
 
-    // ESP_LOGI(TAG, "Create RMT TX channel");
-    // myMotorChan = NULL;
-    // myTxChanConfig = {
-    //     .gpio_num = myStepPin,
-    //     .clk_src = RMT_CLK_SRC_DEFAULT, // select clock source
-    //     .resolution_hz = myResolution,
-    //     .mem_block_symbols = 64,
-    //     .trans_queue_depth = 10, // set the number of transactions that can be pending in the background
-    // };
-    // ESP_ERROR_CHECK(rmt_new_tx_channel(&myTxChanConfig, &myMotorChan));
-
     ESP_LOGI(TAG, "Set spin direction");
     gpio_set_level(myDirPin, myCWDir);
     ESP_LOGI(TAG, "Disable step motor");
     gpio_set_level(myEnPin, !myEnableLevel);
     myIsEnabled = false;
-
-    // ESP_LOGI(TAG, "Create motor encoders");
-    // myAccelEncoderConfig = {
-    //     .resolution = myResolution,
-    //     .sample_points = 500,
-    //     .start_freq_hz = 500,
-    //     .end_freq_hz = 1500,
-    // };
-    // myAccelEncoder = NULL;
-    // ESP_ERROR_CHECK(rmt_new_stepper_motor_curve_encoder(&myAccelEncoderConfig, &myAccelEncoder));
-
-    // myUniformEncoderConfig = {
-    //     .resolution = myResolution,
-    // };
-    // myUniformEncoder = NULL;
-    // ESP_ERROR_CHECK(rmt_new_stepper_motor_uniform_encoder(&myUniformEncoderConfig, &myUniformEncoder));
-
-    // myDecelEncoderConfig = {
-    //     .resolution = myResolution,
-    //     .sample_points = 500,
-    //     .start_freq_hz = 1500,
-    //     .end_freq_hz = 500,
-    // };
-    // myDecelEncoder = NULL;
-    // ESP_ERROR_CHECK(rmt_new_stepper_motor_curve_encoder(&myDecelEncoderConfig, &myDecelEncoder));
-
-    // ESP_LOGI(TAG, "Enable RMT channel");
-    // ESP_ERROR_CHECK(rmt_enable(myMotorChan));
-
-    // ESP_LOGI(TAG, "Spin motor for 6000 steps: 500 accel + 5000 uniform + 500 decel");
-    // myTxConfig = {
-    //     .loop_count = 0,
-    // };
-
-    
 
     myRmt = std::make_unique<espp::Rmt>(espp::Rmt::Config{
         .gpio_num = aStepPin,
@@ -110,14 +82,16 @@ RMTStepper::RMTStepper(
         .log_level = espp::Logger::Verbosity::INFO,
     });
 
-    auto uniform_encoder = std::make_unique<espp::RmtEncoder>(espp::RmtEncoder::Config{
+    //This config gets deep copied so it will remain accessable for future reuse when we want to make
+    //a new uniform encoder.
+    myUniformEncoderConfig = std::make_unique<espp::RmtEncoder::Config>(espp::RmtEncoder::Config{
         .bytes_encoder_config = {
             .bit0 =
                 {
                     // divide the rmt transmit resolution (200hz) to get about 1us
-                    .duration0 = static_cast<unsigned short>(myResolution / myMaxStepperFreq / 2),
+                    .duration0 = static_cast<unsigned short>(aResolution / aMaxStepperFreq / 2),
                     //.level0 = 0,
-                    //.duration1 = static_cast<unsigned short>(myResolution / myMaxStepperFreq / 2),
+                    //.duration1 = static_cast<unsigned short>(aResolution / aMaxStepperFreq / 2),
                     // .level1 = 1,
                 },
             .flags =
@@ -130,8 +104,8 @@ RMTStepper::RMTStepper(
         .reset = UniformEncoder::ResetFn
     });
 
-    std::mutex m;
-    std::condition_variable cv;
+    auto aUniformEncoder = std::make_unique<espp::RmtEncoder>(*myUniformEncoderConfig);
+        
 //todo I THINK this is how we start the move
 /**
  * 1: set the encoder to accel_encoder
@@ -158,17 +132,25 @@ RMTStepper::RMTStepper(
  * 
  * Stop can simply delete the encoder (which should stop the task, and reset the queue via the Encoder::DelFn)
 */
-    myRmt->set_encoder(std::move(uniform_encoder));
+    myRmt->set_encoder(std::move(aUniformEncoder));
 
-    espp::Task uniformQueueTask = espp::Task(espp::Task::SimpleConfig{
-        .name = "RMTSendUniformQueueStepsTask",
-        .callback = [&]() -> bool {
-            return SendUniformQueuedSteps();
-        },
-        .stack_size_bytes = 4096,
-        .priority = 1,
-        .log_level = espp::Logger::Verbosity::WARN,
-    });
+    QueueMove(myUniformQueue, INT8_MAX, myUniformQueueMutex, myUniformQueueCV);
+    
+    myUniformEncoderTask = espp::Task::make_unique(
+        {
+            .name = "RMTSendUniformQueueStepsTask",
+            .callback = [&]() -> bool {
+                return SendQueuedSteps(myUniformQueue,myUniformQueueMutex,myUniformQueueCV);
+            },
+            .stack_size_bytes = 4096,
+            .priority = 1,
+            .log_level = espp::Logger::Verbosity::WARN,
+        }
+    );
+
+    myUniformEncoderTask->start();
+
+    
 }
 
 
@@ -176,66 +158,80 @@ RMTStepper::RMTStepper(
  * @brief send all queued steps, one step at a time, and waiting before hand to allow
  * another thread to insert more steps into the queue, or to cancel the queue.
  * at rest, this task is not running.
+ * 
+ * RMTStepper == Uniform type, no acceleration.
  * @return true if the queue is empty, false if the queue is not empty.
 */
-bool RMTStepper::SendUniformQueuedSteps() {
-    if(myUniformQueue > 0 || myUniformQueue < 0) {
-        std::unique_lock<std::mutex> lk(myUniformQueueMutex);
-        myUniformQueueCV.wait(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq));
+bool RMTStepper::SendQueuedSteps(uint8_t* aQueue, std::mutex& aQueueMutex, std::condition_variable& aQueueCV) {
+    if(*aQueue > 0) {
         const uint8_t data[] = {1};
 
-        myRmt->transmit(data, sizeof(data));
-        if(myUniformQueue > 0) {
-            myUniformQueue--;
+        std::unique_lock<std::mutex> lk(aQueueMutex);
+        std::cv_status status = aQueueCV.wait_for(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq)/2);
+
+        if(status == std::cv_status::timeout) {
+            ESP_LOGW(TAG, "SendUniformQueuedSteps timeout");
+        }
+        else if(status == std::cv_status::no_timeout) {
+            ESP_LOGI(TAG, "SendUniformQueuedSteps no_timeout, shutting down");
+            return true;
         }
         else {
-            myUniformQueue++;
+            ESP_LOGI(TAG, "SendUniformQueuedSteps unknown");
         }
+
+        //assume we're going to send this pulse. if we error in the transmit we'll maybe have to add it back.
+        //this is so the queue can be returned for more queuing while we transmit.
+        --(*aQueue);
         lk.unlock();
-        myUniformQueueCV.notify_one(); 
+        aQueueCV.notify_one(); 
 
-        if(myUniformQueue > 0 || myUniformQueue < 0) {
+        if(!myRmt->transmit(data, sizeof(data))){
+            //todo add the step back if this is a recurring problem and we actually want to handle it
+            ESP_LOGE(TAG, "SendUniformQueuedSteps transmit error, may or may not have lost a step");
             return false;
-        }
+        };
 
-        return true;
+        //there's still more in the queue, , maybe keep going
+        //probably transition to decelerating here. maybe fire a "UniformQueueEmpty event."
+        //The UniformQueueEmptyEvent should probably switch the primary queue to the deceleration queue, 
+        //and set the myRmt to the DecelEncoder.
+        return *aQueue == 0;
     }
-
     return true;
 }
       
-//todo probably not required.
 void RMTStepper::SetDirection(uint8_t aDirection) {
-        //use the FSM to coordinate this properly. Shouldn't reverse if not stopped first.
-        //probably not required because queuemove allows negative moves.
-        myDirection = aDirection;
-        ESP_LOGI(TAG, "Set spin direction");
-        gpio_set_level(myDirPin, myDirection);
+        //Fire a direction change event, which will fire a direction change error event if it's running
+        // myDirection = aDirection;
+        // ESP_LOGI(TAG, "Set spin direction");
+        // gpio_set_level(myDirPin, myDirection);
     }
 
-size_t RMTStepper::QueueMove(int8_t aStepsToMove) {
+size_t RMTStepper::QueueMove(uint8_t* aQueue, uint8_t aStepsToMove, std::mutex& aQueueMutex, std::condition_variable& aQueueCV) {
 
     //TODO this is assuming NO acceleration at the moment. It will naievely queue up all steps as uniform steps.
     //TODO make this calculate the number of acceleration steps required based on current speed, and the number of
     //deceleration steps required at the end.
 
-    std::unique_lock<std::mutex> lk(myUniformQueueMutex);
-    myUniformQueueCV.wait(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq));
-    
-    auto m = std::lock_guard(myUniformQueueMutex);
+    std::unique_lock<std::mutex> lk(aQueueMutex);
+    aQueueCV.wait(lk);
 
-    int16_t sum = myUniformQueue + aStepsToMove;
-    int8_t overflow = 0;
+    uint16_t sum = static_cast<uint16_t>(*aQueue) + static_cast<uint16_t>(aStepsToMove);
+    uint8_t overflow = 0;
 
     if (sum > INT8_MAX) {
-        overflow = sum - INT8_MAX;
-        myUniformQueue = INT8_MAX;
-    } else if (sum < INT8_MIN) {
-        overflow = sum - INT8_MIN;
-        myUniformQueue = INT8_MIN;
+        overflow = sum - UINT8_MAX;
+        *aQueue = UINT8_MAX;
     }
 
     lk.unlock();
-    myUniformQueueCV.notify_one();
+    aQueueCV.notify_one();
+
+    if(overflow) {
+        while(overflow > 0) {
+            overflow = QueueMove(aQueue, overflow, aQueueMutex, aQueueCV);
+        }
+    }
     return overflow;
 }

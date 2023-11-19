@@ -105,7 +105,8 @@
 			"xtr1common": "cpp",
 			"xutility": "cpp",
 			"filesystem": "cpp",
-			"stack": "cpp"
+			"stack": "cpp",
+			"xtree": "cpp"
 		},
 		"idf.espIdfPathWin": "c:\\Espressif5.1.1\\frameworks\\esp-idf",
 		"idf.pythonBinPathWin": "c:\\Espressif5.1.1\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
