@@ -51,7 +51,7 @@ extern "C" void app_main(void)
     );
     ESP_LOGI(TAG,"Created Axis");
     //disabled for servo motor
-    axis.stepper->SetAcceleration(100);
+    //axis.stepper->SetAcceleration(100);
     axis.stepper->SetSpeed(1, Stepper::DistancePerTimeUnit::IPM);
     // axis.stepper->Run(Direction::CCW);
     const TickType_t xDelay = 2500 / portTICK_PERIOD_MS;

@@ -12,6 +12,8 @@
 #include <memory>
 #include <rmt.hpp>
 #include <rmt_encoder.hpp>
+#include <condition_variable>
+#include "StepperMotorEncoder.h"
 
 //#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 class RMTStepper  {
@@ -22,7 +24,8 @@ public:
         gpio_num_t anEnPin, 
         uint8_t aCWDir, 
         uint8_t anEnableLevel,
-        uint32_t aResolution
+        uint32_t aResolution,
+        uint32_t aMaxStepperFreq
     );
     static const char *TAG;
 
@@ -33,8 +36,8 @@ public:
         myTargetSpeed = aSpeed;
         myAccelerationRate = anAccelerationRate;
         myDecelerationRate = aDecelerationRate;
-        myFullSpeedAccelerationSteps = MovePlanner::CalculateSamples(0, myTargetSpeed, myAccelerationRate);
-        myFullSpeedDecellerationSteps = MovePlanner::CalculateSamples(0, myTargetSpeed, myDecelerationRate);
+        // myFullSpeedAccelerationSteps = MovePlanner::CalculateSamples(0, myTargetSpeed, myAccelerationRate);
+        // myFullSpeedDecellerationSteps = MovePlanner::CalculateSamples(0, myTargetSpeed, myDecelerationRate);
     }
 
     void SetDirection(uint8_t aDirection);
@@ -86,30 +89,36 @@ private:
     uint8_t myCWDir;
     uint8_t myCCWDir;
     uint8_t myEnableLevel;
-    uint32_t myResolution;
+
     uint64_t myTargetPosition;
     uint64_t myCurrentPosition;
     uint16_t myTargetSpeed; //steps per second
     uint16_t myCurrentSpeed;
     uint16_t myAccelerationRate;
+
     uint16_t myDecelerationRate;
     uint8_t myDirection;
+    
+    uint16_t myMaxStepperFreq; // Reordered member variable
+    uint16_t myResolution; // Reordered member variable
     bool myIsEnabled;
     uint32_t myFullSpeedAccelerationSteps; //Stores how many steps it takes to go from 0 to the current target speed
-    uint32_t myFullSpeedDecellerationSteps; //Stores how many steps it takes to go from the current target speed to a full stop
-    
-    espp::Rmt myRmt;
+    uint32_t myFullSpeedDecelerationSteps; //Stores how many steps it takes to go from the current target speed to a full stop
+    std::unique_ptr<espp::Rmt> myRmt;
     rmt_channel_handle_t myMotorChan;
     rmt_tx_channel_config_t myTxChanConfig;
-    //stepper_motor_curve_encoder_config_t myAccelEncoderConfig;
-    //std::make_unique<espp::RmtEncoder>(espp::RmtEncoder::Config
     std::unique_ptr<espp::RmtEncoder::Config> myAccelEncoderConfig;
-    std::unique_ptr<espp::RmtEncoder> myAccelEncoder;
+    //std::unique_ptr<CurveEncoder> myAccelEncoder; // Corrected spelling if needed
     std::unique_ptr<espp::RmtEncoder::Config> myUniformEncoderConfig;
-    std::unique_ptr<espp::RmtEncoder> myUniformEncoder;
+    std::unique_ptr<UniformEncoder> myUniformEncoder; // Fixed template argument
     std::unique_ptr<espp::RmtEncoder::Config> myDecelEncoderConfig;
-    std::unique_ptr<espp::RmtEncoder> myDecelEncoder;
+    //std::unique_ptr<CurveEncoder> myDecelEncoder;
     rmt_transmit_config_t myTxConfig;
+
+    uint8_t myUniformQueue;
+    std::mutex myUniformQueueMutex;
+    std::condition_variable myUniformQueueCV;
+    bool SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv);
     //todo calculate these based off of speed and accel per time unit
     uint32_t myAccelSamples;
     uint32_t myUniformSpeedHz;

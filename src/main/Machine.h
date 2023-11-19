@@ -36,8 +36,9 @@ public:
         gpio_num_t dirPin, 
         gpio_num_t stepPin, 
         StepperDriver::Level enableLevel, 
-        uint32_t motorResolutionHz, 
-        StepperDriver::StepperDirection startupMotorDirection
+        uint32_t stepperMaxStepsPerSecond = 200000, //200 kHz
+        StepperDriver::StepperDirection startupMotorDirection = StepperDriver::StepperDirection(), // Default value
+        uint32_t rmtResolutionHz = 10000000 //10MHz
     );
     /**
      * Singletons should not be assignable.
@@ -60,9 +61,9 @@ class MachineException : std::exception {
         MachineException(const char* aMsg) {
             myMsg = aMsg;
         }
-        virtual const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT override {
-            return myMsg.c_str();
-        }
+        // virtual const char* what() const override {
+        //     return myMsg.c_str();
+        // }
 
 };
 

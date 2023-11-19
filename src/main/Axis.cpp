@@ -8,8 +8,9 @@ Axis::Axis(
     gpio_num_t dirPin, 
     gpio_num_t stepPin, 
     StepperDriver::Level enableLevel, 
-    uint32_t motorResolutionHz, 
-    StepperDriver::StepperDirection startupMotorDirection
+    uint16_t stepperMaxFreq, 
+    StepperDriver::StepperDirection startupMotorDirection,
+    uint16_t rmtResolutionHz
 ) {
     label = aLabel;
     stepper = new StepperDriver::Stepper(
@@ -18,7 +19,8 @@ Axis::Axis(
         dirPin, 
         stepPin, 
         enableLevel, 
-        motorResolutionHz, 
+        rmtResolutionHz,
+        stepperMaxFreq,
         startupMotorDirection
     );
 }

@@ -5,5 +5,5 @@
 # )
 
 idf_component_register(SRCS "RMTStepper.cpp" "StepperMotorEncoder.cpp"
-    PRIV_REQUIRES "hal" "driver" "MovePlanner" "Exception" "state_machine" "rmt"
+    PRIV_REQUIRES "hal" "driver" "MovePlanner" "Exception" "state_machine" "rmt" "task"
                        INCLUDE_DIRS ".")

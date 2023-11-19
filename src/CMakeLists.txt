@@ -11,9 +11,11 @@ set(EXTRA_COMPONENT_DIRS
 
 set(
   COMPONENTS
-  "main state_machine rmt"
+  "main state_machine rmt task"
   CACHE STRING
   "List of components to include"
   )
 
 project(StepperPowerFeed)
+
+add_compile_options(-Wno-reorder)

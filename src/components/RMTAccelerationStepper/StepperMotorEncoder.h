@@ -1,17 +1,7 @@
-/*
- * SPDX-FileCopyrightText: 2021-2022 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: Apache-2.0
- */
 #pragma once
 
 #include <stdint.h>
 #include <rmt_encoder.hpp>
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /**
  * @brief Stepper motor curve encoder configuration
  */
@@ -29,30 +19,57 @@ typedef struct {
     uint32_t resolution; // Encoder resolution, in Hz
 } stepper_motor_uniform_encoder_config_t;
 
-/**
- * @brief Create stepper motor curve encoder
- *
- * @param[in] config Encoder configuration
- * @param[out] ret_encoder Returned encoder handle
- * @return
- *      - ESP_ERR_INVALID_ARG for any invalid arguments
- *      - ESP_ERR_NO_MEM out of memory when creating step motor encoder
- *      - ESP_OK if creating encoder successfully
- */
-esp_err_t rmt_new_stepper_motor_curve_encoder(const stepper_motor_curve_encoder_config_t *config, rmt_encoder_handle_t *ret_encoder);
 
-/**
- * @brief Create RMT encoder for encoding step motor uniform phase into RMT symbols
- *
- * @param[in] config Encoder configuration
- * @param[out] ret_encoder Returned encoder handle
- * @return
- *      - ESP_ERR_INVALID_ARG for any invalid arguments
- *      - ESP_ERR_NO_MEM out of memory when creating step motor encoder
- *      - ESP_OK if creating encoder successfully
- */
-esp_err_t rmt_new_stepper_motor_uniform_encoder(const stepper_motor_uniform_encoder_config_t *config, rmt_encoder_handle_t *ret_encoder);
+class StepperMotorEncoder : public espp::RmtEncoder {
+    public:
 
-#ifdef __cplusplus
-}
-#endif
+    //size_t EncodeFn(rmt_channel_handle_t channel, const void *primary_data, size_t data_size, rmt_encode_state_t *ret_state)
+
+
+        static size_t EncodeFn(rmt_channel_handle_t channel, rmt_encoder_t *copy_encoder,
+                               rmt_encoder_t *bytes_encoder, const void *primary_data,
+                               size_t data_size, rmt_encode_state_t *ret_state);
+
+        static esp_err_t DelFn(rmt_encoder_t * encoder) {
+            return ESP_OK;
+        };
+
+        static esp_err_t ResetFn(rmt_encoder_t * encoder) {
+            //todo: delete all queued pulses, MAYBE. maybe nothing.
+
+            return ESP_OK;
+        };
+    
+    
+};
+
+class CurvenEncoder : public StepperMotorEncoder {
+    public:
+        /**
+         * @brief Create stepper motor curve encoder for acceleration phase
+         *
+         * @param[in] config Encoder configuration
+         * @return
+         *      - ESP_ERR_INVALID_ARG for any invalid arguments
+         *      - ESP_ERR_NO_MEM out of memory when creating step motor encoder
+         *      - ESP_OK if creating encoder successfully
+         */
+        // CurvenEncoder(const stepper_motor_curve_encoder_config_t *config);
+};
+
+class UniformEncoder : public StepperMotorEncoder {
+    public:
+        /**
+         * @brief Create RMT encoder for encoding step motor uniform phase into RMT symbols
+         *
+         * @param[in] config Encoder configuration
+         * @return
+         *      - ESP_ERR_INVALID_ARG for any invalid arguments
+         *      - ESP_ERR_NO_MEM out of memory when creating step motor encoder
+         *      - ESP_OK if creating encoder successfully
+         */
+    //    static size_t EncodeFn(rmt_channel_handle_t channel, rmt_encoder_t *copy_encoder,
+    //                            rmt_encoder_t *bytes_encoder, const void *primary_data,
+    //                            size_t data_size, rmt_encode_state_t *ret_state);
+};
+

@@ -2,7 +2,6 @@
     "configurations": [
         {
             "name": "ESP-IDF",
-            "compilerPath": "C:\\Espressif5.1.1\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe",
             "includePath": [
                 "${config:idf.espIdfPath}/components/**",
                 "${config:idf.espIdfPathWin}/components/**",
@@ -21,7 +20,6 @@
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
             },
-            
             "compileCommands": "${workspaceFolder}\\build\\compile_commands.json"
         }
     ],

@@ -1,0 +1,720 @@
+monostate
+ignore_unused
+is_constant_evaluated
+const_check
+convert_for_visit
+to_unsigned call:[assert_fail]
+is_utf8 call:[char,sizeof]
+to_string_view
+to_string_view
+to_string_view
+to_string_view
+to_string_view
+is_integral_type
+is_arithmetic_type
+set
+in call:[return]
+on_error call:[throw_format_error] noreturn:[throw_format_error]
+get_container call:[accessor]
+accessor
+copy_str
+copy_str call:[is_constant_evaluated,memcpy,sizeof,to_unsigned] noreturn:[memcpy]
+buffer_traits
+count
+limit
+fixed_buffer_traits
+count
+limit
+grow call:[flush,size] noreturn:[flush]
+flush call:[clear,limit,size]
+iterator_buffer
+iterator_buffer
+iterator_buffer call:[flush] noreturn:[flush]
+out call:[flush]
+count call:[count,size] noreturn:[size]
+grow call:[capacity,flush,size] noreturn:[flush]
+flush call:[clear,data,limit,set,size] noreturn:[clear,set]
+iterator_buffer
+iterator_buffer call:[clear,data,set] noreturn:[clear]
+iterator_buffer call:[flush] noreturn:[flush]
+out call:[flush]
+count call:[count,size] noreturn:[size]
+grow
+iterator_buffer
+out call:[end] noreturn:[end]
+grow call:[resize,set] noreturn:[set]
+iterator_buffer
+iterator_buffer
+out call:[back_inserter] noreturn:[back_inserter]
+grow call:[clear,size] noreturn:[clear]
+counting_buffer
+count call:[size] noreturn:[size]
+appender
+operator++
+operator++
+has_const_formatter_impl
+has_const_formatter_impl
+has_const_formatter
+get_buffer
+get_buffer call:[get_container] noreturn:[get_container]
+get_iterator call:[out] noreturn:[out]
+get_iterator
+named_arg
+arg_data
+args
+named_args
+arg_data
+args
+named_args
+init_named_args
+init_named_args call:[init_named_args] noreturn:[init_named_args]
+init_named_args call:[init_named_args] noreturn:[init_named_args]
+init_named_args
+count
+count call:[return]
+count_named_args
+count_statically_named_args
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map
+map call:[to_string_view] noreturn:[to_string_view]
+map
+map
+map
+map
+map
+map
+map call:[format_as,map] noreturn:[map]
+do_map
+do_map
+map call:[do_map] noreturn:[do_map]
+map call:[map] noreturn:[map]
+map
+copy_str call:[append,get_container]
+copy_str call:[begin,end]
+locale_ref
+operatorbool
+encode_types
+encode_types
+make_arg call:[decltype,map,static_assert]
+make_arg
+make_arg
+visit_format_arg call:[convert_for_visit,handle,monostate,sv,vis] noreturn:[vis]
+format_arg_store call:[const_check,init_named_args,named_args] noreturn:[init_named_args]
+make_format_args
+arg call:[static_assert]
+to_ascii
+to_ascii
+code_point_length call:[const_check,sizeof]
+find
+find < false , char > call:[memchr,to_unsigned]
+parse_nonnegative_int call:[assert_fail,int,to_unsigned,while]
+parse_align
+is_name_start call:[return]
+do_parse_arg_id call:[is_name_start,on_index,on_name,parse_nonnegative_int,throw_format_error,to_unsigned,while] noreturn:[on_index,parse_nonnegative_int,throw_format_error]
+parse_arg_id call:[assert_fail,do_parse_arg_id,on_auto] noreturn:[do_parse_arg_id]
+on_auto call:[check_dynamic_spec,next_arg_id] noreturn:[check_dynamic_spec]
+on_index call:[check_arg_id,check_dynamic_spec] noreturn:[check_dynamic_spec]
+on_name call:[check_arg_id] noreturn:[check_arg_id]
+parse_dynamic_spec call:[assert_fail,parse_arg_id,parse_nonnegative_int,throw_format_error] noreturn:[parse_arg_id,throw_format_error]
+parse_precision call:[parse_dynamic_spec,throw_format_error] noreturn:[parse_dynamic_spec]
+parse_format_specs call:[Char,code_point_length,in,is_arithmetic_type,operator(),parse_align,parse_dynamic_spec,parse_precision,throw_format_error,to_ascii,to_unsigned] noreturn:[Char,throw_format_error,to_ascii]
+operator() call:[throw_format_error] noreturn:[throw_format_error]
+operator() call:[in,throw_format_error] noreturn:[throw_format_error]
+parse_replacement_field call:[Char,on_arg_id,on_error,on_format_specs,on_replacement_field,on_text,parse_arg_id] noreturn:[on_arg_id,on_replacement_field,on_text]
+on_auto call:[on_arg_id] noreturn:[on_arg_id]
+on_index call:[on_arg_id] noreturn:[on_arg_id]
+on_name call:[on_arg_id] noreturn:[on_arg_id]
+parse_format_string call:[Char,data,on_error,on_text,operator(),parse_replacement_field,size] noreturn:[on_error,on_text,operator(),parse_replacement_field]
+operator() call:[Char,on_error,on_text] noreturn:[on_error,on_text]
+parse_format_specs call:[decltype,map,parse] noreturn:[parse]
+check_char_specs call:[throw_format_error] noreturn:[throw_format_error]
+get_arg_index_by_name
+format_string_checker
+on_text
+on_arg_id call:[next_arg_id] noreturn:[next_arg_id]
+on_arg_id call:[check_arg_id]
+on_arg_id call:[on_error]
+on_replacement_field call:[on_format_specs] noreturn:[on_format_specs]
+on_format_specs call:[advance_to]
+on_error call:[throw_format_error] noreturn:[throw_format_error]
+check_format_string
+check_format_string call:[checker,ignore_unused] noreturn:[ignore_unused]
+vprint_mojibake
+parse call:[begin,check_char_specs,end,parse_format_specs] noreturn:[check_char_specs]
+set_debug_format
+basic_format_string call:[static_assert]
+basic_format_string
+operatorbasic_string_view
+get
+runtime
+format call:[make_format_args,vformat] noreturn:[vformat]
+vformat_to call:[get_iterator,vformat_to] noreturn:[get_iterator]
+format_to call:[make_format_args,vformat_to] noreturn:[vformat_to]
+vformat_to_n call:[count,out,vformat_to]
+format_to_n call:[make_format_args,vformat_to_n] noreturn:[vformat_to_n]
+formatted_size call:[count,make_format_args] noreturn:[count]
+print call:[is_utf8,make_format_args,vprint,vprint_mojibake] noreturn:[vprint_mojibake]
+print call:[is_utf8,make_format_args,vprint,vprint_mojibake] noreturn:[vprint_mojibake]
+println call:[format,print] noreturn:[print]
+println call:[println] noreturn:[println]
+abort_fuzzing_if call:[ignore_unused] noreturn:[ignore_unused]
+operatorbasic_string_view call:[sizeof...]
+formatbuf
+bit_cast call:[To,memcpy,sizeof]
+is_big_endian call:[bit_cast < bytes , 0 , 0 >,sizeof]
+uint128_fallback
+uint128_fallback
+high
+low
+operatorT
+operator==
+operator!=
+operator>
+operator|
+operator&
+operator~
+operator+ call:[uint128_fallback]
+operator* call:[assert_fail,uint32_t]
+operator-
+operator>> call:[uint128_fallback]
+operator<< call:[uint128_fallback]
+operator>>=
+operator+= call:[assert_fail]
+operator&=
+operator+= call:[is_constant_evaluated]
+num_bits < int128_opt >
+num_bits < std :: conditional < 0 , uint128_opt , uint128_fallback > :: type >
+countl_zero_fallback
+countl_zero call:[countl_zero_fallback] noreturn:[countl_zero_fallback]
+countl_zero call:[countl_zero_fallback] noreturn:[countl_zero_fallback]
+assume
+get_data
+get_data call:[data] noreturn:[data]
+reserve call:[get_container,get_data,resize,size]
+reserve call:[get_container,size,try_reserve]
+reserve
+to_pointer
+to_pointer call:[capacity,data,get_container,size,try_resize]
+base_iterator
+base_iterator
+fill_n
+fill_n call:[is_constant_evaluated,memset,to_unsigned]
+copy_str_noinline
+utf8_decode call:[char,uint32_t]
+for_each_codepoint call:[data,decode,f,size,string_view,to_unsigned,uint32_t,utf8_decode,while] noreturn:[while]
+compute_width call:[size] noreturn:[size]
+compute_width call:[for_each_codepoint,operator(),to_unsigned]
+operator() call:[to_unsigned]
+compute_width call:[compute_width,data,size,string_view] noreturn:[compute_width]
+code_point_index call:[size]
+code_point_index call:[data,size] noreturn:[size]
+code_point_index call:[code_point_index,data,size,string_view] noreturn:[code_point_index]
+compile_string_to_view call:[to_int_type]
+compile_string_to_view call:[data,size]
+loc_value
+loc_value
+visit call:[visit_format_arg] noreturn:[visit_format_arg]
+format_facet
+put call:[do_put] noreturn:[do_put]
+is_negative
+is_negative
+is_supported_floating_point
+digits2
+sign call:[static_assert]
+count_digits_fallback
+count_digits call:[count_digits_fallback] noreturn:[count_digits_fallback]
+count_digits call:[while]
+count_digits call:[count_digits_fallback] noreturn:[count_digits_fallback]
+digits10
+digits10 < int128_opt >
+digits10 < std :: conditional < 0 , uint128_opt , uint128_fallback > :: type >
+thousands_sep call:[Char,thousands_sep_impl < char >]
+thousands_sep call:[thousands_sep_impl < wchar_t >] noreturn:[thousands_sep_impl < wchar_t >]
+decimal_point call:[Char] noreturn:[Char]
+decimal_point call:[decimal_point_impl < wchar_t >] noreturn:[decimal_point_impl < wchar_t >]
+equal2 call:[Char] noreturn:[Char]
+equal2 call:[memcmp]
+copy2 call:[is_constant_evaluated,memcpy,sizeof]
+format_decimal call:[assert_fail,copy2,count_digits,digits2]
+format_decimal call:[format_decimal]
+format_uint call:[while]
+format_uint call:[to_unsigned]
+operatorbasic_string_view call:[size]
+size call:[size]
+c_str
+str call:[size]
+to_utf8
+to_utf8 call:[convert,runtime_error,sizeof,static_assert] noreturn:[runtime_error]
+operatorstring_view call:[size,string_view] noreturn:[string_view]
+size call:[size]
+c_str
+str call:[size,string] noreturn:[string]
+convert call:[convert,push_back]
+convert call:[append,begin,end,push_back,sizeof,string_view] noreturn:[push_back]
+umul128 call:[max_value < uint32_t >]
+floor_log10_pow2 call:[assert_fail,return,static_assert]
+floor_log2_pow10 call:[assert_fail,return]
+umul128_upper64 call:[high,umul128] noreturn:[high]
+umul192_upper128 call:[high,low,umul128,umul128_upper64]
+exponent_mask call:[float_uint,return]
+exponent_bias
+write_exponent call:[assert_fail,digits2,to_unsigned]
+normalize call:[F,num_significand_bits < double >]
+multiply
+operator* call:[multiply]
+convert_float
+fill call:[data,fill_n,size] noreturn:[fill_n]
+write_padded call:[base_iterator,f,fill,reserve,size,static_assert,to_unsigned] noreturn:[base_iterator,fill]
+write_padded
+write_bytes call:[data,size]
+write_ptr call:[base_iterator,long,reserve,to_unsigned,write] noreturn:[base_iterator]
+needs_escape call:[is_printable] noreturn:[is_printable]
+find_escape call:[begin,end,find_escape < char >,for_each_codepoint,is_utf8,needs_escape,string_view,to_unsigned] noreturn:[find_escape < char >]
+write_codepoint call:[fill_n]
+write_escaped_cp call:[to_unsigned]
+write_escaped_string call:[begin,end,find_escape,while]
+write_escaped_char call:[needs_escape,write_escaped_cp] noreturn:[write_escaped_cp]
+write_char call:[write_escaped_char,write_padded] noreturn:[write_escaped_char,write_padded]
+write call:[check_char_specs,write,write_char] noreturn:[write]
+write_int_data call:[to_unsigned] noreturn:[to_unsigned]
+write_int call:[base_iterator,fill_n,reserve,to_unsigned,write_digits] noreturn:[base_iterator,write_digits]
+initial_state call:[begin]
+next call:[back,empty,end,max_value < int >] noreturn:[back,max_value < int >]
+digit_grouping call:[assign] noreturn:[assign]
+digit_grouping
+has_separator call:[empty] noreturn:[empty]
+count_separators call:[initial_state,next]
+apply call:[data,initial_state,next,push_back,size,to_unsigned] noreturn:[push_back]
+write_int call:[apply,count_digits,count_separators,format_decimal,static_assert,string_view,to_unsigned] noreturn:[apply]
+write_loc
+prefix_append
+make_write_int_arg call:[is_negative]
+write_int call:[count_digits,int,prefix_append,static_assert,throw_format_error,write_char,write_int] noreturn:[prefix_append,throw_format_error,write_int]
+write_int_noinline call:[write_int] noreturn:[write_int]
+write call:[make_write_int_arg,write_int_noinline,write_loc] noreturn:[write_int_noinline]
+write call:[make_write_int_arg,write_int,write_loc] noreturn:[write_int]
+operator=
+counting_iterator
+count
+operator++
+operator++
+operator+
+operator*
+write call:[code_point_index,compute_width,count,data,size,to_unsigned,write_escaped_string,write_padded] noreturn:[code_point_index,compute_width,count,write_escaped_string,write_padded]
+write call:[write] noreturn:[write]
+write call:[write]
+write call:[base_iterator,count_digits,is_negative,reserve] noreturn:[base_iterator]
+parse_align call:[assert_fail,code_point_length,throw_format_error,to_ascii,to_unsigned]
+parse_float_type_spec call:[float_specs,on_error]
+write_nonfinite call:[data,size,write_padded] noreturn:[write_padded]
+get_significand_size
+get_significand_size call:[count_digits] noreturn:[count_digits]
+write_significand
+write_significand
+write_significand call:[appender,apply,data,fill_n,has_separator,memory_buffer,size,string_view] noreturn:[apply,fill_n]
+write_significand call:[copy2,digits2,format_decimal]
+write_significand call:[write_significand]
+write_significand
+write_significand call:[apply,data,end,has_separator,to_unsigned,write_significand] noreturn:[write_significand]
+do_write_float call:[Char,Grouping,abort_fuzzing_if,base_iterator,count_separators,fill_n,get_significand_size,reserve,to_unsigned,use_exp_format,write,write_significand] noreturn:[Char,base_iterator,fill_n,to_unsigned]
+fallback_digit_grouping
+has_separator
+count_separators
+apply
+write_float call:[do_write_float,is_constant_evaluated] noreturn:[do_write_float]
+isnan
+isfinite call:[T,infinity,is_constant_evaluated,isfinite,isnan] noreturn:[isfinite]
+isfinite call:[T,infinity,isnan]
+signbit call:[is_constant_evaluated,signbit] noreturn:[signbit]
+adjust_precision call:[format_error,max_value < int >] noreturn:[format_error]
+operator[] call:[to_unsigned]
+operator[] call:[to_unsigned]
+subtract_bigits
+remove_leading_zeros call:[resize,size,to_unsigned] noreturn:[resize]
+subtract_aligned call:[assert_fail,compare,remove_leading_zeros,size,subtract_bigits] noreturn:[remove_leading_zeros,subtract_bigits]
+multiply call:[push_back,size] noreturn:[push_back]
+multiply call:[push_back,size]
+assign call:[resize,while]
+bigint
+bigint call:[assign] noreturn:[assign]
+assign call:[copy_str < bigit , 0 >,data,resize,size]
+operator= call:[assert_fail,assign] noreturn:[assign]
+num_bigits call:[size]
+operator<<= call:[assert_fail,push_back,size] noreturn:[push_back]
+operator*= call:[assert_fail,multiply]
+compare call:[num_bigits,size]
+add_compare call:[get_bigit,maximum,minimum,num_bigits]
+assign_pow10 call:[assert_fail,square]
+square call:[move,n,remove_leading_zeros,resize,size,to_unsigned,uint128_t]
+align call:[data,resize,size,to_unsigned,uninitialized_fill_n]
+divmod_assign call:[align,assert_fail,compare,size,subtract_aligned,while]
+format_dragon call:[add_compare,adjust_precision,assign,assign_pow10,compare,data,divmod_assign,push_back,to_unsigned,try_resize] noreturn:[adjust_precision,push_back]
+format_hexfloat call:[append,appender,carrier_uint,count_digits,countl_zero,f,fill_n,push_back,sizeof,static_assert] noreturn:[push_back]
+format_hexfloat call:[format_hexfloat] noreturn:[format_hexfloat]
+format_float call:[adjust_precision,assert_fail,assign,convert_float,copy2,countl_zero,data,decltype,digits2,fill_n,floor_log10_pow2,floor_log2_pow10,format_dragon,get_cached_power,high,is_constant_evaluated,low,num_significand_bits < double >,print_subsegment,push_back,size,static_assert,to_decimal,to_unsigned,try_resize,umul128_upper64,umul192_upper128] noreturn:[adjust_precision,format_dragon,try_resize]
+write_float call:[base_iterator,const_check,convert_float,data,format_float,format_hexfloat,isfinite,isnan,max_value < int >,parse_float_type_spec,push_back,reserve,signbit,size,throw_format_error,write_float,write_nonfinite] noreturn:[push_back,throw_format_error,write_float,write_nonfinite]
+write call:[const_check,is_supported_floating_point,write_float,write_loc] noreturn:[write_float]
+write call:[const_check,float_specs,is_constant_evaluated,is_supported_floating_point,isnan,signbit,to_decimal,write,write_float,write_nonfinite] noreturn:[write,write_float,write_nonfinite]
+write call:[write] noreturn:[write]
+write call:[assert_fail]
+write call:[base_iterator,begin,end,reserve,size] noreturn:[base_iterator]
+write call:[to_string_view]
+write
+write call:[write,write_bytes] noreturn:[write_bytes]
+write call:[base_iterator,reserve] noreturn:[base_iterator]
+write call:[throw_format_error,write] noreturn:[write]
+write
+write call:[map]
+write call:[Context,format] noreturn:[format]
+operator()
+operator() call:[format,format_ctx,out,parse_ctx] noreturn:[out]
+operator() call:[write] noreturn:[write]
+operator()
+operator() call:[format] noreturn:[format]
+operator()
+width_checker
+operator() call:[is_negative,on_error] noreturn:[on_error]
+operator() call:[on_error]
+precision_checker
+operator() call:[is_negative,on_error] noreturn:[on_error]
+operator() call:[on_error]
+get_dynamic_spec call:[max_value < int >,on_error,to_unsigned,visit_format_arg] noreturn:[on_error]
+get_arg call:[arg,on_error] noreturn:[on_error]
+handle_dynamic_spec call:[error_handler,get_arg]
+vformat call:[data,locale_ref,size,vformat_to]
+system_error call:[make_format_args,vsystem_error] noreturn:[vsystem_error]
+format_unsigned call:[format_decimal]
+format_signed call:[format_unsigned]
+format_int
+format_int
+format_int
+format_int
+format_int
+format_int
+size call:[to_unsigned] noreturn:[to_unsigned]
+data
+c_str
+str call:[size,string] noreturn:[string]
+format call:[format,format_as] noreturn:[format]
+ptr call:[static_assert]
+ptr call:[get] noreturn:[get]
+ptr call:[get] noreturn:[get]
+underlying
+format_as
+bytes
+parse call:[begin,end,parse_format_specs] noreturn:[parse_format_specs]
+format call:[out,write_bytes] noreturn:[write_bytes]
+group_digits
+parse call:[begin,end,parse_format_specs] noreturn:[parse_format_specs]
+format call:[out,write_int] noreturn:[write_int]
+join_view
+parse call:[parse] noreturn:[parse]
+format call:[advance_to,begin,end,format,out]
+join
+join call:[begin,end,join] noreturn:[join]
+to_string call:[appender,data,memory_buffer,size]
+to_string call:[string] noreturn:[string]
+to_string call:[assume,data,max_size,size]
+vformat_to call:[advance_to,arg_id,args,begin,check_arg_id,data,equal2,error_handler,format_handler,get,get_arg,locale,next_arg_id,on_arg_id,on_error,on_format_specs,out,parse_context,parse_format_specs,size,to_unsigned,type,visit_format_arg] noreturn:[advance_to,begin,next_arg_id,on_error]
+format_handler
+on_text call:[advance_to,out,to_unsigned] noreturn:[advance_to]
+on_arg_id call:[next_arg_id] noreturn:[next_arg_id]
+on_arg_id call:[check_arg_id]
+on_arg_id call:[arg_id,on_error] noreturn:[on_error]
+on_replacement_field call:[advance_to,args,get_arg,locale,out,visit_format_arg] noreturn:[advance_to]
+on_format_specs call:[advance_to,begin,get_arg,locale,on_error,out,parse_format_specs,type,visit_format_arg] noreturn:[begin,on_error]
+vformat call:[vformat] noreturn:[vformat]
+format call:[make_format_args,string_view,vformat] noreturn:[vformat]
+vformat_to call:[get_iterator,locale_ref,vformat_to] noreturn:[get_iterator]
+format_to call:[make_format_args,vformat_to] noreturn:[vformat_to]
+formatted_size call:[count,locale_ref,make_format_args] noreturn:[count]
+format call:[locale,out]
+assert_fail call:[fprintf,terminate] noreturn:[terminate]
+throw_format_error call:[format_error] noreturn:[format_error]
+format_error_code call:[FMT_COMPILE_STRING,assert_fail,count_digits,decltype,format_to,is_negative,size,sizeof,to_unsigned,try_resize] noreturn:[FMT_COMPILE_STRING,assert_fail,format_to]
+operatorfmt::basic_string_view call:[decltype]
+operatorfmt::basic_string_view call:[decltype]
+report_error call:[data,fputc,func,fwrite,size] noreturn:[fputc]
+fwrite_fully call:[FMT_COMPILE_STRING,decltype,fwrite,system_error] noreturn:[FMT_COMPILE_STRING,system_error]
+operatorfmt::basic_string_view call:[decltype]
+locale_ref call:[static_assert] noreturn:[static_assert]
+write_loc call:[format_facet < std :: locale >,get < std :: locale >,put] noreturn:[put]
+vsystem_error call:[error_code,generic_category,system_error,vformat] noreturn:[system_error]
+operator==
+rotr call:[return]
+rotr call:[return]
+umul96_upper64 call:[umul128_upper64] noreturn:[umul128_upper64]
+umul192_lower128 call:[high,low,umul128]
+umul96_lower64
+floor_log10_pow2_minus_log10_4_over_3 call:[assert_fail,return]
+check_divisibility_and_divide_by_pow10 call:[assert_fail]
+small_division_by_pow10 call:[assert_fail,return]
+divide_by_10_to_kappa_plus_1
+divide_by_10_to_kappa_plus_1 call:[umul128_upper64]
+get_cached_power call:[assert_fail]
+compute_mul call:[umul96_upper64]
+compute_delta
+compute_mul_parity call:[assert_fail,umul96_lower64]
+compute_left_endpoint_for_shorter_interval_case call:[num_significand_bits < float >]
+compute_right_endpoint_for_shorter_interval_case call:[num_significand_bits < float >]
+compute_round_up_for_shorter_interval_case call:[num_significand_bits < float >,return]
+get_cached_power call:[assert_fail,floor_log2_pow10,high,low,umul128]
+compute_mul call:[high,low,umul192_upper128]
+compute_delta call:[high]
+compute_mul_parity call:[assert_fail,high,low,umul192_lower128]
+compute_left_endpoint_for_shorter_interval_case call:[high,num_significand_bits < double >,return]
+compute_right_endpoint_for_shorter_interval_case call:[high,num_significand_bits < double >,return]
+compute_round_up_for_shorter_interval_case call:[high,num_significand_bits < double >,return]
+get_cached_power call:[get_cached_power] noreturn:[get_cached_power]
+is_left_endpoint_integer_shorter_interval
+remove_trailing_zeros call:[assert_fail,max_value < uint32_t >,rotr]
+remove_trailing_zeros call:[assert_fail,high,low,max_value < uint64_t >,remove_trailing_zeros,rotr,umul128]
+shorter_interval_case call:[compute_left_endpoint_for_shorter_interval_case,compute_right_endpoint_for_shorter_interval_case,compute_round_up_for_shorter_interval_case,floor_log10_pow2_minus_log10_4_over_3,floor_log2_pow10,get_cached_power,remove_trailing_zeros]
+to_decimal call:[compute_delta,compute_mul,compute_mul_parity,divide_by_10_to_kappa_plus_1,floor_log10_pow2,floor_log2_pow10,get_cached_power,remove_trailing_zeros]
+parse call:[begin] noreturn:[begin]
+format call:[FMT_COMPILE_STRING,decltype,format_to,out,size] noreturn:[FMT_COMPILE_STRING,format_to]
+operatorfmt::basic_string_view call:[decltype]
+operatorfmt::basic_string_view call:[decltype]
+operatorfmt::basic_string_view call:[decltype]
+utf8_to_utf16 call:[for_each_codepoint,push_back,runtime_error] noreturn:[push_back,runtime_error]
+format_system_error call:[back_inserter,error_code,format_error_code,generic_category,system_error,what,write] noreturn:[format_error_code]
+report_system_error call:[report_error] noreturn:[report_error]
+vformat call:[memory_buffer,to_string,vformat_to] noreturn:[to_string]
+write_console
+print call:[data,fwrite_fully,size,write_console] noreturn:[fwrite_fully]
+vprint call:[data,memory_buffer,print,size,vformat_to] noreturn:[print]
+vprint call:[vprint] noreturn:[vprint]
+is_printable
+is_printable call:[is_printable,sizeof] noreturn:[is_printable]
+decimal_point_impl < wchar_t > call:[decimal_point,get < std :: locale >] noreturn:[decimal_point]
+thousands_sep_impl < wchar_t > call:[empty,get < std :: locale >,grouping,move,thousands_sep,wchar_t]
+thousands_sep_impl < char > call:[char,empty,get < std :: locale >,grouping,move,thousands_sep]
+get < std :: locale > call:[locale,static_assert] noreturn:[locale]
+operator() call:[make_write_int_arg,write_int]
+operator()
+find_escape < char > call:[const_check,needs_escape,sizeof]
+basic_fp < unsigned long long >
+basic_fp < unsigned long long >
+basic_fp < unsigned long long > call:[assign] noreturn:[assign]
+assign call:[carrier_uint,static_assert]
+assign call:[assign,static_assert] noreturn:[assign]
+basic_fp < std :: conditional < 0 , uint128_opt , uint128_fallback > :: type >
+basic_fp < std :: conditional < 0 , uint128_opt , uint128_fallback > :: type >
+basic_fp < std :: conditional < 0 , uint128_opt , uint128_fallback > :: type > call:[assign] noreturn:[assign]
+assign call:[carrier_uint,static_assert]
+assign call:[assign,static_assert] noreturn:[assign]
+num_significand_bits < float > call:[has_implicit_bit < float >]
+num_significand_bits < double > call:[has_implicit_bit < double >]
+deallocate call:[capacity,data,deallocate] noreturn:[deallocate]
+grow call:[abort_fuzzing_if,allocate,assume,capacity,data,deallocate,max_size,set,size,uninitialized_copy_n] noreturn:[deallocate]
+basic_memory_buffer < wchar_t , inline_buffer_size , std :: allocator < wchar_t > > call:[fill_n,is_constant_evaluated,set,wchar_t] noreturn:[fill_n]
+basic_memory_buffer < wchar_t , inline_buffer_size , std :: allocator < wchar_t > > call:[deallocate] noreturn:[deallocate]
+move call:[capacity,clear,data,move,resize,set,size] noreturn:[clear,resize]
+basic_memory_buffer < wchar_t , inline_buffer_size , std :: allocator < wchar_t > > call:[move] noreturn:[move]
+operator= call:[assert_fail,deallocate,move]
+get_allocator
+resize call:[try_resize] noreturn:[try_resize]
+reserve call:[try_reserve] noreturn:[try_reserve]
+append call:[append,data,size] noreturn:[append]
+deallocate call:[capacity,data,deallocate] noreturn:[deallocate]
+grow call:[abort_fuzzing_if,allocate,assume,capacity,data,deallocate,max_size,set,size,uninitialized_copy_n] noreturn:[deallocate]
+basic_memory_buffer < uint32_t , bigits_capacity , std :: allocator < uint32_t > > call:[fill_n,is_constant_evaluated,set,uint32_t] noreturn:[fill_n]
+basic_memory_buffer < uint32_t , bigits_capacity , std :: allocator < uint32_t > > call:[deallocate] noreturn:[deallocate]
+move call:[capacity,clear,data,move,resize,set,size] noreturn:[clear,resize]
+basic_memory_buffer < uint32_t , bigits_capacity , std :: allocator < uint32_t > > call:[move] noreturn:[move]
+operator= call:[assert_fail,deallocate,move]
+get_allocator
+resize call:[try_resize] noreturn:[try_resize]
+reserve call:[try_reserve] noreturn:[try_reserve]
+append call:[append,data,size] noreturn:[append]
+deallocate call:[capacity,data,deallocate] noreturn:[deallocate]
+grow call:[abort_fuzzing_if,allocate,assume,capacity,data,deallocate,max_size,set,size,uninitialized_copy_n] noreturn:[deallocate]
+basic_memory_buffer < bigit , bigits_capacity , std :: allocator < bigit > > call:[bigit,fill_n,is_constant_evaluated,set] noreturn:[fill_n]
+basic_memory_buffer < bigit , bigits_capacity , std :: allocator < bigit > > call:[deallocate] noreturn:[deallocate]
+move call:[capacity,clear,data,move,resize,set,size] noreturn:[clear,resize]
+basic_memory_buffer < bigit , bigits_capacity , std :: allocator < bigit > > call:[move] noreturn:[move]
+operator= call:[assert_fail,deallocate,move]
+get_allocator
+resize call:[try_resize] noreturn:[try_resize]
+reserve call:[try_reserve] noreturn:[try_reserve]
+append call:[append,data,size] noreturn:[append]
+num_bits < uint32_t >
+max_value < uint32_t > call:[return]
+max_value < int > call:[return]
+max_value < uint64_t > call:[return]
+bit_cast < bytes , 0 , 0 > call:[bytes,const_check,is_big_endian,sizeof]
+format_specs < char >
+is_packed call:[return]
+has_named_args call:[return]
+type
+basic_format_args < basic_format_context < detail :: buffer_appender < char > , char > >
+basic_format_args < basic_format_context < detail :: buffer_appender < char > , char > >
+basic_format_args < basic_format_context < detail :: buffer_appender < char > , char > >
+basic_format_args < basic_format_context < detail :: buffer_appender < char > , char > >
+basic_format_args < basic_format_context < detail :: buffer_appender < char > , char > >
+basic_format_args < basic_format_context < detail :: buffer_appender < char > , char > >
+get call:[is_packed,max_size,type]
+get call:[format_arg,get,get_id] noreturn:[format_arg]
+get_id call:[has_named_args,is_packed]
+max_size call:[is_packed]
+basic_format_arg < basic_format_context < detail :: buffer_appender < char > , char > >
+handle
+format call:[format] noreturn:[format]
+basic_format_arg < basic_format_context < detail :: buffer_appender < char > , char > >
+operatorbool
+type
+is_integral call:[is_integral_type] noreturn:[is_integral_type]
+is_arithmetic call:[is_arithmetic_type] noreturn:[is_arithmetic_type]
+buffer < char >
+buffer < char >
+set
+begin
+end
+begin
+end
+size
+capacity
+data
+data
+clear
+try_resize call:[try_reserve]
+try_reserve call:[grow] noreturn:[grow]
+push_back call:[try_reserve]
+operator[]
+operator[]
+append call:[to_unsigned,try_reserve,uninitialized_copy_n]
+buffer < wchar_t >
+buffer < wchar_t >
+set
+begin
+end
+begin
+end
+size
+capacity
+data
+data
+clear
+try_resize call:[try_reserve]
+try_reserve call:[grow] noreturn:[grow]
+push_back call:[try_reserve]
+operator[]
+operator[]
+append call:[to_unsigned,try_reserve,uninitialized_copy_n]
+copy_str < bigit , 0 > call:[append,get_container]
+basic_format_parse_context < char >
+begin call:[begin] noreturn:[begin]
+end call:[end] noreturn:[end]
+advance_to call:[begin,remove_prefix,to_unsigned] noreturn:[remove_prefix]
+next_arg_id call:[do_check_arg_id,throw_format_error]
+check_arg_id call:[do_check_arg_id,throw_format_error] noreturn:[do_check_arg_id]
+check_arg_id
+do_check_arg_id call:[is_constant_evaluated,num_args,throw_format_error] noreturn:[throw_format_error]
+check_dynamic_spec call:[check_dynamic_spec,is_constant_evaluated] noreturn:[check_dynamic_spec]
+basic_string_view < char >
+basic_string_view < char >
+basic_string_view < char >
+basic_string_view < char >
+basic_string_view < char >
+data
+size
+begin
+end
+operator[]
+remove_prefix
+starts_with call:[compare]
+starts_with call:[eq] noreturn:[eq]
+starts_with call:[basic_string_view < char >,starts_with] noreturn:[starts_with]
+compare call:[compare]
+operator== call:[compare]
+operator!= call:[compare]
+operator< call:[compare]
+operator<= call:[compare]
+operator> call:[compare]
+operator>= call:[compare]
+basic_string_view < char8_type >
+basic_string_view < char8_type >
+basic_string_view < char8_type >
+basic_string_view < char8_type >
+basic_string_view < char8_type >
+data
+size
+begin
+end
+operator[]
+remove_prefix
+starts_with call:[compare]
+starts_with call:[eq] noreturn:[eq]
+starts_with call:[basic_string_view < char8_type >,starts_with] noreturn:[starts_with]
+compare call:[compare]
+operator== call:[compare]
+operator!= call:[compare]
+operator< call:[compare]
+operator<= call:[compare]
+operator> call:[compare]
+operator>= call:[compare]
+has_implicit_bit < float >
+has_implicit_bit < double >
+arg_ref < char >
+arg_ref < char >
+arg_ref < char >
+operator=
+value
+value
+operator= call:[assert_fail,size]
+size
+data
+operator[]
+operator[]
+basic_format_context < detail :: buffer_appender < char > , char >
+arg call:[get] noreturn:[get]
+arg call:[get] noreturn:[get]
+arg_id call:[get_id] noreturn:[get_id]
+args
+error_handler
+on_error call:[error_handler,on_error] noreturn:[on_error]
+out
+advance_to call:[is_back_insert_iterator < iterator >]
+locale
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > > call:[is_constant_evaluated]
+value < basic_format_context < detail :: buffer_appender < char > , char > > call:[data,size] noreturn:[size]
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > >
+value < basic_format_context < detail :: buffer_appender < char > , char > > call:[addressof]
+format_custom_arg call:[Formatter,advance_to,format,parse] noreturn:[advance_to]
+compile_parse_context < char >
+num_args
+arg_type
+next_arg_id call:[next_arg_id,throw_format_error] noreturn:[throw_format_error]
+check_arg_id call:[check_arg_id,throw_format_error] noreturn:[throw_format_error]
+check_dynamic_spec call:[ignore_unused,is_integral_type,throw_format_error] noreturn:[throw_format_error]

@@ -42,6 +42,16 @@ namespace StepperDriver {
         // Overloading the != operator
         bool operator!=(const Level &other) const;
 
+        bool operator==(const Direction& other) const;
+
+        bool operator!=(const Direction& other) const;
+
+        // Assignment operator taking Direction as input
+        StepperDirection& operator=(const StepperDriver::Direction aDir) {
+            dir = aDir;
+            return *this;
+        }
+
         private:
             Level level;
             Direction dir;
@@ -63,7 +73,8 @@ namespace StepperDriver {
             gpio_num_t dirPin, 
             gpio_num_t stepPin, 
             StepperDriver::Level enableLevel, 
-            uint32_t motorResolutionHz, 
+            uint16_t rmtResolutionHz, 
+            uint16_t aMaxStepperFreq,
             StepperDriver::StepperDirection startupMotorDirection
         );
 

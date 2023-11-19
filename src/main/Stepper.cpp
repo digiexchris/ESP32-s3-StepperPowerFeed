@@ -62,6 +62,14 @@ bool StepperDirection::operator!=(const Level &other) const {
     return !(*this == other); // Reusing the == operator
 }
 
+bool StepperDirection:: operator==(const Direction& other) const {
+    return static_cast<int>(dir) == other;
+};
+
+bool StepperDirection::operator!=(const Direction& other) const {
+    return !(*this == other);
+};
+
 void Stepper::MoveDistance(uint32_t distance) {
     //TODO turn off blocking here
     // stepper->move(distance, false);
@@ -142,7 +150,8 @@ Stepper::Stepper(
     gpio_num_t dirPin,
     gpio_num_t stepPin, 
     StepperDriver::Level enableLevel, //Is enable high or low on your driver?
-    uint32_t motorResolutionHz, 
+    uint16_t rmtResolutionHz, 
+    uint16_t aMaxStepperFreq,
     StepperDriver::StepperDirection startupMotorDirection // default motor direction and level. inverting this reverses direction (and by extension, level of the dir pin)
     ) : defaultMotorDirection(startupMotorDirection)
 {
@@ -152,7 +161,8 @@ Stepper::Stepper(
         enPin, 
         startupMotorDirection, 
         enableLevel,
-        motorResolutionHz
+        rmtResolutionHz,
+        aMaxStepperFreq
     );
 
 }

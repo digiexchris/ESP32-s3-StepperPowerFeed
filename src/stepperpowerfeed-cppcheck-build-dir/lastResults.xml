@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.12.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\MovePlanner\MovePlanner.cpp" line="2"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\MovePlanner\MovePlanner.cpp" line="3"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;CalculateSamples&amp;#039; is never used." verbose="The function &amp;#039;CalculateSamples&amp;#039; is never used." cwe="561" sinceDate="yyyy-MM-dd">
+            <location file="components\MovePlanner\MovePlanner.cpp" line="7"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\Exception\Exception.h" line="2"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\Exception\Exception.h" line="3"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;GenericException&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;GenericException&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="components/MovePlanner/MovePlanner.cpp" sinceDate="yyyy-MM-dd">
+            <location file="components\Exception\Exception.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stddef.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stddef.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\include\freertos\FreeRTOS.h" line="41"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\include\freertos\FreeRTOS.h" line="56"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;reent.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;reent.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\include\freertos\FreeRTOS.h" line="80"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\newlib\platform_include\assert.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\newlib\platform_include\assert.h" line="14"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\xtensa\include\xtensa\hal.h" line="142"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stddef.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stddef.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\xtensa\include\xtensa\hal.h" line="143"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;../hal.h&amp;quot; not found." verbose="Include file: &amp;quot;../hal.h&amp;quot; not found." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\xtensa\esp32s3\include\xtensa\config\core.h" line="44"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;../xtensa-versions.h&amp;quot; not found." verbose="Include file: &amp;quot;../xtensa-versions.h&amp;quot; not found." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\xtensa\esp32s3\include\xtensa\config\core.h" line="45"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\portable\xtensa\include\freertos\portmacro.h" line="66"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\portable\xtensa\include\freertos\portmacro.h" line="67"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\portable\xtensa\include\freertos\portmacro.h" line="68"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdarg.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdarg.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\portable\xtensa\include\freertos\portmacro.h" line="69"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;limits.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;limits.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\freertos\FreeRTOS-Kernel\portable\xtensa\include\freertos\portmacro.h" line="87"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\spinlock.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\spinlock.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_cpu.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_cpu.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_intr_alloc.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_intr_alloc.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_err.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdio.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdio.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_err.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_err.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_memory_utils.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_memory_utils.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_memory_utils.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\soc\esp32s3\include\soc\soc.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\heap\include\esp_heap_caps.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\heap\include\esp_heap_caps.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\heap\include\multi_heap.h" line="7"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdlib.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\heap\include\multi_heap.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\heap\include\multi_heap.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_sys.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_system\include\esp_system.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_system\include\esp_system.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\xtensa\include\xtensa\xtensa_api.h" line="31"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_tx.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_tx.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_common.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_types.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_types.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stddef.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stddef.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_types.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\hal\include\hal\rmt_types.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_encoder.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\gpio\include\driver\gpio.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_gpio.h" line="21"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_gpio.h" line="22"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\gpio\include\driver\gpio_etm.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_etm.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdio.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdio.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_etm.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\log\include\esp_log.h" line="10"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdarg.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdarg.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\log\include\esp_log.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;inttypes.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;inttypes.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\log\include\esp_log.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\StepperMotorEncoder.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;functional&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;functional&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\components\rmt\include\rmt_encoder.hpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\RMTStepper.h" line="7"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\RMTStepper.h" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\RMTStepper.h" line="12"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="main/Stepper.cpp" sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\RMTStepper.h" line="51"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\components\rmt\include\rmt.hpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;atomic&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;atomic&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\components\logger\include\logger.hpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;chrono&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;chrono&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\components\logger\include\logger.hpp" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\components\logger\include\logger.hpp" line="5"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string_view&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string_view&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\components\logger\include\logger.hpp" line="6"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="36"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstdint&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstdint&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="37"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="38"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;initializer_list&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;initializer_list&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="39"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="40"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="41"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdexcept&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdexcept&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="42"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;system_error&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;system_error&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format.h" line="43"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstddef&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstddef&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstdio&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstdio&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iterator&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iterator&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="14"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="15"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="16"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\core.h" line="17"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;algorithm&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;algorithm&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cctype&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cctype&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cerrno&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cerrno&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;climits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;climits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="14"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="15"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstdarg&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstdarg&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="16"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="17"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cwchar&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cwchar&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="18"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="19"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;locale&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;locale&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\format-inl.h" line="22"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;initializer_list&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;initializer_list&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\ranges.h" line="15"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;tuple&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;tuple&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\ranges.h" line="16"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\ranges.h" line="17"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;algorithm&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;algorithm&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;chrono&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;chrono&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="14"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;ctime&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;ctime&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="15"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iterator&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iterator&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="16"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;locale&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;locale&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="17"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;ostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;ostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="18"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="lib\espp\external\fmt\include\fmt\chrono.h" line="19"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\RMTStepper.cpp" line="8"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\RMTStepper.cpp" line="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="components/RMTAccelerationStepper/RMTStepper.cpp" sinceDate="yyyy-MM-dd">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_macros.h" line="87"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="components/RMTAccelerationStepper/StepperMotorEncoder.cpp" sinceDate="yyyy-MM-dd">
+            <location file="components\RMTAccelerationStepper\StepperMotorEncoder.cpp" line="69"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;algorithm&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;algorithm&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cerrno&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cerrno&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;climits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;climits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="14"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="15"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;locale&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;locale&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="18"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &amp;#039;pow10_significands[78]&amp;#039; accessed at index 2147483678, which is out of bounds." verbose="Array &amp;#039;pow10_significands[78]&amp;#039; accessed at index 2147483678, which is out of bounds." cwe="788" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="288" info="Array index out of bounds"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="258" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &amp;#039;pow10_significands[78]&amp;#039; accessed at index -2147483617, which is out of bounds." verbose="Array &amp;#039;pow10_significands[78]&amp;#039; accessed at index -2147483617, which is out of bounds." cwe="786" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="288" info="Negative array index"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="258" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &amp;#039;pow10_significands[24]&amp;#039; accessed at index 79536442, which is out of bounds." verbose="Array &amp;#039;pow10_significands[24]&amp;#039; accessed at index 79536442, which is out of bounds." cwe="788" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1040" info="Array index out of bounds"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" info="cache_index is assigned &amp;#039;(k-float_info &amp;lt; double &amp;gt;::min_k)/compression_ratio&amp;#039; here."/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &amp;#039;pow10_significands[24]&amp;#039; accessed at index -79536420, which is out of bounds." verbose="Array &amp;#039;pow10_significands[24]&amp;#039; accessed at index -79536420, which is out of bounds." cwe="786" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1040" info="Negative array index"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" info="cache_index is assigned &amp;#039;(k-float_info &amp;lt; double &amp;gt;::min_k)/compression_ratio&amp;#039; here."/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &amp;#039;powers_of_5_64[27]&amp;#039; accessed at index -16, which is out of bounds." verbose="Array &amp;#039;powers_of_5_64[27]&amp;#039; accessed at index -16, which is out of bounds." cwe="786" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1048" info="Negative array index"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1037" info="Assignment &amp;#039;offset=k-kb&amp;#039;, assigned value is -16"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="clarifyCondition" severity="style" msg="Boolean result is used in bitwise operation. Clarify expression with parentheses." verbose="Suspicious expression. Boolean result is used in bitwise operation. The operator &amp;#039;!&amp;#039; and the comparison operators have higher precedence than bitwise operators. It is recommended that the expression is clarified with parentheses." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1304"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;!write_console(f,text)&amp;#039; is always true" verbose="Condition &amp;#039;!write_console(f,text)&amp;#039; is always true" cwe="571" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1455" info="Condition &amp;#039;!write_console(f,text)&amp;#039; is always true"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1455" info="Calling function &amp;#039;write_console&amp;#039; returns 0"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;thousands_sep&amp;#039; shadows outer function" verbose="Local variable &amp;#039;thousands_sep&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="98" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1297" info="Shadowed declaration"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;args&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;args&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="148"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;args&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;args&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1465"/>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &amp;#039;ctx&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;ctx&amp;#039; can be declared as reference to const" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1364"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483711 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483711 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="308" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483680 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483680 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483711 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483711 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1081" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483647 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483647 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;k-float_info &amp;lt; float &amp;gt;::min_k&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;k-float_info &amp;lt; float &amp;gt;::min_k&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="288" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="258" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-1-beta&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-1-beta&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="308" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-beta&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-beta&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;32-beta&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;32-beta&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;k-float_info &amp;lt; double &amp;gt;::min_k&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;k-float_info &amp;lt; double &amp;gt;::min_k&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;cache_index*compression_ratio&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;cache_index*compression_ratio&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1036" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" info="cache_index is assigned &amp;#039;(k-float_info &amp;lt; double &amp;gt;::min_k)/compression_ratio&amp;#039; here."/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-1-beta&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-1-beta&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1081" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-beta&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-beta&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-beta&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-beta&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;64-1-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;64-1-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="308" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;64-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;64-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;32-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;32-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;64-1-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;64-1-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1081" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;64-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;64-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;64-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;64-beta&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cmath&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="36"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstdint&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstdint&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="37"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="38"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;initializer_list&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;initializer_list&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="39"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="40"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="41"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdexcept&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdexcept&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="42"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;system_error&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;system_error&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="43"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4017"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4018"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4019"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4020"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4021"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;format_int::buffer_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4022"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;uint128_fallback&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;uint128_fallback&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="375"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;loc_value&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;loc_value&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1086"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;loc_value&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;loc_value&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1089"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &amp;#039;basic_fp &amp;lt; unsigned long long &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Struct &amp;#039;basic_fp &amp;lt; unsigned long long &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1662"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &amp;#039;basic_fp &amp;lt; std :: conditional &amp;lt; 0 , uint128_opt , uint128_fallback &amp;gt; :: type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Struct &amp;#039;basic_fp &amp;lt; std :: conditional &amp;lt; 0 , uint128_opt , uint128_fallback &amp;gt; :: type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1662"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;c&amp;gt;=0x800&amp;#039; is always true" verbose="Condition &amp;#039;c&amp;gt;=0x800&amp;#039; is always true" cwe="571" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1466" info="Condition &amp;#039;c&amp;gt;=0x800&amp;#039; is always true"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1463" info="Assuming that condition &amp;#039;c&amp;lt;0x800&amp;#039; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;!is_utf8()&amp;#039; is always false" verbose="Condition &amp;#039;!is_utf8()&amp;#039; is always false" cwe="570" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1868" info="Condition &amp;#039;!is_utf8()&amp;#039; is always false"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1868" info="Calling function &amp;#039;is_utf8&amp;#039; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;const_check(!is_supported_floating_point(value))&amp;#039; is always false" verbose="Condition &amp;#039;const_check(!is_supported_floating_point(value))&amp;#039; is always false" cwe="570" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" info="Condition &amp;#039;const_check(!is_supported_floating_point(value))&amp;#039; is always false"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" info="Calling function &amp;#039;const_check&amp;#039; returns 0"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" info="Calling function &amp;#039;is_supported_floating_point&amp;#039; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;const_check(!is_supported_floating_point(value))&amp;#039; is always false" verbose="Condition &amp;#039;const_check(!is_supported_floating_point(value))&amp;#039; is always false" cwe="570" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" info="Condition &amp;#039;const_check(!is_supported_floating_point(value))&amp;#039; is always false"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" info="Calling function &amp;#039;const_check&amp;#039; returns 0"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" info="Calling function &amp;#039;is_supported_floating_point&amp;#039; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;const_check(sizeof(char)==1)&amp;#039; is always true" verbose="Condition &amp;#039;const_check(sizeof(char)==1)&amp;#039; is always true" cwe="571" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1860" info="Condition &amp;#039;const_check(sizeof(char)==1)&amp;#039; is always true"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1860" info="Calling function &amp;#039;const_check&amp;#039; returns 1"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;upper&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;upper&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2235"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437"/>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1517"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;count&amp;#039; shadows outer function" verbose="Local variable &amp;#039;count&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="874" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1203" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;count&amp;#039; shadows outer function" verbose="Local variable &amp;#039;count&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1180" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1203" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;ptr&amp;#039; shadows outer function" verbose="Local variable &amp;#039;ptr&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1392" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4093" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;write&amp;#039; shadows outer function" verbose="Local variable &amp;#039;write&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1826" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2003" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;count&amp;#039; shadows outer function" verbose="Local variable &amp;#039;count&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2098" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1203" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;ptr&amp;#039; shadows outer function" verbose="Local variable &amp;#039;ptr&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2380" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4093" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;sign&amp;#039; shadows outer function" verbose="Local variable &amp;#039;sign&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2502" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1172" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;sign&amp;#039; shadows outer function" verbose="Local variable &amp;#039;sign&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2627" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1172" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;decimal_point&amp;#039; shadows outer function" verbose="Local variable &amp;#039;decimal_point&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2631" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1308" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;write&amp;#039; shadows outer function" verbose="Local variable &amp;#039;write&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2659" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2003" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" verbose="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2827" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" verbose="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2879" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" verbose="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2996" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" verbose="Local variable &amp;#039;num_bigits&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3028" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;arg&amp;#039; shadows outer function" verbose="Local variable &amp;#039;arg&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3865" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;arg&amp;#039; shadows outer function" verbose="Local variable &amp;#039;arg&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4322" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;arg&amp;#039; shadows outer function" verbose="Local variable &amp;#039;arg&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4355" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;arg&amp;#039; shadows outer function" verbose="Local variable &amp;#039;arg&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4364" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" info="Shadowed declaration"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;decimal_point&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;decimal_point&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1114"/>
+        </error>
+        <error id="sizeofwithnumericparameter" severity="warning" msg="Suspicious usage of &amp;#039;sizeof&amp;#039; with a numeric constant as parameter." verbose="It is unusual to use a constant value with sizeof. For example, &amp;#039;sizeof(10)&amp;#039; returns 4 (in 32-bit systems) or 8 (in 64-bit systems) instead of 10. &amp;#039;sizeof(&amp;#039;A&amp;#039;)&amp;#039; and &amp;#039;sizeof(char)&amp;#039; can return different results." cwe="682" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="504"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="429" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" info="Shift"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="434" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-shift&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-shift&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="429" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &amp;#039;64-shift&amp;#039;." verbose="Safe checks: Signed integer overflow for expression &amp;#039;64-shift&amp;#039;." cwe="190" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" info="Integer overflow"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="434" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;shift&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;shift&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="429" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &amp;#039;shift&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &amp;#039;shift&amp;#039; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" info="Negative value is converted to an unsigned value"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="434" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;c&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;c&amp;#039; is assigned a value that is never used." cwe="563" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1459"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;arg&amp;#039; shadows outer function" verbose="Local variable &amp;#039;arg&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2194" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" info="Shadowed declaration"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstddef&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstddef&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstdio&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstdio&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstring&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iterator&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iterator&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="14"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;limits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="15"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="16"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="17"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;type_traits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="18"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;buffer &amp;lt; char &amp;gt;::ptr_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;buffer &amp;lt; char &amp;gt;::ptr_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="807"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;buffer &amp;lt; wchar_t &amp;gt;::ptr_&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;buffer &amp;lt; wchar_t &amp;gt;::ptr_&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="807"/>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;iterator_buffer&amp;#039; defines member function with name &amp;#039;count&amp;#039; also defined in its parent class &amp;#039;fixed_buffer_traits&amp;#039;." verbose="The class &amp;#039;iterator_buffer&amp;#039; defines member function with name &amp;#039;count&amp;#039; also defined in its parent class &amp;#039;fixed_buffer_traits&amp;#039;." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="933" info="Derived function &amp;#039;iterator_buffer::count&amp;#039;"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="895" info="Parent function &amp;#039;fixed_buffer_traits::count&amp;#039;"/>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;iterator_buffer&amp;#039; defines member function with name &amp;#039;count&amp;#039; also defined in its parent class &amp;#039;fixed_buffer_traits&amp;#039;." verbose="The class &amp;#039;iterator_buffer&amp;#039; defines member function with name &amp;#039;count&amp;#039; also defined in its parent class &amp;#039;fixed_buffer_traits&amp;#039;." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="977" info="Derived function &amp;#039;iterator_buffer::count&amp;#039;"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="895" info="Parent function &amp;#039;fixed_buffer_traits::count&amp;#039;"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &amp;#039;accessor&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Struct &amp;#039;accessor&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="769"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;appender&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;appender&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1086"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_format_string&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_format_string&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2731"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_format_string&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_format_string&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2748"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_format_args &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_format_args &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1908"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_format_args &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_format_args &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1919"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_string_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_string_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="421"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_string_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_string_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="430"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_string_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_string_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="436"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_string_view &amp;lt; char8_type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_string_view &amp;lt; char8_type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="421"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_string_view &amp;lt; char8_type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_string_view &amp;lt; char8_type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="430"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_string_view &amp;lt; char8_type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_string_view &amp;lt; char8_type &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="436"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1262"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1263"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1264"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1265"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1266"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1267"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1268"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1269"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1270"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1271"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1272"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1273"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1277"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1281"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1285"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1294"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1295"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: buffer_appender &amp;lt; char &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1296"/>
+        </error>
+        <error id="unsafeClassRefMember" severity="warning" msg="Unsafe class: The const reference member &amp;#039;named_arg::value&amp;#039; is initialized by a const reference constructor argument. You need to be careful about lifetime issues." verbose="Unsafe class checking: The const reference member &amp;#039;named_arg::value&amp;#039; is initialized by a const reference constructor argument. You need to be careful about lifetime issues. If you pass a local variable or temporary value in this constructor argument, be extra careful. If the argument is always some global object that is never destroyed then this is safe usage. However it would be defensive to make the member &amp;#039;named_arg::value&amp;#039; a non-reference variable or a smart pointer." file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1140"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;detail::is_utf8()&amp;#039; is always true" verbose="Condition &amp;#039;detail::is_utf8()&amp;#039; is always true" cwe="571" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2878" info="Condition &amp;#039;detail::is_utf8()&amp;#039; is always true"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2878" info="Calling function &amp;#039;is_utf8&amp;#039; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;detail::is_utf8()&amp;#039; is always true" verbose="Condition &amp;#039;detail::is_utf8()&amp;#039; is always true" cwe="571" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2895" info="Condition &amp;#039;detail::is_utf8()&amp;#039; is always true"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2895" info="Calling function &amp;#039;is_utf8&amp;#039; returns 1"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &amp;#039;c&amp;#039;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &amp;#039;c&amp;#039;. The initialized value is overwritten before it is read." cwe="563" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2283" info="c is overwritten"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2280" info="c is initialized"/>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="612"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;arg&amp;#039; shadows outer function" verbose="Local variable &amp;#039;arg&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1589" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;write&amp;#039; shadows outer function" verbose="Local variable &amp;#039;write&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2517" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2003" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &amp;#039;size&amp;#039; shadows outer function" verbose="Local variable &amp;#039;size&amp;#039; shadows outer function" cwe="398" file0="managed_components/espressif__fmt/fmt/src/format.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2005" info="Shadow variable"/>
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2011" info="Shadowed declaration"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1262"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1263"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1264"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1265"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1266"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1267"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1268"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1269"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1270"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1271"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1272"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1273"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1277"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1281"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1285"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1294"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1295"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;value &amp;lt; basic_format_context &amp;lt; detail :: conditional_t &amp;lt; std :: is_same &amp;lt; char , char &amp;gt; :: value , appender , std :: back_insert_iterator &amp;lt; buffer &amp;lt; char &amp;gt; &amp;gt; &amp;gt; , char &amp;gt; &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1296"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cerrno&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cerrno&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\os.h" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstddef&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstddef&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\os.h" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;cstdio&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;cstdio&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\os.h" line="13"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;system_error&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;system_error&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\os.h" line="14"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_cstring_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_cstring_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\os.h" line="107"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_cstring_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_cstring_view &amp;lt; char &amp;gt;&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="managed_components/espressif__fmt/fmt/src/os.cc" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\include\fmt\os.h" line="114"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;climits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;climits&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\src\os.cc" line="15"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;descriptor&amp;#039; is never used." verbose="The function &amp;#039;descriptor&amp;#039; is never used." cwe="561" sinceDate="yyyy-MM-dd">
+            <location file="managed_components\espressif__fmt\fmt\src\os.cc" line="184"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Stepper.h" line="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Stepper.cpp" line="6"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Stepper.cpp" line="7"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;mutex&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;mutex&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.h" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.h" line="6"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;unordered_map&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;unordered_map&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.h" line="7"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Axis.h" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Axis.cpp" line="2"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;mutex&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;mutex&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.cpp" line="1"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.cpp" line="2"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;memory&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.cpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;exception&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="yyyy-MM-dd">
+            <location file="main\Machine.cpp" line="6"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,10 @@
+project_elf_src_esp32s3.a1::D:/Machining-tools/StepperPowerFeed/src/build/project_elf_src_esp32s3.c
+MovePlanner.a1::D:/Machining-tools/StepperPowerFeed/src/components/MovePlanner/MovePlanner.cpp
+RMTStepper.a1::D:/Machining-tools/StepperPowerFeed/src/components/RMTAccelerationStepper/RMTStepper.cpp
+StepperMotorEncoder.a1::D:/Machining-tools/StepperPowerFeed/src/components/RMTAccelerationStepper/StepperMotorEncoder.cpp
+format.a1::D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc
+os.a1::D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/os.cc
+Stepper.a1::D:/Machining-tools/StepperPowerFeed/src/main/Stepper.cpp
+main.a1::D:/Machining-tools/StepperPowerFeed/src/main/main.cpp
+Axis.a1::D:/Machining-tools/StepperPowerFeed/src/main/Axis.cpp
+Machine.a1::D:/Machining-tools/StepperPowerFeed/src/main/Machine.cpp
