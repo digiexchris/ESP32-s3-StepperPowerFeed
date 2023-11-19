@@ -1,3 +1,843 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:25:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   25 | int clock_settime(clockid_t clock_id, const struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:26:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   26 | int clock_gettime(clockid_t clock_id, struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:27:18: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   27 | int clock_getres(clockid_t clock_id, struct timespec *res);
+      |                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/os.h:131:27: warning: function 'fmt::vwindows_error' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+  131 | FMT_API std::system_error vwindows_error(int error_code, string_view format_str,
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:135:19: note: the definition seen here
+  135 | std::system_error vwindows_error(int err_code, string_view format_str,
+      |                   ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/os.h:131:27: note: differing parameters are named here: ('error_code'), in definition: ('err_code')
+  131 | FMT_API std::system_error vwindows_error(int error_code, string_view format_str,
+      |                           ^                  ~~~~~~~~~~
+      |                                              err_code
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:10:11: warning: declaration uses identifier '_CRT_SECURE_NO_WARNINGS', which is a reserved identifier [bugprone-reserved-identifier,cert-dcl37-c,cert-dcl51-cpp]
+   10 | #  define _CRT_SECURE_NO_WARNINGS
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+      |           CRT_SECURE_NO_WARNINGS
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:19:1: warning: included header types.h is not used directly [misc-include-cleaner]
+   19 | #  include <sys/types.h>
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+   20 | 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:31:1: warning: included header io.h is not used directly [misc-include-cleaner]
+   31 | #    include <io.h>
+      | ^~~~~~~~~~~~~~~~~~~
+   32 | 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:40:15: warning: macro 'S_IRGRP' used to declare a constant; consider using a 'constexpr' constant [cppcoreguidelines-macro-usage]
+   40 | #      define S_IRGRP 0
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:43:15: warning: macro 'S_IWGRP' used to declare a constant; consider using a 'constexpr' constant [cppcoreguidelines-macro-usage]
+   43 | #      define S_IWGRP 0
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:46:15: warning: macro 'S_IROTH' used to declare a constant; consider using a 'constexpr' constant [cppcoreguidelines-macro-usage]
+   46 | #      define S_IROTH 0
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:49:15: warning: macro 'S_IWOTH' used to declare a constant; consider using a 'constexpr' constant [cppcoreguidelines-macro-usage]
+   49 | #      define S_IWOTH 0
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:55:1: warning: included header windows.h is not used directly [misc-include-cleaner]
+   55 | #  include <windows.h>
+      | ^~~~~~~~~~~~~~~~~~~~~~
+   56 | #endif
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:65:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   65 | inline unsigned convert_rwcount(std::size_t count) {
+      |        ~~~~~~~~ ^
+      |        auto                                        -> unsigned
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:65:38: warning: no header providing "std::size_t" is directly included [misc-include-cleaner]
+    9 | inline unsigned convert_rwcount(std::size_t count) {
+      |                                      ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:76:1: warning: no header providing "FMT_BEGIN_NAMESPACE" is directly included [misc-include-cleaner]
+    9 | FMT_BEGIN_NAMESPACE
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:81:7: warning: class 'system_message' defines a non-default destructor, a copy constructor and a copy assignment operator but does not define a move constructor or a move assignment operator [cppcoreguidelines-special-member-functions,hicpp-special-member-functions]
+   81 | class system_message {
+      |       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:82:3: warning: deleted member function should be public [hicpp-use-equals-delete,modernize-use-equals-delete]
+   82 |   system_message(const system_message&) = delete;
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:83:8: warning: deleted member function should be public [hicpp-use-equals-delete,modernize-use-equals-delete]
+   83 |   void operator=(const system_message&) = delete;
+      |        ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:85:3: warning: consider replacing 'unsigned long' with 'uint32' [google-runtime-int]
+   85 |   unsigned long result_;
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:85:17: warning: use default member initializer for 'result_' [cppcoreguidelines-use-default-member-init,modernize-use-default-member-init]
+   85 |   unsigned long result_;
+      |                 ^      
+      |                        {0}
+   86 |   wchar_t* message_;
+   87 | 
+   88 |   static bool is_whitespace(wchar_t c) noexcept {
+   89 |     return c == L' ' || c == L'\n' || c == L'\r' || c == L'\t' || c == L'\0';
+   90 |   }
+   91 | 
+   92 |  public:
+   93 |   explicit system_message(unsigned long error_code)
+   94 |       : result_(0), message_(nullptr) {
+      |         ~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:86:12: warning: use default member initializer for 'message_' [cppcoreguidelines-use-default-member-init,modernize-use-default-member-init]
+   86 |   wchar_t* message_;
+      |            ^       
+      |                    {nullptr}
+   87 | 
+   88 |   static bool is_whitespace(wchar_t c) noexcept {
+   89 |     return c == L' ' || c == L'\n' || c == L'\r' || c == L'\t' || c == L'\0';
+   90 |   }
+   91 | 
+   92 |  public:
+   93 |   explicit system_message(unsigned long error_code)
+   94 |       : result_(0), message_(nullptr) {
+      |                     ~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:88:15: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   88 |   static bool is_whitespace(wchar_t c) noexcept {
+      |          ~~~~ ^
+      |          auto                                   -> bool
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:88:37: warning: parameter name 'c' is too short, expected at least 3 characters [readability-identifier-length]
+   88 |   static bool is_whitespace(wchar_t c) noexcept {
+      |                                     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:93:27: warning: consider replacing 'unsigned long' with 'uint32' [google-runtime-int]
+   93 |   explicit system_message(unsigned long error_code)
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:95:15: warning: no header providing "FormatMessageW" is directly included [misc-include-cleaner]
+    9 |     result_ = FormatMessageW(
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:96:9: warning: no header providing "FORMAT_MESSAGE_ALLOCATE_BUFFER" is directly included [misc-include-cleaner]
+    9 |         FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM |
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:96:42: warning: no header providing "FORMAT_MESSAGE_FROM_SYSTEM" is directly included [misc-include-cleaner]
+    9 |         FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM |
+      |                                          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:97:13: warning: no header providing "FORMAT_MESSAGE_IGNORE_INSERTS" is directly included [misc-include-cleaner]
+    9 |             FORMAT_MESSAGE_IGNORE_INSERTS,
+      |             ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:98:30: warning: no header providing "MAKELANGID" is directly included [misc-include-cleaner]
+    9 |         nullptr, error_code, MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+      |                              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:98:41: warning: no header providing "LANG_NEUTRAL" is directly included [misc-include-cleaner]
+    9 |         nullptr, error_code, MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+      |                                         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:98:55: warning: no header providing "SUBLANG_DEFAULT" is directly included [misc-include-cleaner]
+    9 |         nullptr, error_code, MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+      |                                                       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:99:9: warning: do not use reinterpret_cast [cppcoreguidelines-pro-type-reinterpret-cast]
+   99 |         reinterpret_cast<wchar_t*>(&message_), 0, nullptr);
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:101:7: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+  101 |       while (result_ != 0 && is_whitespace(message_[result_ - 1])) {
+      |       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:101:14: warning: backward branch (while loop) is ID-dependent due to member reference to 'result_' and may cause performance degradation [altera-id-dependent-backward-branch]
+  101 |       while (result_ != 0 && is_whitespace(message_[result_ - 1])) {
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:85:3: note: inferred assignment of ID-dependent member from ID-dependent 
+   85 |   unsigned long result_;
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:101:44: warning: do not use pointer arithmetic [cppcoreguidelines-pro-bounds-pointer-arithmetic]
+  101 |       while (result_ != 0 && is_whitespace(message_[result_ - 1])) {
+      |                                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:106:23: warning: no header providing "LocalFree" is directly included [misc-include-cleaner]
+    9 |   ~system_message() { LocalFree(message_); }
+      |                       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:108:3: warning: 'operator basic_string_view' must be marked explicit to avoid unintentional implicit conversions [google-explicit-constructor,hicpp-explicit-conversions]
+  108 |   operator basic_string_view<wchar_t>() const noexcept {
+      |   ^
+      |   explicit 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:108:12: warning: no header providing "fmt::basic_string_view" is directly included [misc-include-cleaner]
+    9 |   operator basic_string_view<wchar_t>() const noexcept {
+      |            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:109:12: warning: no header providing "fmt::basic_string_view" is directly included [misc-include-cleaner]
+    9 |     return basic_string_view<wchar_t>(message_, result_);
+      |            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:109:12: warning: avoid repeating the return type from the declaration; use a braced initializer list instead [modernize-return-braced-init-list]
+  109 |     return basic_string_view<wchar_t>(message_, result_);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~                 ~
+      |            {                                           }
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:113:48: warning: no header providing "std::error_category" is directly included [misc-include-cleaner]
+    9 | class utf8_system_category final : public std::error_category {
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:115:3: warning: function 'name' should be marked [[nodiscard]] [modernize-use-nodiscard]
+  115 |   const char* name() const noexcept override { return "system"; }
+      |   ^
+      |   [[nodiscard]] 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:115:15: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  115 |   const char* name() const noexcept override { return "system"; }
+      |   ~~~~~~~~~~~ ^
+      |   auto                              -> const char*
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:116:3: warning: function 'message' should be marked [[nodiscard]] [modernize-use-nodiscard]
+  116 |   std::string message(int error_code) const override {
+      |   ^
+      |   [[nodiscard]] 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:116:8: warning: no header providing "std::string" is directly included [misc-include-cleaner]
+    9 |   std::string message(int error_code) const override {
+      |        ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:116:15: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  116 |   std::string message(int error_code) const override {
+      |   ~~~~~~~~~~~ ^
+      |   auto                                      -> std::string
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:119:27: warning: no header providing "fmt::detail::to_utf8" is directly included [misc-include-cleaner]
+    9 |       auto utf8_message = to_utf8<wchar_t>();
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:120:11: warning: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls]
+  120 |       if (utf8_message.convert(msg)) {
+      |           ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/format.h:1441:16: note: default parameter was declared here
+ 1441 |                to_utf8_error_policy policy = to_utf8_error_policy::abort) {
+      |                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:130:1: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    9 | FMT_API const std::error_category& system_category() noexcept {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:130:20: warning: no header providing "std::error_category" is directly included [misc-include-cleaner]
+    9 | FMT_API const std::error_category& system_category() noexcept {
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:130:36: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  130 | FMT_API const std::error_category& system_category() noexcept {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+      |         auto                                                  -> const std::error_category&
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:135:6: warning: no header providing "std::system_error" is directly included [misc-include-cleaner]
+    9 | std::system_error vwindows_error(int err_code, string_view format_str,
+      |      ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:135:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  135 | std::system_error vwindows_error(int err_code, string_view format_str,
+      | ~~~~~~~~~~~~~~~~~ ^
+      | auto
+  136 |                                  format_args args) {
+      |                                                    -> std::system_error
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:135:48: warning: no header providing "fmt::string_view" is directly included [misc-include-cleaner]
+    9 | std::system_error vwindows_error(int err_code, string_view format_str,
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:136:34: warning: no header providing "fmt::format_args" is directly included [misc-include-cleaner]
+    9 |                                  format_args args) {
+      |                                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:137:8: warning: variable name 'ec' is too short, expected at least 3 characters [readability-identifier-length]
+  137 |   auto ec = std::error_code(err_code, system_category());
+      |        ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:137:18: warning: no header providing "std::error_code" is directly included [misc-include-cleaner]
+    9 |   auto ec = std::error_code(err_code, system_category());
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:138:10: warning: avoid repeating the return type from the declaration; use a braced initializer list instead [modernize-return-braced-init-list]
+  138 |   return std::system_error(ec, vformat(format_str, args));
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:138:15: warning: no header providing "std::system_error" is directly included [misc-include-cleaner]
+    9 |   return std::system_error(ec, vformat(format_str, args));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:138:32: warning: no header providing "fmt::vformat" is directly included [misc-include-cleaner]
+    9 |   return std::system_error(ec, vformat(format_str, args));
+      |                                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:141:43: warning: no header providing "fmt::detail::buffer" is directly included [misc-include-cleaner]
+    9 | void detail::format_windows_error(detail::buffer<char>& out, int error_code,
+      |                                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:143:3: warning: no header providing "FMT_TRY" is directly included [misc-include-cleaner]
+    9 |   FMT_TRY {
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:146:27: warning: no header providing "fmt::detail::to_utf8" is directly included [misc-include-cleaner]
+    9 |       auto utf8_message = to_utf8<wchar_t>();
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:147:11: warning: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls]
+  147 |       if (utf8_message.convert(msg)) {
+      |           ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/format.h:1441:16: note: default parameter was declared here
+ 1441 |                to_utf8_error_policy policy = to_utf8_error_policy::abort) {
+      |                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:148:14: warning: no header providing "fmt::format_to" is directly included [misc-include-cleaner]
+    9 |         fmt::format_to(appender(out), FMT_STRING("{}: {}"), message,
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:148:24: warning: no header providing "fmt::appender" is directly included [misc-include-cleaner]
+    9 |         fmt::format_to(appender(out), FMT_STRING("{}: {}"), message,
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:148:39: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |         fmt::format_to(appender(out), FMT_STRING("{}: {}"), message,
+      |                                       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:149:24: warning: C-style casts are discouraged; use constructor call syntax [google-readability-casting]
+  149 |                        string_view(utf8_message));
+      |                        ^~~~~~~~~~~
+      |                        string_view
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:149:24: warning: no header providing "fmt::string_view" is directly included [misc-include-cleaner]
+    9 |                        string_view(utf8_message));
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:154:3: warning: no header providing "FMT_CATCH" is directly included [misc-include-cleaner]
+    9 |   FMT_CATCH(...) {}
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:155:3: warning: no header providing "fmt::detail::format_error_code" is directly included [misc-include-cleaner]
+    9 |   format_error_code(out, error_code, message);
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:159:3: warning: no header providing "fmt::detail::report_error" is directly included [misc-include-cleaner]
+    9 |   report_error(detail::format_windows_error, error_code, message);
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:164:7: warning: implicit conversion 'FILE *' (aka '_iobuf *') -> bool [readability-implicit-bool-conversion]
+  164 |   if (file_ && FMT_SYSTEM(fclose(file_)) != 0)
+      |       ^
+      |       (     != nullptr)
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:164:16: warning: calling legacy resource function without passing a 'gsl::owner<>' [cppcoreguidelines-owning-memory]
+  164 |   if (file_ && FMT_SYSTEM(fclose(file_)) != 0)
+      |                ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/os.h:51:28: note: expanded from macro 'FMT_SYSTEM'
+   51 | #  define FMT_SYSTEM(call) ::call
+      |                            ^~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:164:27: warning: no header providing "fclose" is directly included [misc-include-cleaner]
+    9 |   if (file_ && FMT_SYSTEM(fclose(file_)) != 0)
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:164:47: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  164 |   if (file_ && FMT_SYSTEM(fclose(file_)) != 0)
+      |                                               ^
+      |                                                {
+  165 |     report_system_error(errno, "cannot close file");
+      |                                                     
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:165:5: warning: no header providing "fmt::report_system_error" is directly included [misc-include-cleaner]
+    9 |     report_system_error(errno, "cannot close file");
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:165:25: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     report_system_error(errno, "cannot close file");
+      |                         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:169:17: warning: assigning newly created 'gsl::owner<>' to non-owner 'FILE *' (aka '_iobuf *') [cppcoreguidelines-owning-memory]
+  169 |   FMT_RETRY_VAL(file_, FMT_SYSTEM(fopen(filename.c_str(), mode.c_str())),
+      |                 ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/os.h:68:59: note: expanded from macro 'FMT_RETRY_VAL'
+   68 | #  define FMT_RETRY_VAL(result, expression, error_result) result = (expression)
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:169:17: warning: 'file_' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+  168 | buffered_file::buffered_file(cstring_view filename, cstring_view mode) {
+      |                                                                        : file_(FMT_SYSTEM(fopen(filename.c_str(), mode.c_str())))
+  169 |   FMT_RETRY_VAL(file_, FMT_SYSTEM(fopen(filename.c_str(), mode.c_str())),
+      |   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  170 |                 nullptr);
+      |                 ~~~~~~~~~
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/os.h:68:59: note: expanded from macro 'FMT_RETRY_VAL'
+   68 | #  define FMT_RETRY_VAL(result, expression, error_result) result = (expression)
+      |                                                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:169:35: warning: no header providing "fopen" is directly included [misc-include-cleaner]
+    9 |   FMT_RETRY_VAL(file_, FMT_SYSTEM(fopen(filename.c_str(), mode.c_str())),
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:171:8: warning: implicit conversion 'FILE *' (aka '_iobuf *') -> bool [readability-implicit-bool-conversion]
+  171 |   if (!file_)
+      |       ~^    
+      |              == nullptr
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:171:14: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  171 |   if (!file_)
+      |              ^
+      |               {
+  172 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+  173 |                            filename.c_str()));
+      |                                               
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:172:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:172:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:172:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:172:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:177:8: warning: implicit conversion 'FILE *' (aka '_iobuf *') -> bool [readability-implicit-bool-conversion]
+  177 |   if (!file_) return;
+      |       ~^    
+      |              == nullptr
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:177:14: warning: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements]
+  177 |   if (!file_) return;
+      |              ^       
+      |               {
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:178:3: warning: variable 'result' of type 'int' can be declared 'const' [misc-const-correctness]
+  178 |   int result = FMT_SYSTEM(fclose(file_));
+      |   ^
+      |       const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:178:16: warning: calling legacy resource function without passing a 'gsl::owner<>' [cppcoreguidelines-owning-memory]
+  178 |   int result = FMT_SYSTEM(fclose(file_));
+      |                ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/os.h:51:28: note: expanded from macro 'FMT_SYSTEM'
+   51 | #  define FMT_SYSTEM(call) ::call
+      |                            ^~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:178:27: warning: no header providing "fclose" is directly included [misc-include-cleaner]
+    9 |   int result = FMT_SYSTEM(fclose(file_));
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:180:19: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  180 |   if (result != 0)
+      |                   ^
+      |                    {
+  181 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |                                                                     
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:181:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:181:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:181:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:181:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:184:20: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  184 | int buffered_file::descriptor() const {
+      | ~~~                ^
+      | auto                                  -> int
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:188:3: warning: variable 'fd' of type 'int' can be declared 'const' [misc-const-correctness]
+  188 |   int fd = FMT_POSIX_CALL(fileno(file_));
+      |   ^
+      |       const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:188:7: warning: variable name 'fd' is too short, expected at least 3 characters [readability-identifier-length]
+  188 |   int fd = FMT_POSIX_CALL(fileno(file_));
+      |       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:190:16: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  190 |   if (fd == -1)
+      |                ^
+      |                 {
+  191 |     FMT_THROW(system_error(errno, FMT_STRING("cannot get file descriptor")));
+      |                                                                              
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:191:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot get file descriptor")));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:191:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot get file descriptor")));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:191:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot get file descriptor")));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:191:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot get file descriptor")));
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:200:53: warning: operator has equivalent nested operands [misc-redundant-expression]
+  200 |     S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH;
+      |                                                     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:204:3: warning: 'fd_' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+  202 | file::file(cstring_view path, int oflag) {
+      |                                          : fd_(-1)
+  203 | #  if defined(_WIN32) && !defined(__MINGW32__)
+  204 |   fd_ = -1;
+      |   ^~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:205:28: warning: no header providing "fmt::detail::utf8_to_utf16" is directly included [misc-include-cleaner]
+    9 |   auto converted = detail::utf8_to_utf16(string_view(path.c_str()));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:205:42: warning: no header providing "fmt::string_view" is directly included [misc-include-cleaner]
+    9 |   auto converted = detail::utf8_to_utf16(string_view(path.c_str()));
+      |                                          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:218:52: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  218 |   if (fd_ != -1 && FMT_POSIX_CALL(close(fd_)) != 0)
+      |                                                    ^
+      |                                                     {
+  219 |     report_system_error(errno, "cannot close file");
+      |                                                     
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:219:5: warning: no header providing "fmt::report_system_error" is directly included [misc-include-cleaner]
+    9 |     report_system_error(errno, "cannot close file");
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:219:25: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     report_system_error(errno, "cannot close file");
+      |                         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:223:17: warning: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements]
+  223 |   if (fd_ == -1) return;
+      |                 ^       
+      |                  {
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:226:3: warning: variable 'result' of type 'int' can be declared 'const' [misc-const-correctness]
+  226 |   int result = FMT_POSIX_CALL(close(fd_));
+      |   ^
+      |       const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:228:19: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  228 |   if (result != 0)
+      |                   ^
+      |                    {
+  229 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |                                                                     
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:229:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:229:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:229:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:229:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot close file")));
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:232:1: warning: consider replacing 'long long' with 'int64' [google-runtime-int]
+  232 | long long file::size() const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:232:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  232 | long long file::size() const {
+      | ~~~~~~~~~       ^
+      | auto                         -> long long
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:237:3: warning: no header providing "DWORD" is directly included [misc-include-cleaner]
+    9 |   DWORD size_upper = 0;
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:238:3: warning: use auto when initializing with a cast to avoid duplicating the type name [hicpp-use-auto,modernize-use-auto]
+  238 |   HANDLE handle = reinterpret_cast<HANDLE>(_get_osfhandle(fd_));
+      |   ^~~~~~
+      |   auto
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:238:3: warning: no header providing "HANDLE" is directly included [misc-include-cleaner]
+    9 |   HANDLE handle = reinterpret_cast<HANDLE>(_get_osfhandle(fd_));
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:238:19: warning: do not use reinterpret_cast [cppcoreguidelines-pro-type-reinterpret-cast]
+  238 |   HANDLE handle = reinterpret_cast<HANDLE>(_get_osfhandle(fd_));
+      |                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:238:19: warning: integer to pointer cast pessimizes optimization opportunities [performance-no-int-to-ptr]
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:238:36: warning: no header providing "HANDLE" is directly included [misc-include-cleaner]
+    9 |   HANDLE handle = reinterpret_cast<HANDLE>(_get_osfhandle(fd_));
+      |                                    ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:238:44: warning: no header providing "_get_osfhandle" is directly included [misc-include-cleaner]
+    9 |   HANDLE handle = reinterpret_cast<HANDLE>(_get_osfhandle(fd_));
+      |                                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:239:3: warning: variable 'size_lower' of type 'DWORD' (aka 'unsigned long') can be declared 'const' [misc-const-correctness]
+  239 |   DWORD size_lower = FMT_SYSTEM(GetFileSize(handle, &size_upper));
+      |   ^
+      |         const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:239:3: warning: no header providing "DWORD" is directly included [misc-include-cleaner]
+    9 |   DWORD size_lower = FMT_SYSTEM(GetFileSize(handle, &size_upper));
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:239:33: warning: no header providing "GetFileSize" is directly included [misc-include-cleaner]
+    9 |   DWORD size_lower = FMT_SYSTEM(GetFileSize(handle, &size_upper));
+      |                                 ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:240:21: warning: no header providing "INVALID_FILE_SIZE" is directly included [misc-include-cleaner]
+    9 |   if (size_lower == INVALID_FILE_SIZE) {
+      |                     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:241:5: warning: variable 'error' of type 'DWORD' (aka 'unsigned long') can be declared 'const' [misc-const-correctness]
+  241 |     DWORD error = GetLastError();
+      |     ^
+      |           const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:241:5: warning: no header providing "DWORD" is directly included [misc-include-cleaner]
+    9 |     DWORD error = GetLastError();
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:241:19: warning: no header providing "GetLastError" is directly included [misc-include-cleaner]
+    9 |     DWORD error = GetLastError();
+      |                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:242:18: warning: no header providing "NO_ERROR" is directly included [misc-include-cleaner]
+    9 |     if (error != NO_ERROR)
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:242:27: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  242 |     if (error != NO_ERROR)
+      |                           ^
+      |                            {
+  243 |       FMT_THROW(windows_error(GetLastError(), "cannot get file size"));
+      |                                                                        
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:243:7: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |       FMT_THROW(windows_error(GetLastError(), "cannot get file size"));
+      |       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:243:31: warning: no header providing "GetLastError" is directly included [misc-include-cleaner]
+    9 |       FMT_THROW(windows_error(GetLastError(), "cannot get file size"));
+      |                               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:245:3: warning: consider replacing 'unsigned long long' with 'uint64' [google-runtime-int]
+  245 |   unsigned long long long_size = size_upper;
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:245:3: warning: variable 'long_size' of type 'unsigned long long' can be declared 'const' [misc-const-correctness]
+  245 |   unsigned long long long_size = size_upper;
+      |   ^
+      |                      const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:246:10: warning: narrowing conversion from 'unsigned long long' to signed type 'long long' is implementation-defined [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions]
+  246 |   return (long_size << sizeof(DWORD) * CHAR_BIT) | size_lower;
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:246:31: warning: no header providing "DWORD" is directly included [misc-include-cleaner]
+    9 |   return (long_size << sizeof(DWORD) * CHAR_BIT) | size_lower;
+      |                               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:258:6: warning: no header providing "std::size_t" is directly included [misc-include-cleaner]
+    9 | std::size_t file::read(void* buffer, std::size_t count) {
+      |      ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:258:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  258 | std::size_t file::read(void* buffer, std::size_t count) {
+      | ~~~~~~~~~~~       ^
+      | auto                                                    -> std::size_t
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:258:19: warning: method 'read' can be made const [readability-make-member-function-const]
+  258 | std::size_t file::read(void* buffer, std::size_t count) {
+      |                   ^
+      |                                                         const
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:258:43: warning: no header providing "std::size_t" is directly included [misc-include-cleaner]
+    9 | std::size_t file::read(void* buffer, std::size_t count) {
+      |                                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:261:18: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  261 |   if (result < 0)
+      |                  ^
+      |                   {
+  262 |     FMT_THROW(system_error(errno, FMT_STRING("cannot read from file")));
+      |                                                                         
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:262:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot read from file")));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:262:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot read from file")));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:262:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot read from file")));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:262:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot read from file")));
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:263:18: warning: no header providing "fmt::detail::to_unsigned" is directly included [misc-include-cleaner]
+    9 |   return detail::to_unsigned(result);
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:266:6: warning: no header providing "std::size_t" is directly included [misc-include-cleaner]
+    9 | std::size_t file::write(const void* buffer, std::size_t count) {
+      |      ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:266:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  266 | std::size_t file::write(const void* buffer, std::size_t count) {
+      | ~~~~~~~~~~~       ^
+      | auto                                                           -> std::size_t
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:266:19: warning: method 'write' can be made const [readability-make-member-function-const]
+  266 | std::size_t file::write(const void* buffer, std::size_t count) {
+      |                   ^
+      |                                                                const
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:266:50: warning: no header providing "std::size_t" is directly included [misc-include-cleaner]
+    9 | std::size_t file::write(const void* buffer, std::size_t count) {
+      |                                                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:269:18: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  269 |   if (result < 0)
+      |                  ^
+      |                   {
+  270 |     FMT_THROW(system_error(errno, FMT_STRING("cannot write to file")));
+      |                                                                        
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:270:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot write to file")));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:270:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot write to file")));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:270:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot write to file")));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:270:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot write to file")));
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:271:18: warning: no header providing "fmt::detail::to_unsigned" is directly included [misc-include-cleaner]
+    9 |   return detail::to_unsigned(result);
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:274:12: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  274 | file file::dup(int fd) {
+      | ~~~~       ^
+      | auto                   -> file
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:274:20: warning: parameter name 'fd' is too short, expected at least 3 characters [readability-identifier-length]
+  274 | file file::dup(int fd) {
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:277:3: warning: variable 'new_fd' of type 'int' can be declared 'const' [misc-const-correctness]
+  277 |   int new_fd = FMT_POSIX_CALL(dup(fd));
+      |   ^
+      |       const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:278:20: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  278 |   if (new_fd == -1)
+      |                    ^
+      |                     {
+  279 |     FMT_THROW(system_error(
+  280 |         errno, FMT_STRING("cannot duplicate file descriptor {}"), fd));
+      |                                                                        
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:279:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:279:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:280:9: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |         errno, FMT_STRING("cannot duplicate file descriptor {}"), fd));
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:280:16: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |         errno, FMT_STRING("cannot duplicate file descriptor {}"), fd));
+      |                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:284:21: warning: parameter name 'fd' is too short, expected at least 3 characters [readability-identifier-length]
+  284 | void file::dup2(int fd) {
+      |                     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:288:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:288:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:289:9: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |         errno, FMT_STRING("cannot duplicate file descriptor {} to {}"), fd_,
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:289:16: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |         errno, FMT_STRING("cannot duplicate file descriptor {} to {}"), fd_,
+      |                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:294:12: warning: method 'dup2' can be made const [readability-make-member-function-const]
+  294 | void file::dup2(int fd, std::error_code& ec) noexcept {
+      |            ^
+      |                                              const
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:294:21: warning: parameter name 'fd' is too short, expected at least 3 characters [readability-identifier-length]
+  294 | void file::dup2(int fd, std::error_code& ec) noexcept {
+      |                     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:294:30: warning: no header providing "std::error_code" is directly included [misc-include-cleaner]
+    9 | void file::dup2(int fd, std::error_code& ec) noexcept {
+      |                              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:294:42: warning: parameter name 'ec' is too short, expected at least 3 characters [readability-identifier-length]
+  294 | void file::dup2(int fd, std::error_code& ec) noexcept {
+      |                                          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:297:20: warning: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements]
+  297 |   if (result == -1) ec = std::error_code(errno, std::generic_category());
+      |                    ^                                                     
+      |                     {
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:297:31: warning: no header providing "std::error_code" is directly included [misc-include-cleaner]
+    9 |   if (result == -1) ec = std::error_code(errno, std::generic_category());
+      |                               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:297:42: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |   if (result == -1) ec = std::error_code(errno, std::generic_category());
+      |                                          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:297:54: warning: no header providing "std::generic_category" is directly included [misc-include-cleaner]
+    9 |   if (result == -1) ec = std::error_code(errno, std::generic_category());
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:305:3: warning: do not declare C-style arrays, use std::array<> instead [cppcoreguidelines-avoid-c-arrays,hicpp-avoid-c-arrays,modernize-avoid-c-arrays]
+  305 |   int fds[2] = {};
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:309:3: warning: variable 'result' of type 'int' can be declared 'const' [misc-const-correctness]
+  309 |   int result = FMT_POSIX_CALL(pipe(fds, DEFAULT_CAPACITY, _O_BINARY));
+      |   ^
+      |       const 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:309:36: warning: do not implicitly decay an array into a pointer; consider using gsl::array_view or an explicit cast instead [cppcoreguidelines-pro-bounds-array-to-pointer-decay,hicpp-no-array-decay]
+  309 |   int result = FMT_POSIX_CALL(pipe(fds, DEFAULT_CAPACITY, _O_BINARY));
+      |                                    ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:309:59: warning: no header providing "_O_BINARY" is directly included [misc-include-cleaner]
+    9 |   int result = FMT_POSIX_CALL(pipe(fds, DEFAULT_CAPACITY, _O_BINARY));
+      |                                                           ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:315:19: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+  315 |   if (result != 0)
+      |                   ^
+      |                    {
+  316 |     FMT_THROW(system_error(errno, FMT_STRING("cannot create pipe")));
+      |                                                                      
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:316:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot create pipe")));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:316:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot create pipe")));
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:316:28: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot create pipe")));
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:316:35: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(errno, FMT_STRING("cannot create pipe")));
+      |                                   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:323:21: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  323 | buffered_file file::fdopen(const char* mode) {
+      | ~~~~~~~~~~~~~       ^
+      | auto                                         -> buffered_file
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:328:3: warning: no header providing "FILE" is directly included [misc-include-cleaner]
+    9 |   FILE* f = FMT_POSIX_CALL(fdopen(fd_, mode));
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:328:9: warning: variable name 'f' is too short, expected at least 3 characters [readability-identifier-length]
+  328 |   FILE* f = FMT_POSIX_CALL(fdopen(fd_, mode));
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:330:8: warning: implicit conversion 'FILE *' (aka '_iobuf *') -> bool [readability-implicit-bool-conversion]
+  330 |   if (!f) {
+      |       ~^
+      |          == nullptr
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:331:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:331:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:332:9: warning: no header providing "errno" is directly included [misc-include-cleaner]
+    9 |         errno, FMT_STRING("cannot associate stream with file descriptor")));
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:332:16: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |         errno, FMT_STRING("cannot associate stream with file descriptor")));
+      |                ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:334:17: warning: variable name 'bf' is too short, expected at least 3 characters [readability-identifier-length]
+  334 |   buffered_file bf(f);
+      |                 ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:340:12: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  340 | file file::open_windows_file(wcstring_view path, int oflag) {
+      | ~~~~       ^
+      | auto                                                        -> file
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:341:7: warning: variable name 'fd' is too short, expected at least 3 characters [readability-identifier-length]
+  341 |   int fd = -1;
+      |       ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:342:14: warning: no header providing "_wsopen_s" is directly included [misc-include-cleaner]
+    9 |   auto err = _wsopen_s(&fd, path.c_str(), oflag, _SH_DENYNO, default_open_mode);
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:342:50: warning: no header providing "_SH_DENYNO" is directly included [misc-include-cleaner]
+    9 |   auto err = _wsopen_s(&fd, path.c_str(), oflag, _SH_DENYNO, default_open_mode);
+      |                                                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:344:5: warning: no header providing "FMT_THROW" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(err, FMT_STRING("cannot open file {}"),
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:344:15: warning: no header providing "fmt::system_error" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(err, FMT_STRING("cannot open file {}"),
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:344:33: warning: no header providing "FMT_STRING" is directly included [misc-include-cleaner]
+    9 |     FMT_THROW(system_error(err, FMT_STRING("cannot open file {}"),
+      |                                 ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:345:28: warning: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls]
+  345 |                            detail::to_utf8<wchar_t>(path.c_str()).c_str()));
+      |                            ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/format.h:1425:20: note: default parameter was declared here
+ 1425 |                    to_utf8_error_policy policy = to_utf8_error_policy::abort) {
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:345:36: warning: no header providing "fmt::detail::to_utf8" is directly included [misc-include-cleaner]
+    9 |                            detail::to_utf8<wchar_t>(path.c_str()).c_str()));
+      |                                    ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:352:1: warning: consider replacing 'long' with 'int32' [google-runtime-int]
+  352 | long getpagesize() {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:352:6: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  352 | long getpagesize() {
+      | ~~~~ ^
+      | auto               -> long
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:354:3: warning: no header providing "SYSTEM_INFO" is directly included [misc-include-cleaner]
+    9 |   SYSTEM_INFO si;
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:354:15: warning: variable name 'si' is too short, expected at least 3 characters [readability-identifier-length]
+  354 |   SYSTEM_INFO si;
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:355:3: warning: no header providing "GetSystemInfo" is directly included [misc-include-cleaner]
+    9 |   GetSystemInfo(&si);
+      |   ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:356:10: warning: narrowing conversion from 'DWORD' (aka 'unsigned long') to signed type 'long' is implementation-defined [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions]
+  356 |   return si.dwPageSize;
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:373:24: warning: no header providing "size_t" is directly included [misc-include-cleaner]
+    9 | void file_buffer::grow(size_t) {
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:373:30: warning: all parameters should be named in a function [hicpp-named-parameter,readability-named-parameter]
+  373 | void file_buffer::grow(size_t) {
+      |                              ^
+      |                               /*capacity*/
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:374:40: warning: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements]
+  374 |   if (this->size() == this->capacity()) flush();
+      |                                        ^        
+      |                                         {
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:377:14: warning: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls]
+  377 | file_buffer::file_buffer(cstring_view path,
+      |              ^
+D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include\fmt/core.h:809:26: note: default parameter was declared here
+  809 |   FMT_CONSTEXPR20 buffer(T* p = nullptr, size_t sz = 0, size_t cap = 0) noexcept
+      |                          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:380:7: warning: initializing non-owner argument of type 'char *' with a newly created 'gsl::owner<>' [cppcoreguidelines-owning-memory]
+  380 |   set(new char[params.buffer_size], params.buffer_size);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:383:14: warning: move constructors should be marked noexcept [cppcoreguidelines-noexcept-move-operations,hicpp-noexcept-move,performance-noexcept-move-constructor]
+  384 | file_buffer::file_buffer(file_buffer&& other)
+      |              ^
+  385 |     : detail::buffer<char>(other.data(), other.size(), other.capacity()),
+      |  noexcept 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:384:15: warning: no header providing "fmt::detail::buffer" is directly included [misc-include-cleaner]
+    9 |     : detail::buffer<char>(other.data(), other.size(), other.capacity()),
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:385:18: warning: no header providing "std::move" is directly included [misc-include-cleaner]
+    9 |       file_(std::move(other.file_)) {
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:390:14: warning: an exception may be thrown in function '~file_buffer' which should not throw exceptions [bugprone-exception-escape]
+  390 | file_buffer::~file_buffer() {
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc:398:1: warning: no header providing "FMT_END_NAMESPACE" is directly included [misc-include-cleaner]
+    9 | FMT_END_NAMESPACE
+      | ^
 
 
 
+178695 warnings and 3 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\os.cc.
+Suppressed 178421 warnings (178421 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

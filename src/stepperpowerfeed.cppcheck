@@ -12,8 +12,11 @@
         <path name="lib/"/>
         <path name="managed_components/"/>
         <path name="C:/Users/chris/.espressif/"/>
-        <path name="C:/Users/chris/esp/"/>
+        <path name="C:/Users/chris/esp/*"/>
     </exclude>
+    <libraries>
+        <library>gnu</library>
+    </libraries>
     <safe-checks>
         <class-public/>
     </safe-checks>

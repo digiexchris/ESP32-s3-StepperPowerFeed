@@ -3,9 +3,9 @@
 #include "StepperMotorEncoder.h"
 #include "RMTStepper.h"
 #include <task.hpp>
-#include <cmath>
-#include <exception>
-#include <memory>
+// #include <cmath>
+// #include <exception>
+// #include <memory>
 #include <condition_variable>
 //#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 
@@ -22,9 +22,9 @@ RMTStepper::RMTStepper(
         gpio_num_t aDirPin, 
         gpio_num_t anEnPin, 
         uint8_t aCWDir = 0,
-        uint8_t anEnableLevel = 1, 
-        uint32_t aResolution = 10000000,
-        uint32_t aMaxStepperFreq = 200000
+        uint8_t anEnableLevel, 
+        uint32_t aResolution,
+        uint32_t aMaxStepperFreq
     ) : myStepPin(aStepPin),
         myDirPin(aDirPin),
         myEnPin(anEnPin),
@@ -44,7 +44,7 @@ RMTStepper::RMTStepper(
         myUniformQueue(0)
 {
     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
-    gpio_config_t en_dir_gpio_config = {
+    const gpio_config_t en_dir_gpio_config = {
         .pin_bit_mask = 1ULL << myDirPin | 1ULL << myEnPin,
         .mode = GPIO_MODE_OUTPUT,
         .intr_type = GPIO_INTR_DISABLE,
@@ -132,13 +132,38 @@ RMTStepper::RMTStepper(
 
     std::mutex m;
     std::condition_variable cv;
-
+//todo I THINK this is how we start the move
+/**
+ * 1: set the encoder to accel_encoder
+ * 2: queue up accel moves
+ * 3: start the accel move task
+ * 4: wait for the accel move task to finish
+ * 5: set the encoder to uniform_encoder
+ * 6: queue up uniform moves
+ * 7: start the uniform move task
+ * 8: wait for the uniform move task to finish
+ * 9: set the encoder to decel_encoder
+ * 10: queue up decel moves
+ * 11: start the decel move task
+ * 12: wait for the decel move task to finish
+ * 
+ * In any of the queue moves logic, if QueueMove returns a non-zero value, 
+ * then we need to queue up the remaining steps in a loop
+ * after we start the task. We probably need to check if the queue is empty when
+ * we first wait on the task, because if it's empty then we don't need to wait. 
+ * Also if it wasn't empty, but got sent before we got to the wait, don't need
+ * to wait either.
+ * 
+ * So, this shouldn't be in the constructor, but in a Move() or MoveContinuous() function.
+ * 
+ * Stop can simply delete the encoder (which should stop the task, and reset the queue via the Encoder::DelFn)
+*/
     myRmt->set_encoder(std::move(uniform_encoder));
 
     espp::Task uniformQueueTask = espp::Task(espp::Task::SimpleConfig{
         .name = "RMTSendUniformQueueStepsTask",
         .callback = [&]() -> bool {
-            return SendUniformQueuedSteps(myUniformQueueMutex, myUniformQueueCV);
+            return SendUniformQueuedSteps();
         },
         .stack_size_bytes = 4096,
         .priority = 1,
@@ -150,87 +175,67 @@ RMTStepper::RMTStepper(
 /**
  * @brief send all queued steps, one step at a time, and waiting before hand to allow
  * another thread to insert more steps into the queue, or to cancel the queue.
+ * at rest, this task is not running.
+ * @return true if the queue is empty, false if the queue is not empty.
 */
-bool RMTStepper::SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv) {
-    
-    std::unique_lock<std::mutex> lk(m);
-    if(myUniformQueue > 0) {
-        
-        //wait for the time between pulses (maybe)
-        std::cv_status status = cv.wait_for(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq / 2));
-
-        //if notimeout, it means we're shutting down, so cancel all this.
-        //eg if we've immediately switched from uniform to decel phase while
-        //there is still steps in the queue (stop the power feed, etc)
-        switch(status) {
-            case std::cv_status::no_timeout:
-                myUniformQueue = 0;
-                return true;
-            default:
-                break;
-        }
-
+bool RMTStepper::SendUniformQueuedSteps() {
+    if(myUniformQueue > 0 || myUniformQueue < 0) {
+        std::unique_lock<std::mutex> lk(myUniformQueueMutex);
+        myUniformQueueCV.wait(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq));
         const uint8_t data[] = {1};
 
         myRmt->transmit(data, sizeof(data));
-        myUniformQueue--;
         if(myUniformQueue > 0) {
+            myUniformQueue--;
+        }
+        else {
+            myUniformQueue++;
+        }
+        lk.unlock();
+        myUniformQueueCV.notify_one(); 
+
+        if(myUniformQueue > 0 || myUniformQueue < 0) {
             return false;
         }
+
+        return true;
     }
 
     return true;
 }
       
-
+//todo probably not required.
 void RMTStepper::SetDirection(uint8_t aDirection) {
         //use the FSM to coordinate this properly. Shouldn't reverse if not stopped first.
+        //probably not required because queuemove allows negative moves.
         myDirection = aDirection;
         ESP_LOGI(TAG, "Set spin direction");
         gpio_set_level(myDirPin, myDirection);
     }
 
-void RMTStepper::Move(uint64_t aStepsToMove) {
-    //if this is < current position, use the FSM to reverse it.
-    //calculate number of required samples for acceleration
-    //currently is just from 0 speed to target and back to zero.
-    //make it go to a new target speed instead of 0
+size_t RMTStepper::QueueMove(int8_t aStepsToMove) {
+
+    //TODO this is assuming NO acceleration at the moment. It will naievely queue up all steps as uniform steps.
+    //TODO make this calculate the number of acceleration steps required based on current speed, and the number of
+    //deceleration steps required at the end.
+
+    std::unique_lock<std::mutex> lk(myUniformQueueMutex);
+    myUniformQueueCV.wait(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq));
     
-    // const static uint32_t accel_samples = 500;
-    // const static uint32_t uniform_speed_hz = 1500; //eg steps per second
-    // const static uint32_t decel_samples = 500;
+    auto m = std::lock_guard(myUniformQueueMutex);
 
-    int i = 0;
-    while (1) {
-        if(i == 0) {
-            i = 1;
-        } else {
-            i = 0;
-        }
-        ESP_LOGI(TAG, "Enable step motor");
-        gpio_set_level(myEnPin, myEnableLevel);
-        gpio_set_level(myDirPin, i);
-        vTaskDelay(pdMS_TO_TICKS(50));
-        // acceleration phase
-        myTxConfig.loop_count = 0;
-        // ESP_ERROR_CHECK(rmt_transmit(myMotorChan, myAccelEncoder, &accel_samples, sizeof(accel_samples), &myTxConfig));
+    int16_t sum = myUniformQueue + aStepsToMove;
+    int8_t overflow = 0;
 
-        // // uniform phase
-        // myTxConfig.loop_count = 5000;
-        // ESP_ERROR_CHECK(rmt_transmit(myMotorChan, myUniformEncoder, &uniform_speed_hz, sizeof(uniform_speed_hz), &myTxConfig));
-
-        // // deceleration phase
-        // myTxConfig.loop_count = 0;
-        // ESP_ERROR_CHECK(rmt_transmit(myMotorChan, myDecelEncoder, &decel_samples, sizeof(decel_samples), &myTxConfig));
-        // // wait all transactions finished
-        // ESP_ERROR_CHECK(rmt_tx_wait_all_done(myMotorChan, -1));
-
-        ESP_LOGI(TAG, "Disable step motor");
-        gpio_set_level(myEnPin, !myEnableLevel);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+    if (sum > INT8_MAX) {
+        overflow = sum - INT8_MAX;
+        myUniformQueue = INT8_MAX;
+    } else if (sum < INT8_MIN) {
+        overflow = sum - INT8_MIN;
+        myUniformQueue = INT8_MIN;
     }
 
-    // Accelerate(#);
-    // MoveUniformSteps(#);
-    // Decelerate(#);
+    lk.unlock();
+    myUniformQueueCV.notify_one();
+    return overflow;
 }

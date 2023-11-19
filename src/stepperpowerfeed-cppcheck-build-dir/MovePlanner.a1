@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="16402118489062604742">
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+<analyzerinfo hash="11665501735432223612">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdint&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdint&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="D:\Machining-tools\StepperPowerFeed\src\components\MovePlanner\MovePlanner.cpp" line="2" column="0"/>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
@@ -25,7 +25,6 @@
     <functiondecl functionName="CalculateSamples" lineNumber="7"/>
     <functioncall functionName="GenericException"/>
     <functioncall functionName="abs"/>
-    <functioncall functionName="c_str"/>
     <functioncall functionName="pow"/>
     <functioncall functionName="round"/>
     <functioncall functionName="uint16_t"/>

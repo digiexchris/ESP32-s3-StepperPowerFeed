@@ -1,3 +1,935 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:25:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   25 | int clock_settime(clockid_t clock_id, const struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:26:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   26 | int clock_gettime(clockid_t clock_id, struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:27:18: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   27 | int clock_getres(clockid_t clock_id, struct timespec *res);
+      |                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/xtensa/esp32s3/include\xtensa/config/core.h:44:10: error: '../hal.h' file not found [clang-diagnostic-error]
+   44 | #include "../hal.h"
+      |          ^~~~~~~~~~
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:142:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:142:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:160:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:160:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:172:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:172:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:6:1: warning: included header cmath is not used directly [misc-include-cleaner]
+    6 | #include <cmath>
+      | ^~~~~~~~~~~~~~~~
+    7 | #include <exception>
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:7:1: warning: included header exception is not used directly [misc-include-cleaner]
+    7 | #include <exception>
+      | ^~~~~~~~~~~~~~~~~~~~
+    8 | #include <memory>
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:12:25: warning: variable 'TAG' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables]
+   12 | const char* RMTStepper::TAG = "RMTStepper";
+      |                         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:20:1: warning: constructor does not initialize these fields: myFullSpeedAccelerationSteps, myFullSpeedDecelerationSteps, myMotorChan, myTxChanConfig, myTxConfig, myAccelSamples, myUniformSpeedHz, myDecelSamples [cppcoreguidelines-pro-type-member-init,hicpp-member-init]
+   20 | RMTStepper::RMTStepper(
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:20:13: warning: function 'RMTStepper' has cognitive complexity of 33 (threshold 25) [readability-function-cognitive-complexity]
+   20 | RMTStepper::RMTStepper(
+      |             ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +1, nesting level increased to 3
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +1, nesting level increased to 3
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +1, nesting level increased to 3
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: note: +1, nesting level increased to 3
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:53:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   53 |     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+      |     ^
+C:/Users/chris/esp/esp-idf/components/esp_common/include\esp_err.h:116:28: note: expanded from macro 'ESP_ERROR_CHECK'
+  116 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:53:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   53 |     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+      |     ^
+C:/Users/chris/esp/esp-idf/components/esp_common/include\esp_err.h:118:9: note: expanded from macro 'ESP_ERROR_CHECK'
+  118 |         if (unlikely(err_rc_ != ESP_OK)) {                              \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +1, nesting level increased to 3
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +1, nesting level increased to 3
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +1, nesting level increased to 3
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: note: +1, nesting level increased to 3
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +1, nesting level increased to 3
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +1, nesting level increased to 3
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +1, nesting level increased to 3
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: note: +1, nesting level increased to 3
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:140:21: note: nesting level increased to 1
+  140 |         .callback = [&]() -> bool {
+      |                     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:21:9: warning: 3 adjacent parameters of 'RMTStepper' of similar type ('gpio_num_t') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+   21 |         gpio_num_t aStepPin, 
+      |         ^~~~~~~~~~~~~~~~~~~~
+   22 |         gpio_num_t aDirPin, 
+      |         ~~~~~~~~~~~~~~~~~~~
+   23 |         gpio_num_t anEnPin, 
+      |         ~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:21:20: note: the first parameter in the range is 'aStepPin'
+   21 |         gpio_num_t aStepPin, 
+      |                    ^~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:23:20: note: the last parameter in the range is 'anEnPin'
+   23 |         gpio_num_t anEnPin, 
+      |                    ^~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:21:9: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    4 |         gpio_num_t aStepPin, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:22:9: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    4 |         gpio_num_t aDirPin, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:23:9: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    4 |         gpio_num_t anEnPin, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:24:9: warning: 4 adjacent parameters of 'RMTStepper' of convertible types are easily swapped by mistake [bugprone-easily-swappable-parameters]
+   24 |         uint8_t aCWDir = 0,
+      |         ^~~~~~~~~~~~~~~~~~~
+   25 |         uint8_t anEnableLevel = 1, 
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+   26 |         uint32_t aResolution = 10000000,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   27 |         uint32_t aMaxStepperFreq = 200000
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:24:17: note: the first parameter in the range is 'aCWDir'
+   24 |         uint8_t aCWDir = 0,
+      |                 ^~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:27:18: note: the last parameter in the range is 'aMaxStepperFreq'
+   27 |         uint32_t aMaxStepperFreq = 200000
+      |                  ^~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:24:9: note: 
+   24 |         uint8_t aCWDir = 0,
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:26:9: note: 'uint8_t' and 'uint32_t' may be implicitly converted: 'uint8_t' (as 'unsigned char') -> 'uint32_t' (as 'unsigned int'), 'uint32_t' (as 'unsigned int') -> 'uint8_t' (as 'unsigned char')
+   26 |         uint32_t aResolution = 10000000,
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:24:9: warning: declaring a parameter with a default argument is disallowed [fuchsia-default-arguments-declarations]
+   24 |         uint8_t aCWDir = 0,
+      |         ^              ~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:24:9: warning: no header providing "uint8_t" is directly included [misc-include-cleaner]
+    5 |         uint8_t aCWDir = 0,
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:25:9: warning: declaring a parameter with a default argument is disallowed [fuchsia-default-arguments-declarations]
+   25 |         uint8_t anEnableLevel = 1, 
+      |         ^                     ~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:25:9: warning: no header providing "uint8_t" is directly included [misc-include-cleaner]
+    5 |         uint8_t anEnableLevel = 1, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:26:9: warning: declaring a parameter with a default argument is disallowed [fuchsia-default-arguments-declarations]
+   26 |         uint32_t aResolution = 10000000,
+      |         ^                    ~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:26:9: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    5 |         uint32_t aResolution = 10000000,
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:26:32: warning: 10000000 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   26 |         uint32_t aResolution = 10000000,
+      |                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:27:9: warning: declaring a parameter with a default argument is disallowed [fuchsia-default-arguments-declarations]
+   27 |         uint32_t aMaxStepperFreq = 200000
+      |         ^                        ~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:27:9: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    5 |         uint32_t aMaxStepperFreq = 200000
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:27:36: warning: 200000 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   27 |         uint32_t aMaxStepperFreq = 200000
+      |                                    ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:32:18: warning: implicit conversion bool -> 'uint8_t' (aka 'unsigned char') [readability-implicit-bool-conversion]
+   32 |         myCCWDir(!aCWDir),
+      |                  ^      
+      |                  static_cast<uint8_t>( )
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:32:19: warning: implicit conversion 'uint8_t' (aka 'unsigned char') -> bool [readability-implicit-bool-conversion]
+   32 |         myCCWDir(!aCWDir),
+      |                  ~^     
+      |                          == 0u
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:46:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   46 |     ESP_LOGI(TAG, "Initialize EN + DIR GPIO");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:47:5: warning: variable 'en_dir_gpio_config' of type 'gpio_config_t' can be declared 'const' [misc-const-correctness]
+   47 |     gpio_config_t en_dir_gpio_config = {
+      |     ^
+      |                   const 
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:48:33: warning: use of a signed integer operand with a binary bitwise operator [hicpp-signed-bitwise]
+   48 |         .pin_bit_mask = 1ULL << myDirPin | 1ULL << myEnPin,
+      |                              ~~ ^~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:48:52: warning: use of a signed integer operand with a binary bitwise operator [hicpp-signed-bitwise]
+   48 |         .pin_bit_mask = 1ULL << myDirPin | 1ULL << myEnPin,
+      |                                                 ~~ ^~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:49:17: warning: no header providing "GPIO_MODE_OUTPUT" is directly included [misc-include-cleaner]
+    4 |         .mode = GPIO_MODE_OUTPUT,
+      |                 ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:50:22: warning: no header providing "GPIO_INTR_DISABLE" is directly included [misc-include-cleaner]
+    4 |         .intr_type = GPIO_INTR_DISABLE,
+      |                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:53:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   53 |     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+      |     ^
+C:/Users/chris/esp/esp-idf/components/esp_common/include\esp_err.h:116:28: note: expanded from macro 'ESP_ERROR_CHECK'
+  116 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:53:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   53 |     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+      |     ^
+C:/Users/chris/esp/esp-idf/components/esp_common/include\esp_err.h:116:28: note: expanded from macro 'ESP_ERROR_CHECK'
+  116 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:53:5: warning: variable 'err_rc_' of type 'esp_err_t' (aka 'int') can be declared 'const' [misc-const-correctness]
+   53 |     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+      |     ^
+C:/Users/chris/esp/esp-idf/components/esp_common/include\esp_err.h:117:9: note: expanded from macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:53:5: warning: no header providing "ESP_ERROR_CHECK" is directly included [misc-include-cleaner]
+    2 |     ESP_ERROR_CHECK(gpio_config(&en_dir_gpio_config));
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:66:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   66 |     ESP_LOGI(TAG, "Set spin direction");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:68:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   68 |     ESP_LOGI(TAG, "Disable step motor");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:69:29: warning: implicit conversion bool -> 'uint32_t' (aka 'unsigned int') [readability-implicit-bool-conversion]
+   69 |     gpio_set_level(myEnPin, !myEnableLevel);
+      |                             ^             
+      |                             static_cast<uint32_t>( )
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:69:30: warning: implicit conversion 'uint8_t' (aka 'unsigned char') -> bool [readability-implicit-bool-conversion]
+   69 |     gpio_set_level(myEnPin, !myEnableLevel);
+      |                             ~^            
+      |                                            == 0u
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:107:36: warning: no header providing "espp::Rmt" is directly included [misc-include-cleaner]
+    4 |     myRmt = std::make_unique<espp::Rmt>(espp::Rmt::Config{
+      |                                    ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:107:47: warning: no header providing "espp::Rmt" is directly included [misc-include-cleaner]
+    4 |     myRmt = std::make_unique<espp::Rmt>(espp::Rmt::Config{
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:110:28: warning: no header providing "espp::Logger" is directly included [misc-include-cleaner]
+    4 |         .log_level = espp::Logger::Verbosity::INFO,
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:110:47: warning: no header providing "espp::Logger::Verbosity::INFO" is directly included [misc-include-cleaner]
+    4 |         .log_level = espp::Logger::Verbosity::INFO,
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:113:51: warning: no header providing "espp::RmtEncoder" is directly included [misc-include-cleaner]
+    4 |     auto uniform_encoder = std::make_unique<espp::RmtEncoder>(espp::RmtEncoder::Config{
+      |                                                   ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:118:46: warning: consider replacing 'unsigned short' with 'uint16' [google-runtime-int]
+  118 |                     .duration0 = static_cast<unsigned short>(myResolution / myMaxStepperFreq / 2),
+      |                                              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:133:5: warning: variable 'm' of type 'std::mutex' can be declared 'const' [misc-const-correctness]
+  133 |     std::mutex m;
+      |     ^
+      |                const 
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:133:10: warning: no header providing "std::mutex" is directly included [misc-include-cleaner]
+    5 |     std::mutex m;
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:133:16: warning: variable name 'm' is too short, expected at least 3 characters [readability-identifier-length]
+  133 |     std::mutex m;
+      |                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:134:5: warning: variable 'cv' of type 'std::condition_variable' can be declared 'const' [misc-const-correctness]
+  134 |     std::condition_variable cv;
+      |     ^
+      |                             const 
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:134:29: warning: variable name 'cv' is too short, expected at least 3 characters [readability-identifier-length]
+  134 |     std::condition_variable cv;
+      |                             ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:138:5: warning: use auto when initializing with a cast to avoid duplicating the type name [hicpp-use-auto,modernize-use-auto]
+  138 |     espp::Task uniformQueueTask = espp::Task(espp::Task::SimpleConfig{
+      |     ^~~~~~~~~~
+      |     auto
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:143:29: warning: 4096 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+  143 |         .stack_size_bytes = 4096,
+      |                             ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:145:28: warning: no header providing "espp::Logger" is directly included [misc-include-cleaner]
+    4 |         .log_level = espp::Logger::Verbosity::WARN,
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:145:47: warning: no header providing "espp::Logger::Verbosity::WARN" is directly included [misc-include-cleaner]
+    4 |         .log_level = espp::Logger::Verbosity::WARN,
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:155:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  155 | bool RMTStepper::SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv) {
+      | ~~~~             ^
+      | auto                                                                                -> bool
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:155:46: warning: no header providing "std::mutex" is directly included [misc-include-cleaner]
+    5 | bool RMTStepper::SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv) {
+      |                                              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:155:53: warning: parameter name 'm' is too short, expected at least 3 characters [readability-identifier-length]
+  155 | bool RMTStepper::SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv) {
+      |                                                     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:155:81: warning: parameter name 'cv' is too short, expected at least 3 characters [readability-identifier-length]
+  155 | bool RMTStepper::SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv) {
+      |                                                                                 ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:157:5: warning: variable 'lk' of type 'std::unique_lock<std::mutex>' can be declared 'const' [misc-const-correctness]
+  157 |     std::unique_lock<std::mutex> lk(m);
+      |     ^
+      |                                  const 
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:157:10: warning: no header providing "std::unique_lock" is directly included [misc-include-cleaner]
+    5 |     std::unique_lock<std::mutex> lk(m);
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:157:27: warning: no header providing "std::mutex" is directly included [misc-include-cleaner]
+    5 |     std::unique_lock<std::mutex> lk(m);
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:157:34: warning: variable name 'lk' is too short, expected at least 3 characters [readability-identifier-length]
+  157 |     std::unique_lock<std::mutex> lk(m);
+      |                                  ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:161:24: warning: variable 'status' is not initialized [cppcoreguidelines-init-variables]
+  161 |         std::cv_status status = cv.wait_for(lk, static_cast<std::chrono::microseconds>(myResolution / myMaxStepperFreq / 2));
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:174:15: warning: do not declare C-style arrays, use std::array<> instead [cppcoreguidelines-avoid-c-arrays,hicpp-avoid-c-arrays,modernize-avoid-c-arrays]
+  174 |         const uint8_t data[] = {1};
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:174:15: warning: no header providing "uint8_t" is directly included [misc-include-cleaner]
+    5 |         const uint8_t data[] = {1};
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:176:25: warning: do not implicitly decay an array into a pointer; consider using gsl::array_view or an explicit cast instead [cppcoreguidelines-pro-bounds-array-to-pointer-decay,hicpp-no-array-decay]
+  176 |         myRmt->transmit(data, sizeof(data));
+      |                         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:187:31: warning: no header providing "uint8_t" is directly included [misc-include-cleaner]
+    5 | void RMTStepper::SetDirection(uint8_t aDirection) {
+      |                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:190:9: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+  190 |         ESP_LOGI(TAG, "Set spin direction");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:190:9: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+  190 |         ESP_LOGI(TAG, "Set spin direction");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:190:9: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+  190 |         ESP_LOGI(TAG, "Set spin direction");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:194:18: warning: function 'Move' has cognitive complexity of 30 (threshold 25) [readability-function-cognitive-complexity]
+  194 | void RMTStepper::Move(uint64_t aStepsToMove) {
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:205:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  205 |     while (1) {
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:206:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  206 |         if(i == 0) {
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:208:11: note: +1, nesting level increased to 2
+  208 |         } else {
+      |           ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +3, including nesting penalty of 2, nesting level increased to 3
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +4, including nesting penalty of 3, nesting level increased to 4
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +1, nesting level increased to 4
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +1, nesting level increased to 4
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +1, nesting level increased to 4
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: note: +1, nesting level increased to 4
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +3, including nesting penalty of 2, nesting level increased to 3
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +4, including nesting penalty of 3, nesting level increased to 4
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +1, nesting level increased to 4
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +1, nesting level increased to 4
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +1, nesting level increased to 4
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: note: +1, nesting level increased to 4
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:194:23: warning: no header providing "uint64_t" is directly included [misc-include-cleaner]
+    5 | void RMTStepper::Move(uint64_t aStepsToMove) {
+      |                       ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:194:32: warning: parameter 'aStepsToMove' is unused [misc-unused-parameters]
+  194 | void RMTStepper::Move(uint64_t aStepsToMove) {
+      |                                ^~~~~~~~~~~~
+      |                                 /*aStepsToMove*/
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:204:9: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+  204 |     int i = 0;
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:205:12: warning: converting integer literal to bool, use bool literal instead [modernize-use-bool-literals]
+  205 |     while (1) {
+      |            ^
+note: this fix will not be applied because it overlaps with another fix
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:205:12: warning: implicit conversion 'int' -> bool [readability-implicit-bool-conversion]
+note: this fix will not be applied because it overlaps with another fix
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:211:9: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+  211 |         ESP_LOGI(TAG, "Enable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:214:20: warning: no header providing "pdMS_TO_TICKS" is directly included [misc-include-cleaner]
+    4 |         vTaskDelay(pdMS_TO_TICKS(50));
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:228:9: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+  228 |         ESP_LOGI(TAG, "Disable step motor");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:229:33: warning: implicit conversion bool -> 'uint32_t' (aka 'unsigned int') [readability-implicit-bool-conversion]
+  229 |         gpio_set_level(myEnPin, !myEnableLevel);
+      |                                 ^             
+      |                                 static_cast<uint32_t>( )
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:229:34: warning: implicit conversion 'uint8_t' (aka 'unsigned char') -> bool [readability-implicit-bool-conversion]
+  229 |         gpio_set_level(myEnPin, !myEnableLevel);
+      |                                 ~^            
+      |                                                == 0u
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp:230:20: warning: no header providing "pdMS_TO_TICKS" is directly included [misc-include-cleaner]
+    4 |         vTaskDelay(pdMS_TO_TICKS(1000));
+      |                    ^
 
 
 
+214264 warnings and 11 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.cpp.
+Suppressed 214094 warnings (214094 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

@@ -1,3 +1,21 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+D:\Machining-tools\StepperPowerFeed\src\components\MovePlanner\MovePlanner.cpp:4:1: warning: included header Exception.h is not used directly [misc-include-cleaner]
+    4 | #include "Exception.h"
+      | ^~~~~~~~~~~~~~~~~~~~~~
+    5 | #include "MovePlanner.h"
+D:\Machining-tools\StepperPowerFeed\src\components\MovePlanner\MovePlanner.cpp:7:23: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | uint16_t MovePlanner::CalculateSamples(
+      | ~~~~~~~~              ^
+      | auto
+    8 |     uint32_t anInitialSpeed, 
+    9 |     uint32_t aTargetSpeed, 
+   10 |     uint32_t aRate
+   11 | ) {
+      |   -> uint16_t
 
 
 
+50137 warnings generated.
+Suppressed 50131 warnings (50131 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

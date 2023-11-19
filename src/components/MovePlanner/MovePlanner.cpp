@@ -1,5 +1,5 @@
 
-#include <stdint.h>
+#include <cstdint>
 #include <cmath>
 #include "Exception.h"
 #include "MovePlanner.h"

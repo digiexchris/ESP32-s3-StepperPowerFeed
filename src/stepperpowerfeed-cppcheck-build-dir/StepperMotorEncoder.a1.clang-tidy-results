@@ -1,3 +1,190 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:142:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:142:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:160:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:160:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:172:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include\rmt_encoder.hpp:172:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:1:1: warning: included header esp_check.h is not used directly [misc-include-cleaner]
+    1 | #include "esp_check.h"
+      | ^~~~~~~~~~~~~~~~~~~~~~
+    2 | #include "StepperMotorEncoder.h"
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:4:20: warning: variable 'TAG' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables]
+    4 | static const char *TAG = "stepper_motor_encoder";
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:4:20: warning: variable 'TAG' declared 'static', move to anonymous namespace instead [misc-use-anonymous-namespace]
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:6:14: warning: function 'convert_to_smooth_freq' declared 'static', move to anonymous namespace instead [misc-use-anonymous-namespace]
+    6 | static float convert_to_smooth_freq(uint32_t freq1, uint32_t freq2, uint32_t freqx)
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:6:14: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    6 | static float convert_to_smooth_freq(uint32_t freq1, uint32_t freq2, uint32_t freqx)
+      |        ~~~~~ ^                                                                     
+      |        auto                                                                         -> float
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:6:37: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | #include "StepperMotorEncoder.h"
+    3 | 
+    4 | static const char *TAG = "stepper_motor_encoder";
+    5 | 
+    6 | static float convert_to_smooth_freq(uint32_t freq1, uint32_t freq2, uint32_t freqx)
+      |                                     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:6:53: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | #include "StepperMotorEncoder.h"
+    3 | 
+    4 | static const char *TAG = "stepper_motor_encoder";
+    5 | 
+    6 | static float convert_to_smooth_freq(uint32_t freq1, uint32_t freq2, uint32_t freqx)
+      |                                                     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:6:69: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | #include "StepperMotorEncoder.h"
+    3 | 
+    4 | static const char *TAG = "stepper_motor_encoder";
+    5 | 
+    6 | static float convert_to_smooth_freq(uint32_t freq1, uint32_t freq2, uint32_t freqx)
+      |                                                                     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:8:5: warning: variable 'normalize_x' of type 'float' can be declared 'const' [misc-const-correctness]
+    8 |     float normalize_x = ((float)(freqx - freq1)) / (freq2 - freq1);
+      |     ^
+      |           const 
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:8:26: warning: C-style casts are discouraged; use static_cast [google-readability-casting]
+    8 |     float normalize_x = ((float)(freqx - freq1)) / (freq2 - freq1);
+      |                          ^~~~~~~
+      |                          static_cast<float>
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:8:52: warning: narrowing conversion from 'uint32_t' (aka 'unsigned int') to 'float' [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions]
+    8 |     float normalize_x = ((float)(freqx - freq1)) / (freq2 - freq1);
+      |                                                    ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:10:5: warning: variable 'smooth_x' of type 'float' can be declared 'const' [misc-const-correctness]
+   10 |     float smooth_x = normalize_x * normalize_x * (3 - 2 * normalize_x);
+      |     ^
+      |           const 
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:11:23: warning: narrowing conversion from 'uint32_t' (aka 'unsigned int') to 'float' [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions]
+   11 |     return smooth_x * (freq2 - freq1) + freq1;
+      |                       ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:11:41: warning: narrowing conversion from 'uint32_t' (aka 'unsigned int') to 'float' [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions]
+   11 |     return smooth_x * (freq2 - freq1) + freq1;
+      |                                         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:122:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  122 | typedef struct {
+      | ^~~~~~~~~~~~~~~~
+  123 |     rmt_encoder_t base;
+      |     ~~~~~~~~~~~~~~~~~~~
+  124 |     rmt_encoder_handle_t copy_encoder;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  125 |     uint32_t resolution;
+      |     ~~~~~~~~~~~~~~~~~~~~
+  126 | } rmt_stepper_uniform_encoder_t;
+      | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:122:9: warning: accessing fields in struct 'rmt_stepper_uniform_encoder_t' is inefficient due to padding; only needs 36 bytes but is using 40 bytes [altera-struct-pack-align]
+  122 | typedef struct {
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:122:9: note: use "__attribute__((packed))" to reduce the amount of padding applied to struct 'rmt_stepper_uniform_encoder_t'
+note: this fix will not be applied because it overlaps with another fix
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:122:9: warning: accessing fields in struct 'rmt_stepper_uniform_encoder_t' is inefficient due to poor alignment; currently aligned to 8 bytes, but recommended alignment is 64 bytes [altera-struct-pack-align]
+  122 | typedef struct {
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:122:9: note: use "__attribute__((aligned(64)))" to align struct 'rmt_stepper_uniform_encoder_t' to 64 bytes
+note: this fix will not be applied because it overlaps with another fix
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:123:5: warning: no header providing "rmt_encoder_t" is directly included [misc-include-cleaner]
+    1 |     rmt_encoder_t base;
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:124:5: warning: no header providing "rmt_encoder_handle_t" is directly included [misc-include-cleaner]
+    1 |     rmt_encoder_handle_t copy_encoder;
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:125:5: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 |     uint32_t resolution;
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:128:1: warning: no header providing "size_t" is directly included [misc-include-cleaner]
+    2 | size_t StepperMotorEncoder::EncodeFn(
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:128:29: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  128 | size_t StepperMotorEncoder::EncodeFn(
+      | ~~~~~~                      ^
+      | auto
+  129 |     rmt_channel_handle_t channel, 
+  130 |     rmt_encoder_t *copy_encoder,
+  131 |     rmt_encoder_t *bytes_encoder, 
+  132 |     const void *primary_data,
+  133 |     size_t data_size, 
+  134 |     rmt_encode_state_t *ret_state
+  135 |     )
+      |      
+      |       -> size_t
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:129:5: warning: no header providing "rmt_channel_handle_t" is directly included [misc-include-cleaner]
+    1 |     rmt_channel_handle_t channel, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:129:26: warning: parameter 'channel' is unused [misc-unused-parameters]
+  129 |     rmt_channel_handle_t channel, 
+      |                          ^~~~~~~
+      |                           /*channel*/
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:130:5: warning: 2 adjacent parameters of 'EncodeFn' of similar type ('rmt_encoder_t *') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+  130 |     rmt_encoder_t *copy_encoder,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  131 |     rmt_encoder_t *bytes_encoder, 
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:130:20: note: the first parameter in the range is 'copy_encoder'
+  130 |     rmt_encoder_t *copy_encoder,
+      |                    ^~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:131:20: note: the last parameter in the range is 'bytes_encoder'
+  131 |     rmt_encoder_t *bytes_encoder, 
+      |                    ^~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:130:5: warning: no header providing "rmt_encoder_t" is directly included [misc-include-cleaner]
+    1 |     rmt_encoder_t *copy_encoder,
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:130:20: warning: parameter 'copy_encoder' is unused [misc-unused-parameters]
+  130 |     rmt_encoder_t *copy_encoder,
+      |                    ^~~~~~~~~~~~
+      |                     /*copy_encoder*/
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:131:5: warning: no header providing "rmt_encoder_t" is directly included [misc-include-cleaner]
+    1 |     rmt_encoder_t *bytes_encoder, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:131:20: warning: parameter 'bytes_encoder' is unused [misc-unused-parameters]
+  131 |     rmt_encoder_t *bytes_encoder, 
+      |                    ^~~~~~~~~~~~~
+      |                     /*bytes_encoder*/
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:132:17: warning: parameter 'primary_data' is unused [misc-unused-parameters]
+  132 |     const void *primary_data,
+      |                 ^~~~~~~~~~~~
+      |                  /*primary_data*/
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:133:5: warning: no header providing "size_t" is directly included [misc-include-cleaner]
+    2 |     size_t data_size, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:133:12: warning: parameter 'data_size' is unused [misc-unused-parameters]
+  133 |     size_t data_size, 
+      |            ^~~~~~~~~
+      |             /*data_size*/
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:134:5: warning: no header providing "rmt_encode_state_t" is directly included [misc-include-cleaner]
+    1 |     rmt_encode_state_t *ret_state
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp:134:25: warning: parameter 'ret_state' is unused [misc-unused-parameters]
+  134 |     rmt_encode_state_t *ret_state
+      |                         ^~~~~~~~~
+      |                          /*ret_state*/
 
 
 
+53380 warnings and 6 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp.
+Suppressed 53339 warnings (53339 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

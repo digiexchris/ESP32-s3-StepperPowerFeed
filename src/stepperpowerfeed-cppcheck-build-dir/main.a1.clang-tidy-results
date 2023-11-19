@@ -1,3 +1,719 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/xtensa/esp32s3/include\xtensa/config/core.h:44:10: error: '../hal.h' file not found [clang-diagnostic-error]
+   44 | #include "../hal.h"
+      |          ^~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:1:1: warning: included header gpio_types.h is not used directly [misc-include-cleaner]
+    1 | #include <hal/gpio_types.h>
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+    2 | #include "freertos/FreeRTOS.h"
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:2:1: warning: included header FreeRTOS.h is not used directly [misc-include-cleaner]
+    2 | #include "freertos/FreeRTOS.h"
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    3 | #include "freertos/task.h"
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:3:1: warning: included header task.h is not used directly [misc-include-cleaner]
+    3 | #include "freertos/task.h"
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+    4 | #include "Stepper.h"
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:4:1: warning: included header Stepper.h is not used directly [misc-include-cleaner]
+    4 | #include "Stepper.h"
+      | ^~~~~~~~~~~~~~~~~~~~
+    5 | #include "Machine.h"
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:5:1: warning: included header Machine.h is not used directly [misc-include-cleaner]
+    5 | #include "Machine.h"
+      | ^~~~~~~~~~~~~~~~~~~~
+    6 | #include "Axis.h"
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:6:1: warning: included header Axis.h is not used directly [misc-include-cleaner]
+    6 | #include "Axis.h"
+      | ^~~~~~~~~~~~~~~~~
+    7 | #define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:10:1: warning: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace]
+   10 | using namespace StepperDriver;
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:10:17: warning: modification of 'std' namespace can result in undefined behavior [cert-dcl58-cpp]
+   10 | using namespace StepperDriver;
+      |                 ^
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\include\memory:28:1: note: 'std' namespace opened here
+   28 | _STD_BEGIN
+      | ^
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\include\yvals_core.h:1735:30: note: expanded from macro '_STD_BEGIN'
+ 1735 | #define _STD_BEGIN namespace std {
+      |                              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:12:6: warning: modification of 'std' namespace can result in undefined behavior [cert-dcl58-cpp]
+   12 | void vTaskFunction( void * pvParameters ) { 
+      |      ^
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\include\memory:28:1: note: 'std' namespace opened here
+   28 | _STD_BEGIN
+      | ^
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\include\yvals_core.h:1735:30: note: expanded from macro '_STD_BEGIN'
+ 1735 | #define _STD_BEGIN namespace std {
+      |                              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:12:28: warning: parameter 'pvParameters' is unused [misc-unused-parameters]
+   12 | void vTaskFunction( void * pvParameters ) { 
+      |                            ^~~~~~~~~~~~
+      |                             /*pvParameters*/
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:14:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   14 |     ESP_LOGI(TAG,"Starting vTask Proper");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:14:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   14 |     ESP_LOGI(TAG,"Starting vTask Proper");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:14:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   14 |     ESP_LOGI(TAG,"Starting vTask Proper");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:16:38: warning: no header providing "portTICK_PERIOD_MS" is directly included [misc-include-cleaner]
+    3 | #include "freertos/task.h"
+    4 | #include "Stepper.h"
+    5 | #include "Machine.h"
+    6 | #include "Axis.h"
+    7 | #define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
+    8 | #include <esp_log.h>
+    9 | 
+   10 | using namespace StepperDriver;
+   11 | 
+   12 | void vTaskFunction( void * pvParameters ) { 
+   13 |     const char* TAG = "vTaskFunc";
+   14 |     ESP_LOGI(TAG,"Starting vTask Proper");
+   15 |     //Block for 500ms. 
+   16 |     const TickType_t xDelay = 2500 / portTICK_PERIOD_MS; 
+      |                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:20:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   20 |     for( ;; ) 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:36:8: warning: modification of 'std' namespace can result in undefined behavior [cert-dcl58-cpp]
+   36 | extern "C" void app_main(void)
+      |        ^
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\include\memory:28:1: note: 'std' namespace opened here
+   28 | _STD_BEGIN
+      | ^
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\include\yvals_core.h:1735:30: note: expanded from macro '_STD_BEGIN'
+ 1735 | #define _STD_BEGIN namespace std {
+      |                              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:36:17: warning: function 'app_main' has cognitive complexity of 54 (threshold 25) [readability-function-cognitive-complexity]
+   36 | extern "C" void app_main(void)
+      |                 ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +1, nesting level increased to 3
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +1, nesting level increased to 3
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +1, nesting level increased to 3
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: note: +1, nesting level increased to 3
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +1, nesting level increased to 3
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +1, nesting level increased to 3
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +1, nesting level increased to 3
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: note: +1, nesting level increased to 3
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +1, nesting level increased to 3
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +1, nesting level increased to 3
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +1, nesting level increased to 3
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: note: +1, nesting level increased to 3
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:59:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   59 |     for(;;) {
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +3, including nesting penalty of 2, nesting level increased to 3
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +4, including nesting penalty of 3, nesting level increased to 4
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +1, nesting level increased to 4
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +1, nesting level increased to 4
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +1, nesting level increased to 4
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: note: +1, nesting level increased to 4
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +3, including nesting penalty of 2, nesting level increased to 3
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +1, nesting level increased to 3
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:393:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  393 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +1, nesting level increased to 3
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:394:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  394 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +1, nesting level increased to 3
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:395:14: note: expanded from macro 'ESP_LOG_LEVEL'
+  395 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: note: +1, nesting level increased to 3
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:396:9: note: expanded from macro 'ESP_LOG_LEVEL'
+  396 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:39:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   39 |     ESP_LOGI(TAG,"Starting");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:41:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   41 |     ESP_LOGI(TAG,"Init Machine");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:43:17: warning: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls]
+   43 |     Axis axis = machine->AddAxis(
+      |                 ^
+D:\Machining-tools\StepperPowerFeed\src\main/Machine.h:41:9: note: default parameter was declared here
+   41 |         uint32_t rmtResolutionHz = 10000000 //10MHz
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:49:9: warning: 1000000 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   49 |         1000000, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:52:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   52 |     ESP_LOGI(TAG,"Created Axis");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:57:38: warning: no header providing "portTICK_PERIOD_MS" is directly included [misc-include-cleaner]
+    3 |     const TickType_t xDelay = 2500 / portTICK_PERIOD_MS;
+      |                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:60:9: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   60 |         ESP_LOGI(TAG,"Moving 1000");
+      |         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:61:36: warning: 1000 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   61 |         axis.stepper->MoveDistance(1000);
+      |                                    ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:391:48: note: expanded from macro 'ESP_LOG_LEVEL'
+  391 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: warning: avoid do-while loops [cppcoreguidelines-avoid-do-while]
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:431:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  431 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:65:5: warning: do not call c-style vararg functions [cppcoreguidelines-pro-type-vararg,hicpp-vararg]
+   65 |     ESP_LOGI(TAG,"Starting Task");
+      |     ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:336:38: note: expanded from macro 'ESP_LOGI'
+  336 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format __VA_OPT__(,) __VA_ARGS__)
+      |                                      ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:432:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^
+C:/Users/chris/esp/esp-idf/components/log/include\esp_log.h:392:47: note: expanded from macro 'ESP_LOG_LEVEL'
+  392 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag __VA_OPT__(,) __VA_ARGS__); } \
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:66:47: warning: 8000 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   66 |     xTaskCreate(&vTaskFunction, "hello_task", 8000, NULL, 5, NULL);
+      |                                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:66:53: warning: use nullptr [hicpp-use-nullptr,modernize-use-nullptr]
+   66 |     xTaskCreate(&vTaskFunction, "hello_task", 8000, NULL, 5, NULL);
+      |                                                     ^~~~
+      |                                                     nullptr
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:66:53: warning: no header providing "NULL" is directly included [misc-include-cleaner]
+    1 |     xTaskCreate(&vTaskFunction, "hello_task", 8000, NULL, 5, NULL);
+      |                                                     ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:66:59: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   66 |     xTaskCreate(&vTaskFunction, "hello_task", 8000, NULL, 5, NULL);
+      |                                                           ^
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:66:62: warning: use nullptr [hicpp-use-nullptr,modernize-use-nullptr]
+   66 |     xTaskCreate(&vTaskFunction, "hello_task", 8000, NULL, 5, NULL);
+      |                                                              ^~~~
+      |                                                              nullptr
+D:\Machining-tools\StepperPowerFeed\src\main\main.cpp:66:62: warning: no header providing "NULL" is directly included [misc-include-cleaner]
+    1 |     xTaskCreate(&vTaskFunction, "hello_task", 8000, NULL, 5, NULL);
+      |                                                              ^
 
 
 
+173616 warnings and 2 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\main\main.cpp.
+Suppressed 173504 warnings (173504 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="17945482360126498427">
+<analyzerinfo hash="2340986769881291876">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="C:\Users\chris\esp\esp-idf\components\driver\gpio\include\driver\gpio.h" line="9" column="0"/>
         </error>
@@ -52,7 +52,7 @@
             <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_sys.h" line="9" column="0"/>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.h" line="8" column="0"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.h" line="3" column="0"/>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;functional&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;functional&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\rmt\include\rmt_encoder.hpp" line="3" column="0"/>
@@ -222,6 +222,9 @@
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="19" column="0"/>
         </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;condition_variable&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;condition_variable&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="15" column="0"/>
+        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="D:\Machining-tools\StepperPowerFeed\src\main\Stepper.h" line="9" column="0"/>
         </error>
@@ -232,6 +235,6 @@
             <location file="D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp" line="7" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="D:/Machining-tools/StepperPowerFeed/src/main/Stepper.cpp">
-            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="51" column="9"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="54" column="9"/>
         </error>
 </analyzerinfo>

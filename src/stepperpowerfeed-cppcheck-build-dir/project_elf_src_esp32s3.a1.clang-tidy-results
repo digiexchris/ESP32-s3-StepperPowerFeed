@@ -1,3 +1,8 @@
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+error: invalid argument '-std=c++23' not allowed with 'C' [clang-diagnostic-error]
 
 
 
+2 warnings and 1 error generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\build\project_elf_src_esp32s3.c.
+Found compiler error(s).

@@ -116,6 +116,7 @@
 			"IDF_CCACHE_ENABLE": "1",
 			"ESP_ROM_ELF_DIR": "c:\\Espressif5.1.1\\tools\\esp-rom-elfs\\20230320/"
 		},
-		"idf.gitPathWin": "c:\\Espressif5.1.1\\tools\\idf-git\\2.39.2\\cmd\\git.exe"
+		"idf.gitPathWin": "c:\\Espressif5.1.1\\tools\\idf-git\\2.39.2\\cmd\\git.exe",
+		"C_Cpp.codeAnalysis.clangTidy.codeAction.formatFixes": false
 	}
 }

@@ -1,3 +1,314 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:25:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   25 | int clock_settime(clockid_t clock_id, const struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:26:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   26 | int clock_gettime(clockid_t clock_id, struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:27:18: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   27 | int clock_getres(clockid_t clock_id, struct timespec *res);
+      |                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:142:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:142:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:160:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:160:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:172:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:172:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:2:1: warning: included header gpio.h is not used directly [misc-include-cleaner]
+    2 | #include <driver/gpio.h>
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+    3 | #include "esp_log.h"
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:3:1: warning: included header esp_log.h is not used directly [misc-include-cleaner]
+    3 | #include "esp_log.h"
+      | ^~~~~~~~~~~~~~~~~~~~
+    4 | #include "RMTStepper.h"
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:7:1: warning: included header memory is not used directly [misc-include-cleaner]
+    7 | #include <memory>
+      | ^~~~~~~~~~~~~~~~~
+    8 | 
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:13:9: warning: single-argument constructors must be marked explicit to avoid unintentional implicit conversions [google-explicit-constructor,hicpp-explicit-conversions]
+   13 |         InvalidStepperException(char* aMsg) {
+      |         ^
+      |         explicit 
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:14:13: warning: 'msg' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+   13 |         InvalidStepperException(char* aMsg) {
+      |                                             : msg(aMsg)
+   14 |             msg = aMsg;
+      |             ^~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:15:13: warning: deleting a pointer through a type that is not marked 'gsl::owner<>'; consider using a smart pointer instead [cppcoreguidelines-owning-memory]
+   15 |             delete(aMsg);
+      |             ^      ~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:13:33: note: variable declared here
+   13 |         InvalidStepperException(char* aMsg) {
+      |                                 ^~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:17:9: warning: function 'what' should be marked [[nodiscard]] [modernize-use-nodiscard]
+   17 |         const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
+      |         ^
+      |         [[nodiscard]] 
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:17:21: warning: annotate this function with 'override' or (rarely) 'final' [cppcoreguidelines-explicit-virtual-functions,hicpp-use-override,modernize-use-override]
+   17 |         const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
+      |                     ^
+      |                                  override
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:17:21: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   17 |         const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
+      |         ~~~~~~~~~~~ ^
+      |         auto                     -> const char*
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:17:33: error: expected ';' at end of declaration list [clang-diagnostic-error]
+   17 |         const char* what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
+      |                                 ^
+      |                                 ;
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:28:5: warning: 'level' should be initialized in an in-class default member initializer [cppcoreguidelines-prefer-member-initializer]
+   28 |     level = Level::GPIO_LOW;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:29:5: warning: 'dir' should be initialized in an in-class default member initializer [cppcoreguidelines-prefer-member-initializer]
+   29 |     dir = Direction::CW;
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:33:5: warning: 'level' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+   32 | StepperDirection::StepperDirection(Direction aDir, Level aLevel) {
+      |                                                                  : level(aLevel)
+   33 |     level = aLevel;
+      |     ^~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:34:5: warning: 'dir' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+   32 | StepperDirection::StepperDirection(Direction aDir, Level aLevel) {
+      |                                                                 , dir(aDir)
+   33 |     level = aLevel;
+   34 |     dir = aDir;
+      |     ^~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:38:1: warning: overloading 'operator==' is disallowed [fuchsia-overloaded-operator]
+   38 | bool StepperDirection::operator==(const StepperDirection &other) const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:38:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   38 | bool StepperDirection::operator==(const StepperDirection &other) const {
+      | ~~~~                   ^
+      | auto                                                                   -> bool
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:43:1: warning: overloading 'operator!=' is disallowed [fuchsia-overloaded-operator]
+   43 | bool StepperDirection::operator!=(const StepperDirection &other) const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:43:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   43 | bool StepperDirection::operator!=(const StepperDirection &other) const {
+      | ~~~~                   ^
+      | auto                                                                   -> bool
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:51:28: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | StepperDirection::operator uint32_t() {
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:52:24: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 |     return static_cast<uint32_t>(level);
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:56:1: warning: overloading 'operator==' is disallowed [fuchsia-overloaded-operator]
+   56 | bool StepperDirection::operator==(const Level &other) const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:56:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   56 | bool StepperDirection::operator==(const Level &other) const {
+      | ~~~~                   ^
+      | auto                                                        -> bool
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:61:1: warning: overloading 'operator!=' is disallowed [fuchsia-overloaded-operator]
+   61 | bool StepperDirection::operator!=(const Level &other) const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:61:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   61 | bool StepperDirection::operator!=(const Level &other) const {
+      | ~~~~                   ^
+      | auto                                                        -> bool
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:65:1: warning: overloading 'operator==' is disallowed [fuchsia-overloaded-operator]
+   65 | bool StepperDirection:: operator==(const Direction& other) const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:65:25: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   65 | bool StepperDirection:: operator==(const Direction& other) const {
+      | ~~~~                    ^
+      | auto                                                             -> bool
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:69:1: warning: overloading 'operator!=' is disallowed [fuchsia-overloaded-operator]
+   69 | bool StepperDirection::operator!=(const Direction& other) const {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:69:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   69 | bool StepperDirection::operator!=(const Direction& other) const {
+      | ~~~~                   ^
+      | auto                                                            -> bool
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:73:28: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | void Stepper::MoveDistance(uint32_t distance) {
+      |                            ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:73:37: warning: parameter 'distance' is unused [misc-unused-parameters]
+   73 | void Stepper::MoveDistance(uint32_t distance) {
+      |                                     ^~~~~~~~
+      |                                      /*distance*/
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:74:5: warning: missing username/bug in TODO [google-readability-todo]
+   74 |     //TODO turn off blocking here
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     // TODO(chris): turn off blocking here
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:76:22: warning: 1000 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+   76 |     rmtStepper->Move(1000);
+      |                      ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:87:40: warning: 2 adjacent parameters of 'SetFullSpeedAcceleration' of similar type ('uint16_t') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+   87 | void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:87:49: note: the first parameter in the range is 'anAccelStepsPerSecond'
+   87 | void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:87:80: note: the last parameter in the range is 'aDecelStepsPerSecond'
+   87 | void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
+      |                                                                                ^~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:87:40: warning: no header providing "uint16_t" is directly included [misc-include-cleaner]
+    2 | void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
+      |                                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:87:71: warning: no header providing "uint16_t" is directly included [misc-include-cleaner]
+    2 | void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
+      |                                                                       ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:95:15: warning: method 'Run' can be made static [readability-convert-member-functions-to-static]
+   95 | void Stepper::Run(Direction aDir) {
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:96:5: warning: if with identical then and else branches [bugprone-branch-clone]
+   96 |     if(aDir == Direction::CW) {
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:98:7: note: else branch starts here
+   98 |     } else {
+      |       ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:112:15: warning: method 'SetSpeed' can be made static [readability-convert-member-functions-to-static]
+  112 | void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
+      |               ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:112:24: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:112:33: warning: parameter 'aDistancePerTime' is unused [misc-unused-parameters]
+  112 | void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                  /*aDistancePerTime*/
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:114:9: warning: switch has 2 consecutive identical branches [bugprone-branch-clone]
+  114 |         case DistancePerTimeUnit::IPM:
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:120:18: note: last of these clones ends here
+  120 |             break;
+      |                  ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:134:1: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | uint32_t Stepper::PrivIPMToHz(uint32_t aIPM) {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:134:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  134 | uint32_t Stepper::PrivIPMToHz(uint32_t aIPM) {
+      | ~~~~~~~~          ^
+      | auto                                         -> uint32_t
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:134:19: warning: method 'PrivIPMToHz' can be made static [readability-convert-member-functions-to-static]
+  134 | uint32_t Stepper::PrivIPMToHz(uint32_t aIPM) {
+      |                   ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:134:31: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | uint32_t Stepper::PrivIPMToHz(uint32_t aIPM) {
+      |                               ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:135:12: warning: narrowing conversion from 'double' to 'uint32_t' (aka 'unsigned int') [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions]
+  135 |     return (aIPM * 25.4 * 60);
+      |            ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:135:20: warning: 25.4 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+  135 |     return (aIPM * 25.4 * 60);
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:135:27: warning: 60 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+  135 |     return (aIPM * 25.4 * 60);
+      |                           ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:141:1: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:141:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  141 | uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
+      | ~~~~~~~~          ^
+      | auto                                           -> uint32_t
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:141:19: warning: method 'PrivMMPMToHz' can be made static [readability-convert-member-functions-to-static]
+  141 | uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
+      |                   ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:141:32: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    2 | uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
+      |                                ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:142:21: warning: 60 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+  142 |     return (aMMPM * 60);
+      |                     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:147:1: warning: constructor does not initialize these fields: init [cppcoreguidelines-pro-type-member-init,hicpp-member-init]
+  147 | Stepper::Stepper(
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:149:5: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    5 |     gpio_num_t enPin, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:150:5: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    5 |     gpio_num_t dirPin,
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:151:5: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    5 |     gpio_num_t stepPin, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:153:5: warning: no header providing "uint16_t" is directly included [misc-include-cleaner]
+    2 |     uint16_t rmtResolutionHz, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:154:5: warning: no header providing "uint16_t" is directly included [misc-include-cleaner]
+    2 |     uint16_t aMaxStepperFreq,
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:158:5: warning: assigning newly created 'gsl::owner<>' to non-owner 'RMTStepper *' [cppcoreguidelines-owning-memory]
+  158 |     rmtStepper = new RMTStepper(
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  159 |         stepPin, 
+      |         ~~~~~~~~
+  160 |         dirPin, 
+      |         ~~~~~~~
+  161 |         enPin, 
+      |         ~~~~~~
+  162 |         startupMotorDirection, 
+      |         ~~~~~~~~~~~~~~~~~~~~~~
+  163 |         enableLevel,
+      |         ~~~~~~~~~~~~
+  164 |         rmtResolutionHz,
+      |         ~~~~~~~~~~~~~~~~
+  165 |         aMaxStepperFreq
+      |         ~~~~~~~~~~~~~~~
+  166 |     );
+      |     ~
+D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp:158:5: warning: 'rmtStepper' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+  156 |     ) : defaultMotorDirection(startupMotorDirection)
+      |                                                     
+  157 | {
+  158 |     rmtStepper = new RMTStepper(
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  159 |         stepPin, 
+      |         ~~~~~~~~
+  160 |         dirPin, 
+      |         ~~~~~~~
+  161 |         enPin, 
+      |         ~~~~~~
+  162 |         startupMotorDirection, 
+      |         ~~~~~~~~~~~~~~~~~~~~~~
+  163 |         enableLevel,
+      |         ~~~~~~~~~~~~
+  164 |         rmtResolutionHz,
+      |         ~~~~~~~~~~~~~~~~
+  165 |         aMaxStepperFreq
+      |         ~~~~~~~~~~~~~~~
+  166 |     );
+      |     ~~
 
 
 
+218033 warnings and 10 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp.
+Suppressed 217959 warnings (217959 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

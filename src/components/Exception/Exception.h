@@ -7,14 +7,14 @@ public:
     std::string msg;
     GenericException(const char* aMsg);
 
-#ifdef ESP_PLATFORM
-    virtual const char*
-    what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT override {
-#else
-        _NODISCARD char const* what() const override {
-#endif
-        return msg.c_str();
-    };
+// #ifdef ESP_PLATFORM
+//     virtual const char*
+//     what() const override {
+// #else
+//         _NODISCARD char const* what() const override {
+// #endif
+//         return msg.c_str();
+//     };
 };
 
 class NotImplementedException : GenericException {

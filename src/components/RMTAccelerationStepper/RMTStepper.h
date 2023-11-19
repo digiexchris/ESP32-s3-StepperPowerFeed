@@ -23,9 +23,9 @@ public:
         gpio_num_t aDirPin, 
         gpio_num_t anEnPin, 
         uint8_t aCWDir, 
-        uint8_t anEnableLevel,
-        uint32_t aResolution,
-        uint32_t aMaxStepperFreq
+        uint8_t anEnableLevel = 1, 
+        uint32_t aResolution = 10000000,
+        uint32_t aMaxStepperFreq = 200000
     );
     static const char *TAG;
 
@@ -42,7 +42,11 @@ public:
 
     void SetDirection(uint8_t aDirection);
 
-    void Move(uint64_t aStepsToMove);
+    /**
+     * @brief Queue aStepsToMove number of pulses
+     * @param int8_t aStepsToMove // The number of steps to move.
+    */
+    size_t QueueMove(int8_t aStepsToMove);
 
     //keep adding to the queue as the queue gets consumed I guess?
     void Run();
@@ -115,10 +119,10 @@ private:
     //std::unique_ptr<CurveEncoder> myDecelEncoder;
     rmt_transmit_config_t myTxConfig;
 
-    uint8_t myUniformQueue;
+    int8_t myUniformQueue;
     std::mutex myUniformQueueMutex;
     std::condition_variable myUniformQueueCV;
-    bool SendUniformQueuedSteps(std::mutex &m, std::condition_variable &cv);
+    bool SendUniformQueuedSteps();
     //todo calculate these based off of speed and accel per time unit
     uint32_t myAccelSamples;
     uint32_t myUniformSpeedHz;

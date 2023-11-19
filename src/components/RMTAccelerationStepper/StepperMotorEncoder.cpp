@@ -119,12 +119,6 @@ static float convert_to_smooth_freq(uint32_t freq1, uint32_t freq2, uint32_t fre
 //     return ret;
 // }
 
-typedef struct {
-    rmt_encoder_t base;
-    rmt_encoder_handle_t copy_encoder;
-    uint32_t resolution;
-} rmt_stepper_uniform_encoder_t;
-
 size_t StepperMotorEncoder::EncodeFn(
     rmt_channel_handle_t channel, 
     rmt_encoder_t *copy_encoder,
