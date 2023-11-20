@@ -5,7 +5,7 @@
 // #define CONFIG_IDF_TARGET_ESP32S2
 // #define SUPPORT_SELECT_DRIVER_TYPE
 //#define SUPPORT_ESP32_RMT
-#include <FastAccelStepper.h>
+#include "RMTStepper.h"
 #include <memory>
 
 namespace StepperDriver {
@@ -32,7 +32,7 @@ namespace StepperDriver {
         // Overloading the != operator
         bool operator!=(const StepperDirection &other) const;
 
-        operator Level();
+        // operator Level();
 
         operator uint32_t();
 
@@ -41,6 +41,16 @@ namespace StepperDriver {
 
         // Overloading the != operator
         bool operator!=(const Level &other) const;
+
+        bool operator==(const Direction& other) const;
+
+        bool operator!=(const Direction& other) const;
+
+        // Assignment operator taking Direction as input
+        StepperDirection& operator=(const StepperDriver::Direction aDir) {
+            dir = aDir;
+            return *this;
+        }
 
         private:
             Level level;
@@ -58,29 +68,30 @@ namespace StepperDriver {
         };
 
         Stepper(
-            std::shared_ptr<FastAccelStepperEngine> engine,
+            //std::shared_ptr<FastAccelStepperEngine> engine,
             gpio_num_t enPin, 
             gpio_num_t dirPin, 
             gpio_num_t stepPin, 
             StepperDriver::Level enableLevel, 
-            uint32_t motorResolutionHz, 
+            uint16_t rmtResolutionHz, 
+            uint16_t aMaxStepperFreq,
             StepperDriver::StepperDirection startupMotorDirection
         );
 
         void SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit);
-        void SetAcceleration(uint32_t anAcceleration);
-        //don't need to set direction, move and run handle direction
-        //void SetDirection(StepperDriver::Direction aDir);
+        void SetMaxSpeed(uint16_t aMaxSpeed);
+        void SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond);
+
         void MoveDistance(uint32_t distance);
         void Run(Direction aDir);
         void Stop();
 
     private:
         StepperDirection defaultMotorDirection;
-        gpio_config_t en_dir_gpio_config;
-        FastAccelStepperEngine engine;
-        FastAccelStepper *stepper;
-        
+        // gpio_config_t en_dir_gpio_config;
+        // FastAccelStepperEngine engine;
+        // FastAccelStepper *stepper;
+        RMTStepper* rmtStepper;
         uint32_t PrivIPMToHz(uint32_t aIPM);
         uint32_t PrivMMPMToHz(uint32_t aMMPM);
 };

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>stepperpowerfeed-cppcheck-build-dir</builddir>
+    <platform>native</platform>
+    <importproject>build/compile_commands.json</importproject>
+    <analyze-all-vs-configs>false</analyze-all-vs-configs>
+    <check-headers>true</check-headers>
+    <check-unused-templates>true</check-unused-templates>
+    <max-ctu-depth>2</max-ctu-depth>
+    <max-template-recursion>100</max-template-recursion>
+    <exclude>
+        <path name="lib/"/>
+        <path name="managed_components/"/>
+        <path name="C:/Users/chris/.espressif/"/>
+        <path name="C:/Users/chris/esp/*"/>
+    </exclude>
+    <libraries>
+        <library>gnu</library>
+    </libraries>
+    <safe-checks>
+        <class-public/>
+    </safe-checks>
+    <tools>
+        <tool>clang-tidy</tool>
+    </tools>
+    <project-name>stepperpowerfeed</project-name>
+</project>

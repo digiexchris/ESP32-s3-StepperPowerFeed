@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5211678100761741113">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;esp_check.h&quot; not found." verbose="Include file: &quot;esp_check.h&quot; not found.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.cpp" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;rmt_encoder.hpp&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;rmt_encoder.hpp&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.h" line="4" column="0"/>
+        </error>
+  <FileInfo check="Class">
+<class name="StepperMotorEncoder" file="D:/Machining-tools/StepperPowerFeed/src/components/RMTAccelerationStepper/StepperMotorEncoder.h" line="23" col="1" hash="12627464704403929172"/>
+<class name="CurvenEncoder" file="D:/Machining-tools/StepperPowerFeed/src/components/RMTAccelerationStepper/StepperMotorEncoder.h" line="46" col="1" hash="6065051455578196365"/>
+<class name="UniformEncoder" file="D:/Machining-tools/StepperPowerFeed/src/components/RMTAccelerationStepper/StepperMotorEncoder.h" line="60" col="1" hash="11053230982460528698"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="convert_to_smooth_freq" lineNumber="6"/>
+    <functiondecl functionName="EncodeFn" lineNumber="122"/>
+    <functioncall functionName="ESP_OK"/>
+  </FileInfo>
+</analyzerinfo>

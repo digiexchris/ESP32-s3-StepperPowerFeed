@@ -3,22 +3,24 @@
 
 Axis::Axis(
     char aLabel, 
-    std::shared_ptr<FastAccelStepperEngine> engine,
+    //std::shared_ptr<FastAccelStepperEngine> engine,
     gpio_num_t enPin, 
     gpio_num_t dirPin, 
     gpio_num_t stepPin, 
     StepperDriver::Level enableLevel, 
-    uint32_t motorResolutionHz, 
-    StepperDriver::StepperDirection startupMotorDirection
+    uint16_t stepperMaxFreq, 
+    StepperDriver::StepperDirection startupMotorDirection,
+    uint16_t rmtResolutionHz
 ) {
     label = aLabel;
     stepper = new StepperDriver::Stepper(
-        engine,
+        //engine,
         enPin, 
         dirPin, 
         stepPin, 
         enableLevel, 
-        motorResolutionHz, 
+        rmtResolutionHz,
+        stepperMaxFreq,
         startupMotorDirection
     );
 }

@@ -79,16 +79,45 @@
 			"strstream": "cpp",
 			"optional": "cpp",
 			"typeindex": "cpp",
-			"variant": "cpp"
+			"variant": "cpp",
+			"charconv": "cpp",
+			"forward_list": "cpp",
+			"ranges": "cpp",
+			"span": "cpp",
+			"valarray": "cpp",
+			"format": "cpp",
+			"ios": "cpp",
+			"locale": "cpp",
+			"queue": "cpp",
+			"xfacet": "cpp",
+			"xhash": "cpp",
+			"xiosbase": "cpp",
+			"xlocale": "cpp",
+			"xlocbuf": "cpp",
+			"xlocinfo": "cpp",
+			"xlocmes": "cpp",
+			"xlocmon": "cpp",
+			"xlocnum": "cpp",
+			"xloctime": "cpp",
+			"xmemory": "cpp",
+			"xstddef": "cpp",
+			"xstring": "cpp",
+			"xtr1common": "cpp",
+			"xutility": "cpp",
+			"filesystem": "cpp",
+			"stack": "cpp",
+			"xtree": "cpp"
 		},
-		"idf.espIdfPathWin": "c:\\Espressif4.4.6\\frameworks\\esp-idf",
-		"idf.pythonBinPathWin": "c:\\Espressif4.4.6\\python_env\\idf4.4_py3.8_env\\Scripts\\python.exe",
-		"idf.toolsPathWin": "c:\\Espressif4.4.6",
-		"idf.customExtraPaths": "c:\\Espressif4.4.6\\tools\\xtensa-esp-elf-gdb\\11.2_20220823\\xtensa-esp-elf-gdb\\bin;c:\\Espressif4.4.6\\tools\\riscv32-esp-elf-gdb\\11.2_20220823\\riscv32-esp-elf-gdb\\bin;c:\\Espressif4.4.6\\tools\\xtensa-esp32-elf\\esp-2021r2-patch5-8.4.0\\xtensa-esp32-elf\\bin;c:\\Espressif4.4.6\\tools\\xtensa-esp32s2-elf\\esp-2021r2-patch5-8.4.0\\xtensa-esp32s2-elf\\bin;c:\\Espressif4.4.6\\tools\\xtensa-esp32s3-elf\\esp-2021r2-patch5-8.4.0\\xtensa-esp32s3-elf\\bin;c:\\Espressif4.4.6\\tools\\riscv32-esp-elf\\esp-2021r2-patch5-8.4.0\\riscv32-esp-elf\\bin;c:\\Espressif4.4.6\\tools\\esp32ulp-elf\\2.35_20220830\\esp32ulp-elf\\bin;c:\\Espressif4.4.6\\tools\\cmake\\3.23.1\\bin;c:\\Espressif4.4.6\\tools\\openocd-esp32\\v0.12.0-esp32-20230419\\openocd-esp32\\bin;c:\\Espressif4.4.6\\tools\\ninja\\1.10.2;c:\\Espressif4.4.6\\tools\\idf-exe\\1.0.3;c:\\Espressif4.4.6\\tools\\ccache\\4.3\\ccache-4.3-windows-64;c:\\Espressif4.4.6\\tools\\dfu-util\\0.9\\dfu-util-0.9-win64",
+		"idf.espIdfPathWin": "c:\\Espressif5.1.1\\frameworks\\esp-idf",
+		"idf.pythonBinPathWin": "c:\\Espressif5.1.1\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
+		"idf.toolsPathWin": "c:\\Espressif5.1.1",
+		"idf.customExtraPaths": "c:\\Espressif5.1.1\\tools\\xtensa-esp-elf-gdb\\12.1_20221002\\xtensa-esp-elf-gdb\\bin;c:\\Espressif5.1.1\\tools\\riscv32-esp-elf-gdb\\12.1_20221002\\riscv32-esp-elf-gdb\\bin;c:\\Espressif5.1.1\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\bin;c:\\Espressif5.1.1\\tools\\xtensa-esp32s2-elf\\esp-12.2.0_20230208\\xtensa-esp32s2-elf\\bin;c:\\Espressif5.1.1\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin;c:\\Espressif5.1.1\\tools\\riscv32-esp-elf\\esp-12.2.0_20230208\\riscv32-esp-elf\\bin;c:\\Espressif5.1.1\\tools\\esp32ulp-elf\\2.35_20220830\\esp32ulp-elf\\bin;c:\\Espressif5.1.1\\tools\\cmake\\3.24.0\\bin;c:\\Espressif5.1.1\\tools\\openocd-esp32\\v0.12.0-esp32-20230419\\openocd-esp32\\bin;c:\\Espressif5.1.1\\tools\\ninja\\1.10.2;c:\\Espressif5.1.1\\tools\\idf-exe\\1.0.3;c:\\Espressif5.1.1\\tools\\ccache\\4.8\\ccache-4.8-windows-x86_64;c:\\Espressif5.1.1\\tools\\dfu-util\\0.11\\dfu-util-0.11-win64;c:\\Espressif5.1.1\\tools\\esp-rom-elfs\\20230320",
 		"idf.customExtraVars": {
-			"OPENOCD_SCRIPTS": "c:\\Espressif4.4.6\\tools\\openocd-esp32\\v0.12.0-esp32-20230419/openocd-esp32/share/openocd/scripts",
-			"IDF_CCACHE_ENABLE": "1"
+			"OPENOCD_SCRIPTS": "c:\\Espressif5.1.1\\tools\\openocd-esp32\\v0.12.0-esp32-20230419/openocd-esp32/share/openocd/scripts",
+			"IDF_CCACHE_ENABLE": "1",
+			"ESP_ROM_ELF_DIR": "c:\\Espressif5.1.1\\tools\\esp-rom-elfs\\20230320/"
 		},
-		"idf.gitPathWin": "c:\\Espressif4.4.6\\tools\\idf-git\\2.39.2\\cmd\\git.exe"
+		"idf.gitPathWin": "c:\\Espressif5.1.1\\tools\\idf-git\\2.39.2\\cmd\\git.exe",
+		"C_Cpp.codeAnalysis.clangTidy.codeAction.formatFixes": false
 	}
 }

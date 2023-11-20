@@ -1,0 +1,108 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:25:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   25 | int clock_settime(clockid_t clock_id, const struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:26:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   26 | int clock_gettime(clockid_t clock_id, struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:27:18: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   27 | int clock_getres(clockid_t clock_id, struct timespec *res);
+      |                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:8:1: warning: included header format-inl.h is not used directly [misc-include-cleaner]
+    8 | #include "fmt/format-inl.h"
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+    9 | 
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:10:1: warning: no header providing "FMT_BEGIN_NAMESPACE" is directly included [misc-include-cleaner]
+    8 | #include "fmt/format-inl.h"
+    9 | 
+   10 | FMT_BEGIN_NAMESPACE
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:13:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | #include "fmt/format-inl.h"
+    9 | 
+   10 | FMT_BEGIN_NAMESPACE
+   11 | namespace detail {
+   12 | 
+   13 | template FMT_API auto dragonbox::to_decimal(float x) noexcept
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:15:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | #include "fmt/format-inl.h"
+    9 | 
+   10 | FMT_BEGIN_NAMESPACE
+   11 | namespace detail {
+   12 | 
+   13 | template FMT_API auto dragonbox::to_decimal(float x) noexcept
+   14 |     -> dragonbox::decimal_fp<float>;
+   15 | template FMT_API auto dragonbox::to_decimal(double x) noexcept
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:19:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | #include "fmt/format-inl.h"
+    9 | 
+   10 | FMT_BEGIN_NAMESPACE
+   11 | namespace detail {
+   12 | 
+   13 | template FMT_API auto dragonbox::to_decimal(float x) noexcept
+   14 |     -> dragonbox::decimal_fp<float>;
+   15 | template FMT_API auto dragonbox::to_decimal(double x) noexcept
+   16 |     -> dragonbox::decimal_fp<double>;
+   17 | 
+   18 | #ifndef FMT_STATIC_THOUSANDS_SEPARATOR
+   19 | template FMT_API locale_ref::locale_ref(const std::locale& loc);
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:20:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | #include "fmt/format-inl.h"
+    9 | 
+   10 | FMT_BEGIN_NAMESPACE
+   11 | namespace detail {
+   12 | 
+   13 | template FMT_API auto dragonbox::to_decimal(float x) noexcept
+   14 |     -> dragonbox::decimal_fp<float>;
+   15 | template FMT_API auto dragonbox::to_decimal(double x) noexcept
+   16 |     -> dragonbox::decimal_fp<double>;
+   17 | 
+   18 | #ifndef FMT_STATIC_THOUSANDS_SEPARATOR
+   19 | template FMT_API locale_ref::locale_ref(const std::locale& loc);
+   20 | template FMT_API auto locale_ref::get<std::locale>() const -> std::locale;
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:25:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API auto thousands_sep_impl(locale_ref)
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:27:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API auto decimal_point_impl(locale_ref) -> char;
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:29:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API void buffer<char>::append(const char*, const char*);
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:31:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API void vformat_to(buffer<char>&, string_view,
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:36:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API auto thousands_sep_impl(locale_ref)
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:38:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API auto decimal_point_impl(locale_ref) -> wchar_t;
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:40:10: warning: no header providing "FMT_API" is directly included [misc-include-cleaner]
+    8 | template FMT_API void buffer<wchar_t>::append(const wchar_t*, const wchar_t*);
+      |          ^
+D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc:43:1: warning: no header providing "FMT_END_NAMESPACE" is directly included [misc-include-cleaner]
+    8 | FMT_END_NAMESPACE
+      | ^
+
+
+
+173407 warnings and 3 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\src\format.cc.
+Suppressed 173389 warnings (173389 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

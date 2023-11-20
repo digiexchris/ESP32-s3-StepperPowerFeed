@@ -1,0 +1,163 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:25:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   25 | int clock_settime(clockid_t clock_id, const struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:26:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   26 | int clock_gettime(clockid_t clock_id, struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:27:18: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   27 | int clock_getres(clockid_t clock_id, struct timespec *res);
+      |                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:142:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:142:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:160:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:160:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:172:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:172:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:2:1: warning: included header vector is not used directly [misc-include-cleaner]
+    2 | #include <vector>
+      | ^~~~~~~~~~~~~~~~~
+    3 | #include <memory>
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:6:1: warning: included header exception is not used directly [misc-include-cleaner]
+    6 | #include <exception>
+      | ^~~~~~~~~~~~~~~~~~~~
+    7 | #include <fmt/core.h>
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:13:19: warning: variable 'instance' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables]
+   13 | Machine* Machine::instance{nullptr};
+      |                   ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:13:19: warning: variable 'instance' provides global access to a non-const object; consider making the pointed-to data 'const' [cppcoreguidelines-avoid-non-const-global-variables]
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:14:1: warning: static objects are disallowed; if possible, use a constexpr constructor instead [fuchsia-statically-constructed-objects]
+   14 | std::mutex Machine::mutex;
+      | ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:14:21: warning: variable 'mutex' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables]
+   14 | std::mutex Machine::mutex;
+      |                     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:17:5: warning: 'init' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+   16 | Machine::Machine() {
+      |                    : init(random())
+   17 |     init = random();
+      |     ^~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:17:12: warning: rand() has limited randomness; use C++11 random library instead [cert-msc30-c,cert-msc50-cpp]
+   17 |     init = random();
+      |            ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:17:12: error: use of undeclared identifier 'random'; did you mean 'rand'? [clang-diagnostic-error]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stdlib.h:352:37: note: 'rand' declared here
+  352 | _Check_return_ _ACRTIMP int __cdecl rand(void);
+      |                                     ^
+note: this fix will not be applied because it overlaps with another fix
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:17:12: warning: function is not thread safe [concurrency-mt-unsafe]
+   17 |     init = random();
+      |            ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:17:12: warning: no header providing "rand" is directly included [misc-include-cleaner]
+    1 |     init = random();
+      |            ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:27:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   27 | Machine *Machine::GetInstance()
+      | ~~~~~~~~~         ^            
+      | auto                            -> Machine *
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:29:5: warning: variable 'lock' of type 'std::lock_guard<std::mutex>' can be declared 'const' [misc-const-correctness]
+   29 |     std::lock_guard<std::mutex> lock(mutex);
+      |     ^
+      |                                 const 
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:32:9: warning: assigning newly created 'gsl::owner<>' to non-owner 'Machine *' [cppcoreguidelines-owning-memory]
+   32 |         instance = new Machine();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:37:41: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   37 | std::shared_ptr<Machine::Axes> Machine::GetAxes() const{
+      | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~          ^              
+      | auto                                                    -> std::shared_ptr<Machine::Axes>
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:41:15: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   41 | Axis Machine::AddAxis(
+      | ~~~~          ^
+      | auto
+   42 |             const char aLabel,
+   43 |         gpio_num_t enPin, 
+   44 |         gpio_num_t dirPin, 
+   45 |         gpio_num_t stepPin, 
+   46 |         StepperDriver::Level enableLevel, 
+   47 |         uint32_t stepperMaxStepsPerSecond,
+   48 |         StepperDriver::StepperDirection startupMotorDirection,
+   49 |         uint32_t rmtResolutionHz
+   50 | ) {
+      |   -> Axis
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:43:9: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    5 |         gpio_num_t enPin, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:44:9: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    5 |         gpio_num_t dirPin, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:45:9: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    5 |         gpio_num_t stepPin, 
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:46:24: warning: no header providing "StepperDriver::Level" is directly included [misc-include-cleaner]
+    5 |         StepperDriver::Level enableLevel, 
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:47:9: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    1 |         uint32_t stepperMaxStepsPerSecond,
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:48:24: warning: no header providing "StepperDriver::StepperDirection" is directly included [misc-include-cleaner]
+    5 |         StepperDriver::StepperDirection startupMotorDirection,
+      |                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:49:9: warning: no header providing "uint32_t" is directly included [misc-include-cleaner]
+    1 |         uint32_t rmtResolutionHz
+      |         ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:52:20: warning: no header providing "std::invalid_argument" is directly included [misc-include-cleaner]
+    2 |         throw std::invalid_argument(fmt::format("Axis {} already exists", aLabel));
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:55:5: warning: variable 'newAxis' of type 'Axis' can be declared 'const' [misc-const-correctness]
+   55 |     Axis newAxis(
+      |     ^
+      |          const 
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:74:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+   74 |     else
+      |     ^~~~
+   75 |     {
+      |     ~
+   76 |         throw MachineException("Unable to insert Axis");
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |         abort();
+      |         ~~~~~~~~
+   78 |     }
+      |     ~
+D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp:77:9: warning: no header providing "abort" is directly included [misc-include-cleaner]
+    1 |         abort();
+      |         ^
+
+
+
+218978 warnings and 10 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\main\Machine.cpp.
+Suppressed 218947 warnings (218947 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

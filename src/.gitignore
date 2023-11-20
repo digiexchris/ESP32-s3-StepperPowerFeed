@@ -1,7 +1,7 @@
 build/
 sdkconfig
 sdkconfig.old
-managed_components/
 .vscode/
+.vs/
 src.code-workspace
 debug.log

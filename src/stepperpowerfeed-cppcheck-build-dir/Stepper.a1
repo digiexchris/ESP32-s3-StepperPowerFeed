@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2340986769881291876">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\gpio\include\driver\gpio.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_err.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_err.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\newlib\platform_include\assert.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\newlib\platform_include\assert.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_common\include\esp_err.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_intr_alloc.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_intr_alloc.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_gpio.h" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_gpio.h" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\gpio\include\driver\gpio_etm.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_etm.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_hw_support\include\esp_etm.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\log\include\esp_log.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\log\include\esp_log.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\log\include\esp_log.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\esp_rom\include\esp_rom_sys.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\StepperMotorEncoder.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;functional&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;functional&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\rmt\include\rmt_encoder.hpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_encoder.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\hal\include\hal\rmt_types.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_types.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_types.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_types.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_tx.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_tx.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\chris\esp\esp-idf\components\driver\rmt\include\driver\rmt_common.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\Exception\Exception.h" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\Exception\Exception.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\rmt\include\rmt.hpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;atomic&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;atomic&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\logger\include\logger.hpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;chrono&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;chrono&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\logger\include\logger.hpp" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\logger\include\logger.hpp" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string_view&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string_view&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\components\logger\include\logger.hpp" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdint&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdint&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;initializer_list&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;initializer_list&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="40" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="41" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdexcept&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdexcept&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="42" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;system_error&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;system_error&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstddef&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstddef&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdio&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdio&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iterator&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iterator&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\core.h" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cctype&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cctype&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cerrno&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cerrno&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;climits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;climits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdarg&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdarg&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cwchar&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cwchar&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\format-inl.h" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;initializer_list&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;initializer_list&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\ranges.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;tuple&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;tuple&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\ranges.h" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\ranges.h" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;chrono&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;chrono&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;ctime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;ctime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iterator&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iterator&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;ostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;ostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\lib\espp\external\fmt\include\fmt\chrono.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;condition_variable&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;condition_variable&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\main\Stepper.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\main\Stepper.cpp" line="7" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="D:/Machining-tools/StepperPowerFeed/src/main/Stepper.cpp">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\components\RMTAccelerationStepper\RMTStepper.h" line="54" column="9"/>
+        </error>
+</analyzerinfo>

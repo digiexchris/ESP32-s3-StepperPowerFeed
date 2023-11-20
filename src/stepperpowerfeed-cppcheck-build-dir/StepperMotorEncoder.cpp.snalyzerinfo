@@ -1,0 +1,11 @@
+RmtEncoder call:[init] noreturn:[init]
+RmtEncoder call:[rmt_del_encoder] noreturn:[rmt_del_encoder]
+handle
+encoder_encode call:[__containerof,encode_]
+encoder_reset call:[__containerof,reset_,rmt_encoder_reset]
+encoder_delete call:[__containerof,del_,rmt_del_encoder] noreturn:[del_]
+init call:[rmt_new_bytes_encoder,rmt_new_copy_encoder]
+DelFn
+ResetFn
+convert_to_smooth_freq
+EncodeFn

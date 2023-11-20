@@ -1,0 +1,202 @@
+warning: redefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+warning: undefining builtin macro [clang-diagnostic-builtin-macro-redefined]
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:25:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   25 | int clock_settime(clockid_t clock_id, const struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:26:19: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   26 | int clock_gettime(clockid_t clock_id, struct timespec *tp);
+      |                   ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+C:/Users/chris/esp/esp-idf/components/newlib/platform_include\time.h:27:18: error: unknown type name 'clockid_t'; did you mean 'clock_t'? [clang-diagnostic-error]
+   27 | int clock_getres(clockid_t clock_id, struct timespec *res);
+      |                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\time.h:30:14: note: 'clock_t' declared here
+   30 | typedef long clock_t;
+      |              ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:142:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:142:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  142 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:160:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:160:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  160 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:172:47: error: 'Wrapper' does not refer to a value [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                               ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:131:10: note: declared here
+  131 |   struct Wrapper {
+      |          ^
+D:/Machining-tools/StepperPowerFeed/src/lib/espp/components/rmt/include/rmt_encoder.hpp:172:56: error: use of undeclared identifier 'base_' [clang-diagnostic-error]
+  172 |     Wrapper *wrapper = __containerof(encoder, Wrapper, base_);
+      |                                                        ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:2:1: warning: included header memory is not used directly [misc-include-cleaner]
+    2 | #include <memory>
+      | ^~~~~~~~~~~~~~~~~
+    3 | 
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:7:5: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:8:5: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:9:5: warning: no header providing "gpio_num_t" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+    9 |     gpio_num_t stepPin, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:10:20: warning: no header providing "StepperDriver::Level" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+    9 |     gpio_num_t stepPin, 
+   10 |     StepperDriver::Level enableLevel, 
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:11:5: warning: no header providing "uint16_t" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+    9 |     gpio_num_t stepPin, 
+   10 |     StepperDriver::Level enableLevel, 
+   11 |     uint16_t stepperMaxFreq, 
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:12:20: warning: no header providing "StepperDriver::StepperDirection" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+    9 |     gpio_num_t stepPin, 
+   10 |     StepperDriver::Level enableLevel, 
+   11 |     uint16_t stepperMaxFreq, 
+   12 |     StepperDriver::StepperDirection startupMotorDirection,
+      |                    ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:13:5: warning: no header providing "uint16_t" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+    9 |     gpio_num_t stepPin, 
+   10 |     StepperDriver::Level enableLevel, 
+   11 |     uint16_t stepperMaxFreq, 
+   12 |     StepperDriver::StepperDirection startupMotorDirection,
+   13 |     uint16_t rmtResolutionHz
+      |     ^
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:15:5: warning: 'label' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+   14 | ) {
+      |   : label(aLabel)
+   15 |     label = aLabel;
+      |     ^~~~~~~~~~~~~~~
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:16:5: warning: assigning newly created 'gsl::owner<>' to non-owner 'StepperDriver::Stepper *' [cppcoreguidelines-owning-memory]
+   16 |     stepper = new StepperDriver::Stepper(
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   17 |         //engine,
+      |         ~~~~~~~~~
+   18 |         enPin, 
+      |         ~~~~~~
+   19 |         dirPin, 
+      |         ~~~~~~~
+   20 |         stepPin, 
+      |         ~~~~~~~~
+   21 |         enableLevel, 
+      |         ~~~~~~~~~~~~
+   22 |         rmtResolutionHz,
+      |         ~~~~~~~~~~~~~~~~
+   23 |         stepperMaxFreq,
+      |         ~~~~~~~~~~~~~~~
+   24 |         startupMotorDirection
+      |         ~~~~~~~~~~~~~~~~~~~~~
+   25 |     );
+      |     ~
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:16:5: warning: 'stepper' should be initialized in a member initializer of the constructor [cppcoreguidelines-prefer-member-initializer]
+   14 | ) {
+   15 |     label = aLabel;
+   16 |     stepper = new StepperDriver::Stepper(
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   17 |         //engine,
+      |         ~~~~~~~~~
+   18 |         enPin, 
+      |         ~~~~~~
+   19 |         dirPin, 
+      |         ~~~~~~~
+   20 |         stepPin, 
+      |         ~~~~~~~~
+   21 |         enableLevel, 
+      |         ~~~~~~~~~~~~
+   22 |         rmtResolutionHz,
+      |         ~~~~~~~~~~~~~~~~
+   23 |         stepperMaxFreq,
+      |         ~~~~~~~~~~~~~~~
+   24 |         startupMotorDirection
+      |         ~~~~~~~~~~~~~~~~~~~~~
+   25 |     );
+      |     ~~
+D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp:16:34: warning: no header providing "StepperDriver::Stepper" is directly included [misc-include-cleaner]
+    2 | #include <memory>
+    3 | 
+    4 | Axis::Axis(
+    5 |     char aLabel, 
+    6 |     //std::shared_ptr<FastAccelStepperEngine> engine,
+    7 |     gpio_num_t enPin, 
+    8 |     gpio_num_t dirPin, 
+    9 |     gpio_num_t stepPin, 
+   10 |     StepperDriver::Level enableLevel, 
+   11 |     uint16_t stepperMaxFreq, 
+   12 |     StepperDriver::StepperDirection startupMotorDirection,
+   13 |     uint16_t rmtResolutionHz
+   14 | ) {
+   15 |     label = aLabel;
+   16 |     stepper = new StepperDriver::Stepper(
+      |                                  ^
+
+
+
+217953 warnings and 9 errors generated.
+Error while processing D:\Machining-tools\StepperPowerFeed\src\main\Axis.cpp.
+Suppressed 217937 warnings (217937 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

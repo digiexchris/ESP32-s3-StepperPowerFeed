@@ -15,7 +15,7 @@ std::mutex Machine::mutex;
 
 Machine::Machine() {
     init = random();
-    engine = std::make_shared<FastAccelStepperEngine>();
+    // engine = std::make_shared<FastAccelStepperEngine>();
     axes = std::make_shared<Axes>();
 }
 
@@ -39,13 +39,14 @@ std::shared_ptr<Machine::Axes> Machine::GetAxes() const{
     } 
 
 Axis Machine::AddAxis(
-    const char aLabel,
-    gpio_num_t enPin, 
-    gpio_num_t dirPin, 
-    gpio_num_t stepPin, 
-    StepperDriver::Level enableLevel, 
-    uint32_t motorResolutionHz, 
-    StepperDriver::StepperDirection startupMotorDirection
+            const char aLabel,
+        gpio_num_t enPin, 
+        gpio_num_t dirPin, 
+        gpio_num_t stepPin, 
+        StepperDriver::Level enableLevel, 
+        uint32_t stepperMaxStepsPerSecond,
+        StepperDriver::StepperDirection startupMotorDirection,
+        uint32_t rmtResolutionHz
 ) {
     if(axes->find(aLabel) != axes->end()) {
         throw std::invalid_argument(fmt::format("Axis {} already exists", aLabel));
@@ -53,13 +54,14 @@ Axis Machine::AddAxis(
 
     Axis newAxis(
         aLabel,
-        engine,
+        // engine,
         enPin, 
         dirPin, 
         stepPin, 
         enableLevel, 
-        motorResolutionHz, 
-        startupMotorDirection
+        stepperMaxStepsPerSecond, 
+        startupMotorDirection,
+        rmtResolutionHz
     );
 
     //todo this mem for newAxis might be going out of scope after this returns, check that it copies or moves instead of nothing...

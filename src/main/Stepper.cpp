@@ -1,7 +1,7 @@
 // #include "driver/rmt_tx.h"
 #include <driver/gpio.h>
 #include "esp_log.h"
-#include "FastAccelStepper.h"
+#include "RMTStepper.h"
 #include "Stepper.h"
 #include <exception>
 #include <memory>
@@ -44,9 +44,9 @@ bool StepperDirection::operator!=(const StepperDirection &other) const {
     return !(*this == other); // Reusing the == operator
 }
 
-StepperDirection::operator Level() {
-    return level;
-}
+// StepperDirection::operator Level() {
+//     return level;
+// }
 
 StepperDirection::operator uint32_t() {
     return static_cast<uint32_t>(level);
@@ -62,21 +62,28 @@ bool StepperDirection::operator!=(const Level &other) const {
     return !(*this == other); // Reusing the == operator
 }
 
+bool StepperDirection:: operator==(const Direction& other) const {
+    return static_cast<int>(dir) == other;
+};
+
+bool StepperDirection::operator!=(const Direction& other) const {
+    return !(*this == other);
+};
+
 void Stepper::MoveDistance(uint32_t distance) {
-    //TODO turn off blocking here
-    stepper->move(distance, false);
+    //rmtStepper->Move(1000);
 }
 
 /**
  * @brief set motor acceleration/deceleration
- * Note: this is linear acceleration.
+ * Note: this is linear acceleration, from zero to full speed and back to zero.
  * @param uint32_t steps #the number of steps to accelerate up to speed. 
  * A closed loop stepper may be able to set this to 0 if all moves are slow enough.
  * A servo may not need any acceleration for any moves, the closed loop driver
  * may handle it.
 */
-void Stepper::SetAcceleration(uint32_t steps){
-    stepper->setLinearAcceleration(steps);
+void Stepper::SetFullSpeedAcceleration(uint16_t anAccelStepsPerSecond,uint16_t aDecelStepsPerSecond){
+    // stepper->setLinearAcceleration(steps);
 }
 
 // void Stepper::SetDirection(Direction aDir) {
@@ -85,15 +92,15 @@ void Stepper::SetAcceleration(uint32_t steps){
 
 void Stepper::Run(Direction aDir) {
     if(aDir == Direction::CW) {
-        stepper->runForward();
+        //stepper->runForward();
     } else {
-        stepper->runBackward();
+        //stepper->runBackward();
     }
     
 }
 
 void Stepper::Stop() {
-    stepper->stopMove();
+    //stepper->stopMove();
 }
 
 /**
@@ -103,11 +110,11 @@ void Stepper::Stop() {
 void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
     switch(aUnit) {
         case DistancePerTimeUnit::IPM:
-        stepper->setSpeedInUs(1000);
+        //stepper->setSpeedInUs(1000);
             //stepper->setSpeedInHz(PrivIPMToHz(aDistancePerTime));
             break;
         case DistancePerTimeUnit::MMPM:
-            stepper->setSpeedInHz(PrivMMPMToHz(aDistancePerTime));
+            //stepper->setSpeedInHz(PrivMMPMToHz(aDistancePerTime));
             break;
         default:
             throw InvalidDistancePerTimeUnitException();
@@ -116,7 +123,7 @@ void Stepper::SetSpeed(uint32_t aDistancePerTime, DistancePerTimeUnit aUnit) {
 
     //if it's running continuously, set the new speed immediately
     //useful for rapids or changing IPM during a cut.
-    stepper->applySpeedAcceleration();
+    //stepper->applySpeedAcceleration();
 }
 
 /**
@@ -136,39 +143,25 @@ uint32_t Stepper::PrivMMPMToHz(uint32_t aMMPM) {
 
 //NOTE pullups disabled. Use appropriate resistors.
 Stepper::Stepper(
-    std::shared_ptr<FastAccelStepperEngine> engine,
+    //std::shared_ptr<FastAccelStepperEngine> engine,
     gpio_num_t enPin, 
     gpio_num_t dirPin,
     gpio_num_t stepPin, 
     StepperDriver::Level enableLevel, //Is enable high or low on your driver?
-    uint32_t motorResolutionHz, 
+    uint16_t rmtResolutionHz, 
+    uint16_t aMaxStepperFreq,
     StepperDriver::StepperDirection startupMotorDirection // default motor direction and level. inverting this reverses direction (and by extension, level of the dir pin)
     ) : defaultMotorDirection(startupMotorDirection)
 {
-
-//     #define dirPinStepper 18
-// #define enablePinStepper 26
-// #define stepPinStepper 17
-    init = random();
-    stepper = NULL;
-
-    stepper = engine->stepperConnectToPin(stepPin);
-    
-    if(!stepper) {
-        throw InvalidStepperException("Could not connect to stepper pin");
-    }
-
-    stepper->setDirectionPin(dirPin);
-    stepper->setEnablePin(enPin);
-    stepper->setAutoEnable(true);
-
-    // If auto enable/disable need delays, just add (one or both):
-    // stepper->setDelayToEnable(50);
-    // stepper->setDelayToDisable(1000);
-
-    // speed up in ~0.025s, which needs 625 steps without linear mode
-    stepper->setSpeedInHz(100);
-    stepper->setAcceleration(100);
+    rmtStepper = new RMTStepper(
+        stepPin, 
+        dirPin, 
+        enPin, 
+        startupMotorDirection, 
+        enableLevel,
+        rmtResolutionHz,
+        aMaxStepperFreq
+    );
 
 }
 

@@ -1,0 +1,1326 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7141621318240128887">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cerrno&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cerrno&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;climits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;climits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;exception&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdint&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdint&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;initializer_list&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;initializer_list&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="40" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="41" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdexcept&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdexcept&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="42" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;system_error&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;system_error&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstddef&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstddef&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdio&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdio&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iterator&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iterator&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;memory&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;type_traits&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="18" column="0"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;pow10_significands[78]&apos; accessed at index 2147483678, which is out of bounds." verbose="Array &apos;pow10_significands[78]&apos; accessed at index 2147483678, which is out of bounds." cwe="788" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="288" column="30" info="Array index out of bounds"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="258" column="40" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;pow10_significands[78]&apos; accessed at index -2147483617, which is out of bounds." verbose="Array &apos;pow10_significands[78]&apos; accessed at index -2147483617, which is out of bounds." cwe="786" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="288" column="30" info="Negative array index"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="258" column="40" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;pow10_significands[24]&apos; accessed at index 79536442, which is out of bounds." verbose="Array &apos;pow10_significands[24]&apos; accessed at index 79536442, which is out of bounds." cwe="788" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1040" column="53" info="Array index out of bounds"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" column="21" info="cache_index is assigned &apos;(k-float_info &lt; double &gt;::min_k)/compression_ratio&apos; here."/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" column="48" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;pow10_significands[24]&apos; accessed at index -79536420, which is out of bounds." verbose="Array &apos;pow10_significands[24]&apos; accessed at index -79536420, which is out of bounds." cwe="786" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1040" column="53" info="Negative array index"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" column="21" info="cache_index is assigned &apos;(k-float_info &lt; double &gt;::min_k)/compression_ratio&apos; here."/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" column="48" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;powers_of_5_64[27]&apos; accessed at index -16, which is out of bounds." verbose="Array &apos;powers_of_5_64[27]&apos; accessed at index -16, which is out of bounds." cwe="786" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1048" column="35" info="Negative array index"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1037" column="20" info="Assignment &apos;offset=k-kb&apos;, assigned value is -16"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" column="48" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4017" column="12"/>
+            <symbol>format_int::buffer_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4018" column="12"/>
+            <symbol>format_int::buffer_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4019" column="12"/>
+            <symbol>format_int::buffer_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4020" column="12"/>
+            <symbol>format_int::buffer_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4021" column="12"/>
+            <symbol>format_int::buffer_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;format_int::buffer_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4022" column="12"/>
+            <symbol>format_int::buffer_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;buffer &lt; char &gt;::ptr_&apos; is not initialized in the constructor." verbose="Member variable &apos;buffer &lt; char &gt;::ptr_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="807" column="3"/>
+            <symbol>buffer &lt; char &gt;::ptr_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;buffer &lt; wchar_t &gt;::ptr_&apos; is not initialized in the constructor." verbose="Member variable &apos;buffer &lt; wchar_t &gt;::ptr_&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="807" column="3"/>
+            <symbol>buffer &lt; wchar_t &gt;::ptr_</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;iterator_buffer&apos; defines member function with name &apos;count&apos; also defined in its parent class &apos;fixed_buffer_traits&apos;." verbose="The class &apos;iterator_buffer&apos; defines member function with name &apos;count&apos; also defined in its parent class &apos;fixed_buffer_traits&apos;." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="933" column="8" info="Derived function &apos;iterator_buffer::count&apos;"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="895" column="8" info="Parent function &apos;fixed_buffer_traits::count&apos;"/>
+            <symbol>iterator_buffer</symbol>
+            <symbol>count</symbol>
+            <symbol>fixed_buffer_traits</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;iterator_buffer&apos; defines member function with name &apos;count&apos; also defined in its parent class &apos;fixed_buffer_traits&apos;." verbose="The class &apos;iterator_buffer&apos; defines member function with name &apos;count&apos; also defined in its parent class &apos;fixed_buffer_traits&apos;." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="977" column="8" info="Derived function &apos;iterator_buffer::count&apos;"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="895" column="8" info="Parent function &apos;fixed_buffer_traits::count&apos;"/>
+            <symbol>iterator_buffer</symbol>
+            <symbol>count</symbol>
+            <symbol>fixed_buffer_traits</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;accessor&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;accessor&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="769" column="5"/>
+            <symbol>accessor</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;appender&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;appender&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1086" column="3"/>
+            <symbol>appender</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_format_string&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_format_string&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2731" column="28"/>
+            <symbol>basic_format_string</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_format_string&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_format_string&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2748" column="3"/>
+            <symbol>basic_format_string</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;uint128_fallback&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;uint128_fallback&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="375" column="13"/>
+            <symbol>uint128_fallback</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;loc_value&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;loc_value&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1086" column="3"/>
+            <symbol>loc_value</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;loc_value&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;loc_value&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1089" column="3"/>
+            <symbol>loc_value</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;basic_fp &lt; unsigned long long &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;basic_fp &lt; unsigned long long &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1662" column="43"/>
+            <symbol>basic_fp &lt; unsigned long long &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;basic_fp &lt; std :: conditional &lt; 0 , uint128_opt , uint128_fallback &gt; :: type &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;basic_fp &lt; std :: conditional &lt; 0 , uint128_opt , uint128_fallback &gt; :: type &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1662" column="43"/>
+            <symbol>basic_fp &lt; std :: conditional &lt; 0 , uint128_opt , uint128_fallback &gt; :: type &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_format_args &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_format_args &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1908" column="24"/>
+            <symbol>basic_format_args &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_format_args &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_format_args &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1919" column="24"/>
+            <symbol>basic_format_args &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_string_view &lt; char &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_string_view &lt; char &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="421" column="3"/>
+            <symbol>basic_string_view &lt; char &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_string_view &lt; char &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_string_view &lt; char &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="430" column="17"/>
+            <symbol>basic_string_view &lt; char &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_string_view &lt; char &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_string_view &lt; char &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="436" column="17"/>
+            <symbol>basic_string_view &lt; char &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_string_view &lt; char8_type &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_string_view &lt; char8_type &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="421" column="3"/>
+            <symbol>basic_string_view &lt; char8_type &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_string_view &lt; char8_type &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_string_view &lt; char8_type &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="430" column="17"/>
+            <symbol>basic_string_view &lt; char8_type &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_string_view &lt; char8_type &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_string_view &lt; char8_type &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="436" column="17"/>
+            <symbol>basic_string_view &lt; char8_type &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1262" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1263" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1264" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1265" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1266" column="14"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1267" column="14"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1268" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1269" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1270" column="14"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1271" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1272" column="24"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1273" column="28"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1277" column="28"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1281" column="14"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1285" column="52"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1294" column="3"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1295" column="3"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1296" column="3"/>
+            <symbol>value &lt; basic_format_context &lt; detail :: buffer_appender &lt; char &gt; , char &gt; &gt;</symbol>
+        </error>
+        <error id="unsafeClassRefMember" severity="warning" msg="Unsafe class: The const reference member &apos;named_arg::value&apos; is initialized by a const reference constructor argument. You need to be careful about lifetime issues." verbose="Unsafe class checking: The const reference member &apos;named_arg::value&apos; is initialized by a const reference constructor argument. You need to be careful about lifetime issues. If you pass a local variable or temporary value in this constructor argument, be extra careful. If the argument is always some global object that is never destroyed then this is safe usage. However it would be defensive to make the member &apos;named_arg::value&apos; a non-reference variable or a smart pointer." file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1140" column="51"/>
+            <symbol>named_arg::value</symbol>
+        </error>
+        <error id="clarifyCondition" severity="style" msg="Boolean result is used in bitwise operation. Clarify expression with parentheses." verbose="Suspicious expression. Boolean result is used in bitwise operation. The operator &apos;!&apos; and the comparison operators have higher precedence than bitwise operators. It is recommended that the expression is clarified with parentheses." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1304" column="37"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;detail::is_utf8()&apos; is always true" verbose="Condition &apos;detail::is_utf8()&apos; is always true" cwe="571" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2878" column="25" info="Condition &apos;detail::is_utf8()&apos; is always true"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2878" column="25" info="Calling function &apos;is_utf8&apos; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;detail::is_utf8()&apos; is always true" verbose="Condition &apos;detail::is_utf8()&apos; is always true" cwe="571" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2895" column="25" info="Condition &apos;detail::is_utf8()&apos; is always true"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2895" column="25" info="Calling function &apos;is_utf8&apos; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;c&gt;=0x800&apos; is always true" verbose="Condition &apos;c&gt;=0x800&apos; is always true" cwe="571" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1466" column="21" info="Condition &apos;c&gt;=0x800&apos; is always true"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1463" column="20" info="Assuming that condition &apos;c&lt;0x800&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!is_utf8()&apos; is always false" verbose="Condition &apos;!is_utf8()&apos; is always false" cwe="570" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1868" column="7" info="Condition &apos;!is_utf8()&apos; is always false"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1868" column="15" info="Calling function &apos;is_utf8&apos; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;const_check(!is_supported_floating_point(value))&apos; is always false" verbose="Condition &apos;const_check(!is_supported_floating_point(value))&apos; is always false" cwe="570" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" column="18" info="Condition &apos;const_check(!is_supported_floating_point(value))&apos; is always false"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" column="18" info="Calling function &apos;const_check&apos; returns 0"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" column="47" info="Calling function &apos;is_supported_floating_point&apos; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;const_check(!is_supported_floating_point(value))&apos; is always false" verbose="Condition &apos;const_check(!is_supported_floating_point(value))&apos; is always false" cwe="570" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" column="18" info="Condition &apos;const_check(!is_supported_floating_point(value))&apos; is always false"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" column="18" info="Calling function &apos;const_check&apos; returns 0"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" column="47" info="Calling function &apos;is_supported_floating_point&apos; returns 1"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!write_console(f,text)&apos; is always true" verbose="Condition &apos;!write_console(f,text)&apos; is always true" cwe="571" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1455" column="7" info="Condition &apos;!write_console(f,text)&apos; is always true"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1455" column="21" info="Calling function &apos;write_console&apos; returns 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;const_check(sizeof(char)==1)&apos; is always true" verbose="Condition &apos;const_check(sizeof(char)==1)&apos; is always true" cwe="571" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1860" column="20" info="Condition &apos;const_check(sizeof(char)==1)&apos; is always true"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1860" column="20" info="Calling function &apos;const_check&apos; returns 1"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;c&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;c&apos;. The initialized value is overwritten before it is read." cwe="563" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2283" column="7" info="c is overwritten"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2280" column="10" info="c is initialized"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;upper&apos; can be reduced." verbose="The scope of the variable &apos;upper&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2235" column="10"/>
+            <symbol>upper</symbol>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="612" column="16"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" column="17"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" column="17"/>
+        </error>
+        <error id="shiftNegativeLHS" severity="portability" msg="Shifting a negative value is technically undefined behaviour" verbose="Shifting a negative value is technically undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1517" column="21"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" column="40"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" column="17"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" column="37"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" column="47"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" column="24"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" column="24"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;arg&apos; shadows outer function" verbose="Local variable &apos;arg&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1589" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" column="13" info="Shadowed declaration"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;write&apos; shadows outer function" verbose="Local variable &apos;write&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2517" column="5" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2003" column="20" info="Shadowed declaration"/>
+            <symbol>write</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;count&apos; shadows outer function" verbose="Local variable &apos;count&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="874" column="10" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1203" column="42" info="Shadowed declaration"/>
+            <symbol>count</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;count&apos; shadows outer function" verbose="Local variable &apos;count&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1180" column="7" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1203" column="42" info="Shadowed declaration"/>
+            <symbol>count</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;ptr&apos; shadows outer function" verbose="Local variable &apos;ptr&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1392" column="12" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4093" column="28" info="Shadowed declaration"/>
+            <symbol>ptr</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;write&apos; shadows outer function" verbose="Local variable &apos;write&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1826" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2003" column="20" info="Shadowed declaration"/>
+            <symbol>write</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;count&apos; shadows outer function" verbose="Local variable &apos;count&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2098" column="9" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1203" column="42" info="Shadowed declaration"/>
+            <symbol>count</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;ptr&apos; shadows outer function" verbose="Local variable &apos;ptr&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2380" column="12" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4093" column="28" info="Shadowed declaration"/>
+            <symbol>ptr</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;sign&apos; shadows outer function" verbose="Local variable &apos;sign&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2502" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1172" column="56" info="Shadowed declaration"/>
+            <symbol>sign</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;sign&apos; shadows outer function" verbose="Local variable &apos;sign&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2627" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1172" column="56" info="Shadowed declaration"/>
+            <symbol>sign</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;decimal_point&apos; shadows outer function" verbose="Local variable &apos;decimal_point&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2631" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1308" column="38" info="Shadowed declaration"/>
+            <symbol>decimal_point</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;write&apos; shadows outer function" verbose="Local variable &apos;write&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2659" column="10" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2003" column="20" info="Shadowed declaration"/>
+            <symbol>write</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;num_bigits&apos; shadows outer function" verbose="Local variable &apos;num_bigits&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2827" column="9" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" column="23" info="Shadowed declaration"/>
+            <symbol>num_bigits</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;num_bigits&apos; shadows outer function" verbose="Local variable &apos;num_bigits&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2879" column="12" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" column="23" info="Shadowed declaration"/>
+            <symbol>num_bigits</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;num_bigits&apos; shadows outer function" verbose="Local variable &apos;num_bigits&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2996" column="9" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" column="23" info="Shadowed declaration"/>
+            <symbol>num_bigits</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;num_bigits&apos; shadows outer function" verbose="Local variable &apos;num_bigits&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3028" column="9" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2908" column="23" info="Shadowed declaration"/>
+            <symbol>num_bigits</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;arg&apos; shadows outer function" verbose="Local variable &apos;arg&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3865" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" column="13" info="Shadowed declaration"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;arg&apos; shadows outer function" verbose="Local variable &apos;arg&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4322" column="10" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" column="13" info="Shadowed declaration"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;arg&apos; shadows outer function" verbose="Local variable &apos;arg&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4355" column="12" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" column="13" info="Shadowed declaration"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;arg&apos; shadows outer function" verbose="Local variable &apos;arg&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4364" column="12" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1843" column="13" info="Shadowed declaration"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;thousands_sep&apos; shadows outer function" verbose="Local variable &apos;thousands_sep&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="98" column="8" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1297" column="13" info="Shadowed declaration"/>
+            <symbol>thousands_sep</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;size&apos; shadows outer function" verbose="Local variable &apos;size&apos; shadows outer function" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2005" column="10" info="Shadow variable"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="2011" column="18" info="Shadowed declaration"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;decimal_point&apos; should be passed by const reference." verbose="Parameter &apos;decimal_point&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1114" column="37"/>
+            <symbol>decimal_point</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;args&apos; should be passed by const reference." verbose="Parameter &apos;args&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="148" column="54"/>
+            <symbol>args</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;args&apos; should be passed by const reference." verbose="Parameter &apos;args&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1465" column="51"/>
+            <symbol>args</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;ctx&apos; can be declared as reference to const" verbose="Parameter &apos;ctx&apos; can be declared as reference to const" cwe="398" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1364" column="50" info="Parameter &apos;ctx&apos; can be declared as reference to const"/>
+            <symbol>ctx</symbol>
+        </error>
+        <error id="sizeofwithnumericparameter" severity="warning" msg="Suspicious usage of &apos;sizeof&apos; with a numeric constant as parameter." verbose="It is unusual to use a constant value with sizeof. For example, &apos;sizeof(10)&apos; returns 4 (in 32-bit systems) or 8 (in 64-bit systems) instead of 10. &apos;sizeof(&apos;A&apos;)&apos; and &apos;sizeof(char)&apos; can return different results." cwe="682" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="504" column="42"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" column="32" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="429" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" column="33" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="434" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483711 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483711 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" column="40" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="308" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" column="17" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483680 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483680 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" column="37" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483711 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483711 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" column="47" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1081" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" column="24" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483647 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483647 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" column="24" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 2147483712 bits is undefined behaviour" verbose="Shifting 64-bit value by 2147483712 bits is undefined behaviour" cwe="758" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" column="44" info="Shift"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-shift&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-shift&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" column="39" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="429" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-shift&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-shift&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" column="40" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="434" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;k-float_info &lt; float &gt;::min_k&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;k-float_info &lt; float &gt;::min_k&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="288" column="33" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="258" column="40" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-1-beta&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-1-beta&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" column="51" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="308" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-beta&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-beta&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" column="24" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;32-beta&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;32-beta&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" column="44" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;k-float_info &lt; double &gt;::min_k&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;k-float_info &lt; double &gt;::min_k&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" column="26" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" column="48" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;cache_index*compression_ratio&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;cache_index*compression_ratio&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1036" column="26" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1035" column="21" info="cache_index is assigned &apos;(k-float_info &lt; double &gt;::min_k)/compression_ratio&apos; here."/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="349" column="48" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-1-beta&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-1-beta&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" column="58" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1081" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-beta&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-beta&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" column="31" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeIntegerOverflow" severity="error" msg="Safe checks: Signed integer overflow for expression &apos;64-beta&apos;." verbose="Safe checks: Signed integer overflow for expression &apos;64-beta&apos;." cwe="190" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" column="51" info="Integer overflow"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;shift&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;shift&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="432" column="20" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="429" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+            <symbol>shift</symbol>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;shift&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;shift&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="437" column="20" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="434" column="37" info="Safe checks: Assuming argument has value -2147483648"/>
+            <symbol>shift</symbol>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;64-1-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;64-1-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="309" column="51" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="308" column="37" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;64-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;64-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="318" column="24" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" column="62" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;32-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;32-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="319" column="44" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="313" column="62" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;64-1-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;64-1-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1082" column="58" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1081" column="37" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;64-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;64-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1091" column="31" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" column="27" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value -2147483648"/>
+            <symbol>beta</symbol>
+        </error>
+        <error id="safeSignConversion" severity="warning" msg="Expression &apos;64-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;64-beta&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1092" column="51" info="Negative value is converted to an unsigned value"/>
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="1086" column="62" info="Safe checks: Assuming argument has value 2147483647"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;c&apos; is assigned a value that is never used." verbose="Variable &apos;c&apos; is assigned a value that is never used." cwe="563" file0="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/src/format.cc">
+            <location file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1459" column="13"/>
+            <symbol>c</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:302:45" call-funcname="ignore_unused" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="291" col="16" call-argexpr="condition" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2680" col="21" info="Assuming that condition &apos;num_zeros&lt;=0&apos; is not redundant"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2677" col="32" info="Calling function &apos;abort_fuzzing_if&apos;, 1st argument &apos;num_zeros&gt;5000&apos; value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:374:13" call-funcname="uint128_fallback" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="431" col="44" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:374:13" call-funcname="uint128_fallback" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="436" col="44" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:666:27" call-funcname="utf8_decode" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="712" col="27" call-argexpr="&amp;cp" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:666:27" call-funcname="utf8_decode" call-argnr="3" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="712" col="27" call-argexpr="&amp;error" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1162:23" call-funcname="digits2" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1353" col="23" call-argexpr="static_cast&lt;unsigned long long&gt;(value%100)" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1348" col="16" info="Assuming that condition &apos;value&gt;=100&apos; is not redundant"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1354" col="5" info="Compound assignment &apos;/=&apos;, assigned value is 10000"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1484:25" call-funcname="umul128" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1534" col="17" call-argexpr="y" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="301" col="47" info="Safe checks: Assuming argument has value 0"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="302" col="32" info="Calling function &apos;umul96_upper64&apos;, 2nd argument &apos;cache&apos; value is 0"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="174" col="58" info="Calling function &apos;umul128_upper64&apos;, 2nd argument &apos;y&apos; value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:374:20" call-funcname="to_unsigned" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1644" col="38" call-argexpr="exp" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1640" col="13" info="Assuming that condition &apos;exp&gt;=1000&apos; is not redundant"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="1642" col="5" info="Compound assignment &apos;%=&apos;, assigned value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:374:20" call-funcname="to_unsigned" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2336" col="42" call-argexpr="specs.precision" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2336" col="23" info="Assuming that condition &apos;specs.precision&gt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1787:20" call-funcname="write_padded" call-argnr="4" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2346" col="22" call-argexpr="width" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2339" col="18" info="Assignment &apos;width=0&apos;, assigned value is 0"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2340" col="19" info="Assuming condition is false"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:374:20" call-funcname="to_unsigned" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2649" col="26" call-argexpr="num_zeros" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2648" col="38" info="Assignment &apos;num_zeros=0&apos;, assigned value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:374:20" call-funcname="to_unsigned" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2675" col="24" call-argexpr="f.exponent" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2673" col="18" info="Assuming that condition &apos;f.exponent&gt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:290:27" call-funcname="abort_fuzzing_if" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2677" col="21" call-argexpr="num_zeros&gt;5000" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="2680" col="21" info="Assuming that condition &apos;num_zeros&lt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:374:20" call-funcname="to_unsigned" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2696" col="28" call-argexpr="num_zeros&gt;0?num_zeros:0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2820:24" call-funcname="subtract_bigits" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2840" col="39" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1767:16" call-funcname="convert_float" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3285" col="39" call-argexpr="value" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3288" col="13" info="Assuming that condition &apos;value&lt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:323:49" call-funcname="const_check" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3641" col="18" call-argexpr="!is_supported_floating_point(value)" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3641" col="47" info="Calling function &apos;is_supported_floating_point&apos; returns 1"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:323:49" call-funcname="const_check" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3651" col="18" call-argexpr="!is_supported_floating_point(value)" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="3651" col="47" info="Calling function &apos;is_supported_floating_point&apos; returns 1"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1667:31" call-funcname="visit_format_arg" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4324" col="21" call-argexpr="arg" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format.h" line="4323" col="9" info="Assuming that condition &apos;!arg&apos; is not redundant"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1527:17" call-funcname="umul128_upper64" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="174" col="25" call-argexpr="y" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="301" col="47" info="Safe checks: Assuming argument has value 0"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="302" col="32" info="Calling function &apos;umul96_upper64&apos;, 2nd argument &apos;cache&apos; value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:173:17" call-funcname="umul96_upper64" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="302" col="28" call-argexpr="cache" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="301" col="47" info="Safe checks: Assuming argument has value 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1476:13" call-funcname="is_printable" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1638" col="24" call-argexpr="singletons0" call-argvaluetype="7" call-argvalue="-1"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1476:13" call-funcname="is_printable" call-argnr="4" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1638" col="24" call-argexpr="singletons0_lower" call-argvaluetype="7" call-argvalue="290"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1476:13" call-funcname="is_printable" call-argnr="5" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1638" col="24" call-argexpr="normal0" call-argvaluetype="7" call-argvalue="309"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1476:13" call-funcname="is_printable" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1643" col="24" call-argexpr="singletons1" call-argvaluetype="7" call-argvalue="-1"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1476:13" call-funcname="is_printable" call-argnr="4" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1643" col="24" call-argexpr="singletons1_lower" call-argvaluetype="7" call-argvalue="175"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1476:13" call-funcname="is_printable" call-argnr="5" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1643" col="24" call-argexpr="normal1" call-argvaluetype="7" call-argvalue="419"/><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1933:22" call-funcname="get" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1949" col="25" call-argexpr="id" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="1949" col="15" info="Assuming that condition &apos;id&gt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:861:24" call-funcname="try_reserve" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="853" col="16" call-argexpr="count" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\format-inl.h" line="48" col="18" info="Calling function &apos;try_resize&apos;, 1st argument &apos;0&apos; value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:861:24" call-funcname="try_reserve" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="853" col="16" call-argexpr="count" call-argvaluetype="0" call-argvalue="0">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="852" col="42" info="Safe checks: Assuming argument has value 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:661:22" call-funcname="do_check_arg_id" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="700" col="20" call-argexpr="id" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="694" col="22" info="Assuming that condition &apos;next_arg_id_&lt;0&apos; is not redundant"/>
+  <path file="D:\Machining-tools\StepperPowerFeed\src\managed_components\espressif__fmt\fmt\include\fmt\core.h" line="699" col="26" info="Assignment &apos;id=next_arg_id_++&apos;, assigned value is 0"/>
+</function-call><function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:630:27" call-funcname="throw_format_error" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="637" col="5" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:636:21" my-argnr="1"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1186:6" call-funcname="init_named_args" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1188" col="3" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1186:6" my-argnr="1"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2140:20" call-funcname="parse_nonnegative_int" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2186" col="15" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2179:20" my-argnr="2"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2637:22" call-funcname="on_format_specs" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2634" col="5" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2633:22" my-argnr="2"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2863:14" call-funcname="vprint" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2895" col="30" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2893:17" my-argnr="1"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1856:6" call-funcname="find_escape &lt; char &gt;" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1868" col="26" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1866:13" my-argnr="1"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1856:6" call-funcname="find_escape &lt; char &gt;" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1868" col="26" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1866:13" my-argnr="2"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1343:22" call-funcname="format_decimal" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2558" col="12" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2555:13" my-argnr="1"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2277:31" call-funcname="parse_format_specs" call-argnr="2" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4371" col="15" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4362:10" my-argnr="3"/>
+<function-call call-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1038:14" call-funcname="write_console" call-argnr="1" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1455" col="8" my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1039:14" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1316:31" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1317" col="25" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1193:6" my-argnr="1" my-argname="named_args" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1195" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2130:13" my-argnr="1" my-argname="first" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2133" col="19" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2179:20" my-argnr="1" my-argname="begin" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2181" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:666:27" my-argnr="1" my-argname="s" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="674" col="36" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:666:27" my-argnr="2" my-argname="c" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="684" col="4" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:666:27" my-argnr="3" my-argname="e" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="691" col="4" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1316:31" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1317" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1316:31" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1317" col="25" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1319:13" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1320" col="17" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1319:13" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1320" col="22" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:327:27" my-argnr="1" my-argname="file" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="33" col="55" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:327:27" my-argnr="3" my-argname="message" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="33" col="67" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:76:13" my-argnr="1" my-argname="ptr" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="78" col="32" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:76:13" my-argnr="4" my-argname="stream" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="78" col="50" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1127:17" my-argnr="1" my-argname="buf" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1128" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1502:20" my-argnr="1" my-argname="rng" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1503" col="33" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1667:31" my-argnr="2" my-argname="arg" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1669" col="11" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1826:16" my-argnr="1" my-argname="args" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1828" col="11" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1843:13" my-argnr="1" my-argname="name" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1845" col="11" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1843:13" my-argnr="2" my-argname="arg" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1845" col="17" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2130:13" my-argnr="1" my-argname="first" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2133" col="19" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2130:13" my-argnr="2" my-argname="last" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2133" col="45" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2179:20" my-argnr="1" my-argname="begin" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2181" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2261:20" my-argnr="1" my-argname="begin" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2265" col="5" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2560:20" my-argnr="1" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2561" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:2697:22" my-argnr="1" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="2700" col="36" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:342:22" my-argnr="1" my-argname="from" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="348" col="41" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:385:25" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="387" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:385:25" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="387" col="23" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:393:25" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="395" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:393:25" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="395" col="23" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:397:25" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="400" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:397:25" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="400" col="23" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:402:25" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="405" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:402:25" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="405" col="23" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:407:25" my-argnr="1" my-argname="n" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="409" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:411:15" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="414" col="15" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:417:15" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="419" col="5" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:425:15" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="427" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:561:13" my-argnr="1" my-argname="c" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="562" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:666:27" my-argnr="1" my-argname="s" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="674" col="36" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1067:16" my-argnr="1" my-argname="s" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1071" col="11" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1316:31" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1317" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1319:13" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1320" col="17" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1319:13" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1320" col="22" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1343:22" my-argnr="1" my-argname="out" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1346" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1376:20" my-argnr="1" my-argname="buffer" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1378" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1772:33" my-argnr="3" my-argname="fill" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1774" col="20" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1787:20" my-argnr="2" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1790" col="37" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1787:20" my-argnr="5" my-argname="f" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1799" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1918:6" my-argnr="2" my-argname="escape" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1920" col="30" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1993:20" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1995" col="19" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2020:17" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2023" col="9" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2041:31" my-argnr="4" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2046" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2131:6" my-argnr="5" my-argname="grouping" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2139" col="31" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2159:27" my-argnr="1" my-argname="prefix" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2160" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2207:31" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2213" col="11" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2272:31" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2275" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2284:31" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2287" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2332:20" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2336" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2360:20" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2363" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2452:20" my-argnr="1" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2456" col="22" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2496:22" my-argnr="4" my-argname="fspecs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2502" col="15" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2521:16" my-argnr="1" my-argname="f" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2522" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2540:22" my-argnr="5" my-argname="grouping" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2543" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2601:22" my-argnr="6" my-argname="grouping" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2605" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2620:22" my-argnr="2" my-argname="f" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2624" col="22" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2833:24" my-argnr="1" my-argname="other" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2834" col="5" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2895:24" my-argnr="1" my-argname="other" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2896" col="17" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2933:30" my-argnr="1" my-argname="lhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2934" col="26" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:2933:30" my-argnr="2" my-argname="rhs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="2934" col="61" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:3025:24" my-argnr="1" my-argname="other" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3026" col="33" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:3193:22" my-argnr="4" my-argname="buf" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3252" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:3712:20" my-argnr="3" my-argname="specs" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3715" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:3864:20" my-argnr="1" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="3865" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4098:6" my-argnr="1" my-argname="p" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4099" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4101:28" my-argnr="1" my-argname="p" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4102" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4142:22" my-argnr="1" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4143" col="31" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4183:22" my-argnr="1" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4184" col="31" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4230:8" my-argnr="1" my-argname="value" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4232" col="15" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4230:8" my-argnr="2" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4233" col="16" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4308:20" my-argnr="1" my-argname="buf" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4310" col="15" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4337:10" my-argnr="2" my-argname="end" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4338" col="62" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4426:13" my-argnr="1" my-argname="loc" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4428" col="26" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:4452:17" my-argnr="2" my-argname="loc" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="4454" col="26" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:3937:14" my-argnr="1" my-argname="out" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="48" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:3940:14" my-argnr="1" my-argname="func" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="69" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:76:13" my-argnr="1" my-argname="ptr" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="78" col="32" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:76:13" my-argnr="4" my-argname="stream" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="78" col="50" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:300:29" my-argnr="2" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="302" col="32" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:307:19" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="309" col="34" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:312:36" my-argnr="2" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="317" col="36" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:322:23" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="325" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:329:23" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="332" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:336:23" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="339" col="17" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1074:29" my-argnr="2" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1076" col="34" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1080:19" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1082" col="34" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1085:36" my-argnr="2" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1090" col="38" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1095:23" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1097" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1102:23" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1104" col="13" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1109:23" my-argnr="1" my-argname="cache" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1111" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1364:22" my-argnr="1" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1366" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1369:8" my-argnr="1" my-argname="n" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1373" col="19" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h:1369:8" my-argnr="2" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format-inl.h" line="1371" col="16" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:970:24" my-argnr="1" my-argname="other" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="971" col="24" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1025:8" my-argnr="1" my-argname="range" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1026" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:970:24" my-argnr="1" my-argname="other" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="971" col="24" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1025:8" my-argnr="1" my-argname="range" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1026" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:970:24" my-argnr="1" my-argname="other" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="971" col="24" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h:1025:8" my-argnr="1" my-argname="range" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/format.h" line="1026" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1301:15" my-argnr="2" my-argname="parse_ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1305" col="5" value="0"/>
+    <unsafe-usage my-id="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h:1301:15" my-argnr="3" my-argname="ctx" file="D:/Machining-tools/StepperPowerFeed/src/managed_components/espressif__fmt/fmt/include/fmt/core.h" line="1308" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Alloc"/>
+    <functioncall functionName="Allocator"/>
+    <functioncall functionName="Arg"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="B"/>
+    <functioncall functionName="B2"/>
+    <functioncall functionName="BASE_BITS"/>
+    <functioncall functionName="Buf"/>
+    <functioncall functionName="C"/>
+    <functioncall functionName="Char"/>
+    <functioncall functionName="CharT"/>
+    <functioncall functionName="Container"/>
+    <functioncall functionName="Context"/>
+    <functioncall functionName="ContextType"/>
+    <functioncall functionName="Ctx"/>
+    <functioncall functionName="DecimalFP"/>
+    <functioncall functionName="Deleter"/>
+    <functioncall functionName="Enum"/>
+    <functioncall functionName="ErrorHandler"/>
+    <functioncall functionName="F"/>
+    <functioncall functionName="FMT_COMPILE_STRING"/>
+    <functioncall functionName="Float"/>
+    <functioncall functionName="Formatter"/>
+    <functioncall functionName="From"/>
+    <functioncall functionName="Grouping"/>
+    <functioncall functionName="Handler"/>
+    <functioncall functionName="IS_CONSTEXPR"/>
+    <functioncall functionName="Int"/>
+    <functioncall functionName="It"/>
+    <functioncall functionName="Iterator"/>
+    <functioncall functionName="Locale"/>
+    <functioncall functionName="N"/>
+    <functioncall functionName="NUM_ARGS"/>
+    <functioncall functionName="NUM_NAMED_ARGS"/>
+    <functioncall functionName="OutChar"/>
+    <functioncall functionName="OutputIt"/>
+    <functioncall functionName="P"/>
+    <functioncall functionName="P1"/>
+    <functioncall functionName="PACKED"/>
+    <functioncall functionName="Pn"/>
+    <functioncall functionName="Range"/>
+    <functioncall functionName="S"/>
+    <functioncall functionName="SIZE"/>
+    <functioncall functionName="Sentinel"/>
+    <functioncall functionName="Sign"/>
+    <functioncall functionName="Size"/>
+    <functioncall functionName="Streambuf"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="To"/>
+    <functioncall functionName="Traits"/>
+    <functioncall functionName="U"/>
+    <functioncall functionName="UInt"/>
+    <functioncall functionName="WChar"/>
+    <functioncall functionName="abort"/>
+    <functioncall functionName="abort_fuzzing_if"/>
+    <functioncall functionName="accessor"/>
+    <functioncall functionName="add_compare"/>
+    <functioncall functionName="addressof"/>
+    <functioncall functionName="adjust_precision"/>
+    <functioncall functionName="advance_to"/>
+    <functioncall functionName="align"/>
+    <functioncall functionName="allocate"/>
+    <functioncall functionName="allocator"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="appender"/>
+    <functioncall functionName="apply"/>
+    <functioncall functionName="arg"/>
+    <functioncall functionName="arg_data"/>
+    <functioncall functionName="arg_id"/>
+    <functioncall functionName="arg_mapper"/>
+    <functioncall functionName="arg_ref"/>
+    <functioncall functionName="arg_type"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="assert_fail"/>
+    <functioncall functionName="assign"/>
+    <functioncall functionName="assign_pow10"/>
+    <functioncall functionName="assume"/>
+    <functioncall functionName="back"/>
+    <functioncall functionName="back_insert_iterator"/>
+    <functioncall functionName="back_inserter"/>
+    <functioncall functionName="base"/>
+    <functioncall functionName="base_iterator"/>
+    <functioncall functionName="basic_format_arg"/>
+    <functioncall functionName="basic_format_args"/>
+    <functioncall functionName="basic_format_context"/>
+    <functioncall functionName="basic_format_string"/>
+    <functioncall functionName="basic_fp"/>
+    <functioncall functionName="basic_memory_buffer"/>
+    <functioncall functionName="basic_string"/>
+    <functioncall functionName="basic_string_view"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="bigint"/>
+    <functioncall functionName="bigit"/>
+    <functioncall functionName="bigits_capacity"/>
+    <functioncall functionName="bin_lower"/>
+    <functioncall functionName="bin_upper"/>
+    <functioncall functionName="bit_cast"/>
+    <functioncall functionName="bool_type"/>
+    <functioncall functionName="buffer"/>
+    <functioncall functionName="buffer_appender"/>
+    <functioncall functionName="buffer_context"/>
+    <functioncall functionName="buffer_size"/>
+    <functioncall functionName="buffer_traits"/>
+    <functioncall functionName="bytes"/>
+    <functioncall functionName="capacity"/>
+    <functioncall functionName="carrier_uint"/>
+    <functioncall functionName="center"/>
+    <functioncall functionName="char8_type"/>
+    <functioncall functionName="char_set"/>
+    <functioncall functionName="char_t"/>
+    <functioncall functionName="char_type"/>
+    <functioncall functionName="check"/>
+    <functioncall functionName="check_arg_id"/>
+    <functioncall functionName="check_char_specs"/>
+    <functioncall functionName="check_divisibility_and_divide_by_pow10"/>
+    <functioncall functionName="check_dynamic_spec"/>
+    <functioncall functionName="check_format_string"/>
+    <functioncall functionName="checker"/>
+    <functioncall functionName="chr"/>
+    <functioncall functionName="classic"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="code_point_index"/>
+    <functioncall functionName="code_point_length"/>
+    <functioncall functionName="compare"/>
+    <functioncall functionName="compile_parse_context"/>
+    <functioncall functionName="compile_string"/>
+    <functioncall functionName="compile_string_to_view"/>
+    <functioncall functionName="compute_delta"/>
+    <functioncall functionName="compute_left_endpoint_for_shorter_interval_case"/>
+    <functioncall functionName="compute_mul"/>
+    <functioncall functionName="compute_mul_parity"/>
+    <functioncall functionName="compute_right_endpoint_for_shorter_interval_case"/>
+    <functioncall functionName="compute_round_up_for_shorter_interval_case"/>
+    <functioncall functionName="compute_width"/>
+    <functioncall functionName="conditional"/>
+    <functioncall functionName="conditional_t"/>
+    <functioncall functionName="const_check"/>
+    <functioncall functionName="context"/>
+    <functioncall functionName="convert"/>
+    <functioncall functionName="convert_float"/>
+    <functioncall functionName="convert_float_result"/>
+    <functioncall functionName="convert_for_visit"/>
+    <functioncall functionName="copy2"/>
+    <functioncall functionName="copy_str"/>
+    <functioncall functionName="copy_str_noinline"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="count_digits"/>
+    <functioncall functionName="count_digits_fallback"/>
+    <functioncall functionName="count_separators"/>
+    <functioncall functionName="counting_buffer"/>
+    <functioncall functionName="counting_iterator"/>
+    <functioncall functionName="countl_zero"/>
+    <functioncall functionName="countl_zero_fallback"/>
+    <functioncall functionName="cstring_set"/>
+    <functioncall functionName="cstring_type"/>
+    <functioncall functionName="custom_type"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="data_t"/>
+    <functioncall functionName="deallocate"/>
+    <functioncall functionName="debug"/>
+    <functioncall functionName="dec"/>
+    <functioncall functionName="decimal_fp"/>
+    <functioncall functionName="decimal_point"/>
+    <functioncall functionName="decimal_point_"/>
+    <functioncall functionName="decimal_point_impl"/>
+    <functioncall functionName="declval"/>
+    <functioncall functionName="decode"/>
+    <functioncall functionName="digit_grouping"/>
+    <functioncall functionName="digits10"/>
+    <functioncall functionName="digits2"/>
+    <functioncall functionName="divide_by_10_to_kappa_plus_1"/>
+    <functioncall functionName="divmod_assign"/>
+    <functioncall functionName="do_check_arg_id"/>
+    <functioncall functionName="do_map"/>
+    <functioncall functionName="do_parse_arg_id"/>
+    <functioncall functionName="do_put"/>
+    <functioncall functionName="do_write_float"/>
+    <functioncall functionName="double_bigit"/>
+    <functioncall functionName="double_type"/>
+    <functioncall functionName="dynamic_format_specs"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="encode_types"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="eof"/>
+    <functioncall functionName="eq"/>
+    <functioncall functionName="eq_int_type"/>
+    <functioncall functionName="equal2"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="error_code"/>
+    <functioncall functionName="error_handler"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="exp_lower"/>
+    <functioncall functionName="exp_upper"/>
+    <functioncall functionName="exponent_bias"/>
+    <functioncall functionName="exponent_mask"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fill"/>
+    <functioncall functionName="fill_n"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="find_escape"/>
+    <functioncall functionName="find_escape_result"/>
+    <functioncall functionName="fixed"/>
+    <functioncall functionName="fixed_buffer_traits"/>
+    <functioncall functionName="fixed_lower"/>
+    <functioncall functionName="fixed_upper"/>
+    <functioncall functionName="fixup"/>
+    <functioncall functionName="float128"/>
+    <functioncall functionName="float_info"/>
+    <functioncall functionName="float_set"/>
+    <functioncall functionName="float_specs"/>
+    <functioncall functionName="float_type"/>
+    <functioncall functionName="float_uint"/>
+    <functioncall functionName="floaty"/>
+    <functioncall functionName="floaty_uint"/>
+    <functioncall functionName="floor_log10_pow2"/>
+    <functioncall functionName="floor_log10_pow2_minus_log10_4_over_3"/>
+    <functioncall functionName="floor_log2_pow10"/>
+    <functioncall functionName="flush"/>
+    <functioncall functionName="for_each_codepoint"/>
+    <functioncall functionName="format"/>
+    <functioncall functionName="format_arg"/>
+    <functioncall functionName="format_as"/>
+    <functioncall functionName="format_as_t"/>
+    <functioncall functionName="format_context"/>
+    <functioncall functionName="format_ctx"/>
+    <functioncall functionName="format_decimal"/>
+    <functioncall functionName="format_dragon"/>
+    <functioncall functionName="format_error"/>
+    <functioncall functionName="format_error_code"/>
+    <functioncall functionName="format_facet"/>
+    <functioncall functionName="format_float"/>
+    <functioncall functionName="format_handler"/>
+    <functioncall functionName="format_hexfloat"/>
+    <functioncall functionName="format_signed"/>
+    <functioncall functionName="format_specs"/>
+    <functioncall functionName="format_system_error"/>
+    <functioncall functionName="format_to"/>
+    <functioncall functionName="format_uint"/>
+    <functioncall functionName="format_unsigned"/>
+    <functioncall functionName="formatter"/>
+    <functioncall functionName="formatter_type"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="fprintf"/>
+    <functioncall functionName="fputc"/>
+    <functioncall functionName="from"/>
+    <functioncall functionName="func"/>
+    <functioncall functionName="fwrite"/>
+    <functioncall functionName="fwrite_fully"/>
+    <functioncall functionName="general"/>
+    <functioncall functionName="general_lower"/>
+    <functioncall functionName="general_upper"/>
+    <functioncall functionName="generic_category"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="get_arg"/>
+    <functioncall functionName="get_bigit"/>
+    <functioncall functionName="get_buffer"/>
+    <functioncall functionName="get_cached_power"/>
+    <functioncall functionName="get_container"/>
+    <functioncall functionName="get_data"/>
+    <functioncall functionName="get_dynamic_spec"/>
+    <functioncall functionName="get_id"/>
+    <functioncall functionName="get_iterator"/>
+    <functioncall functionName="get_significand_size"/>
+    <functioncall functionName="get_types"/>
+    <functioncall functionName="group_digits_view"/>
+    <functioncall functionName="grouping"/>
+    <functioncall functionName="grouping_"/>
+    <functioncall functionName="grow"/>
+    <functioncall functionName="half_uint"/>
+    <functioncall functionName="handle"/>
+    <functioncall functionName="handle_dynamic_spec"/>
+    <functioncall functionName="has_const_formatter"/>
+    <functioncall functionName="has_const_formatter_impl"/>
+    <functioncall functionName="has_facet"/>
+    <functioncall functionName="has_format_as"/>
+    <functioncall functionName="has_implicit_bit"/>
+    <functioncall functionName="has_named_args"/>
+    <functioncall functionName="has_named_args_bit"/>
+    <functioncall functionName="has_separator"/>
+    <functioncall functionName="hash"/>
+    <functioncall functionName="hex"/>
+    <functioncall functionName="hex_lower"/>
+    <functioncall functionName="hex_upper"/>
+    <functioncall functionName="hexfloat_lower"/>
+    <functioncall functionName="hexfloat_upper"/>
+    <functioncall functionName="high"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="ignore_unused"/>
+    <functioncall functionName="in"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="infinity"/>
+    <functioncall functionName="init_named_args"/>
+    <functioncall functionName="initial_state"/>
+    <functioncall functionName="inline_buffer_size"/>
+    <functioncall functionName="int128_opt"/>
+    <functioncall functionName="int128_type"/>
+    <functioncall functionName="int_type"/>
+    <functioncall functionName="is_arithmetic_type"/>
+    <functioncall functionName="is_back_insert_iterator"/>
+    <functioncall functionName="is_big_endian"/>
+    <functioncall functionName="is_class"/>
+    <functioncall functionName="is_constant_evaluated"/>
+    <functioncall functionName="is_contiguous"/>
+    <functioncall functionName="is_double_double"/>
+    <functioncall functionName="is_fast_float"/>
+    <functioncall functionName="is_float128"/>
+    <functioncall functionName="is_floating_point"/>
+    <functioncall functionName="is_integral"/>
+    <functioncall functionName="is_integral_type"/>
+    <functioncall functionName="is_left_endpoint_integer_shorter_interval"/>
+    <functioncall functionName="is_name_start"/>
+    <functioncall functionName="is_named_arg"/>
+    <functioncall functionName="is_negative"/>
+    <functioncall functionName="is_packed"/>
+    <functioncall functionName="is_printable"/>
+    <functioncall functionName="is_same"/>
+    <functioncall functionName="is_statically_named_arg"/>
+    <functioncall functionName="is_string"/>
+    <functioncall functionName="is_supported_floating_point"/>
+    <functioncall functionName="is_utf8"/>
+    <functioncall functionName="isfinite"/>
+    <functioncall functionName="isnan"/>
+    <functioncall functionName="iterator_buffer"/>
+    <functioncall functionName="iterator_t"/>
+    <functioncall functionName="iterator_traits"/>
+    <functioncall functionName="join"/>
+    <functioncall functionName="join_view"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="limit"/>
+    <functioncall functionName="loc_value"/>
+    <functioncall functionName="locale"/>
+    <functioncall functionName="locale_ref"/>
+    <functioncall functionName="long_double_type"/>
+    <functioncall functionName="long_long_type"/>
+    <functioncall functionName="long_type"/>
+    <functioncall functionName="low"/>
+    <functioncall functionName="make_arg"/>
+    <functioncall functionName="make_format_args"/>
+    <functioncall functionName="make_unsigned"/>
+    <functioncall functionName="make_write_int_arg"/>
+    <functioncall functionName="map"/>
+    <functioncall functionName="mapped_type"/>
+    <functioncall functionName="mapped_type_constant"/>
+    <functioncall functionName="max_packed_args"/>
+    <functioncall functionName="max_size"/>
+    <functioncall functionName="max_value"/>
+    <functioncall functionName="maximum"/>
+    <functioncall functionName="memchr"/>
+    <functioncall functionName="memcmp"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memory_buffer"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="minimum"/>
+    <functioncall functionName="minus"/>
+    <functioncall functionName="monostate"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="multiply"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="named_arg"/>
+    <functioncall functionName="named_args"/>
+    <functioncall functionName="needs_escape"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="next_arg_id"/>
+    <functioncall functionName="none"/>
+    <functioncall functionName="none_type"/>
+    <functioncall functionName="nullptr_t"/>
+    <functioncall functionName="num_args"/>
+    <functioncall functionName="num_bigits"/>
+    <functioncall functionName="num_bits"/>
+    <functioncall functionName="num_significand_bits"/>
+    <functioncall functionName="numeric"/>
+    <functioncall functionName="numeric_limits"/>
+    <functioncall functionName="numpunct"/>
+    <functioncall functionName="oct"/>
+    <functioncall functionName="on_arg_id"/>
+    <functioncall functionName="on_auto"/>
+    <functioncall functionName="on_error"/>
+    <functioncall functionName="on_format_specs"/>
+    <functioncall functionName="on_index"/>
+    <functioncall functionName="on_name"/>
+    <functioncall functionName="on_replacement_field"/>
+    <functioncall functionName="on_text"/>
+    <functioncall functionName="operator()"/>
+    <functioncall functionName="operatorstring_view"/>
+    <functioncall functionName="out"/>
+    <functioncall functionName="parse"/>
+    <functioncall functionName="parse_align"/>
+    <functioncall functionName="parse_arg_id"/>
+    <functioncall functionName="parse_context_type"/>
+    <functioncall functionName="parse_ctx"/>
+    <functioncall functionName="parse_dynamic_spec"/>
+    <functioncall functionName="parse_float_type_spec"/>
+    <functioncall functionName="parse_format_specs"/>
+    <functioncall functionName="parse_format_string"/>
+    <functioncall functionName="parse_nonnegative_int"/>
+    <functioncall functionName="parse_precision"/>
+    <functioncall functionName="parse_replacement_field"/>
+    <functioncall functionName="plus"/>
+    <functioncall functionName="pointer"/>
+    <functioncall functionName="pointer_type"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="precision_checker"/>
+    <functioncall functionName="prefix_append"/>
+    <functioncall functionName="presentation_type"/>
+    <functioncall functionName="print"/>
+    <functioncall functionName="print_subsegment"/>
+    <functioncall functionName="println"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="put"/>
+    <functioncall functionName="qualified_type"/>
+    <functioncall functionName="remove_const_t"/>
+    <functioncall functionName="remove_cvref_t"/>
+    <functioncall functionName="remove_leading_zeros"/>
+    <functioncall functionName="remove_prefix"/>
+    <functioncall functionName="remove_reference_t"/>
+    <functioncall functionName="remove_trailing_zeros"/>
+    <functioncall functionName="report_error"/>
+    <functioncall functionName="reserve"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="right"/>
+    <functioncall functionName="rotr"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="separator_"/>
+    <functioncall functionName="set"/>
+    <functioncall functionName="shorter_interval_case"/>
+    <functioncall functionName="sign"/>
+    <functioncall functionName="sign_t"/>
+    <functioncall functionName="signbit"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="size_"/>
+    <functioncall functionName="small_divisor_case_label"/>
+    <functioncall functionName="space"/>
+    <functioncall functionName="sputn"/>
+    <functioncall functionName="square"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="starts_with"/>
+    <functioncall functionName="std_string_view"/>
+    <functioncall functionName="stderr"/>
+    <functioncall functionName="stdout"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="string_type"/>
+    <functioncall functionName="string_view"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="subtract_aligned"/>
+    <functioncall functionName="subtract_bigits"/>
+    <functioncall functionName="sv"/>
+    <functioncall functionName="system_error"/>
+    <functioncall functionName="terminate"/>
+    <functioncall functionName="thousands_sep"/>
+    <functioncall functionName="thousands_sep_impl"/>
+    <functioncall functionName="thousands_sep_result"/>
+    <functioncall functionName="throw_format_error"/>
+    <functioncall functionName="to_ascii"/>
+    <functioncall functionName="to_decimal"/>
+    <functioncall functionName="to_int_type"/>
+    <functioncall functionName="to_pointer"/>
+    <functioncall functionName="to_string"/>
+    <functioncall functionName="to_string_view"/>
+    <functioncall functionName="to_unsigned"/>
+    <functioncall functionName="traits"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="try_reserve"/>
+    <functioncall functionName="try_resize"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="type_constant"/>
+    <functioncall functionName="type_identity"/>
+    <functioncall functionName="type_identity_t"/>
+    <functioncall functionName="uint128_fallback"/>
+    <functioncall functionName="uint128_opt"/>
+    <functioncall functionName="uint128_t"/>
+    <functioncall functionName="uint128_type"/>
+    <functioncall functionName="uint16_t"/>
+    <functioncall functionName="uint32_or_64_or_128_t"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="uint64_or_128_t"/>
+    <functioncall functionName="uint64_t"/>
+    <functioncall functionName="uint_type"/>
+    <functioncall functionName="ulong_long_type"/>
+    <functioncall functionName="ulong_type"/>
+    <functioncall functionName="umul128"/>
+    <functioncall functionName="umul128_upper64"/>
+    <functioncall functionName="umul192_lower128"/>
+    <functioncall functionName="umul192_upper128"/>
+    <functioncall functionName="umul96_lower64"/>
+    <functioncall functionName="umul96_upper64"/>
+    <functioncall functionName="underlying_t"/>
+    <functioncall functionName="unformattable"/>
+    <functioncall functionName="unformattable_char"/>
+    <functioncall functionName="unformattable_pointer"/>
+    <functioncall functionName="uninitialized_copy_n"/>
+    <functioncall functionName="uninitialized_fill_n"/>
+    <functioncall functionName="unsigned_type"/>
+    <functioncall functionName="use_exp_format"/>
+    <functioncall functionName="use_facet"/>
+    <functioncall functionName="utf8_decode"/>
+    <functioncall functionName="utf8_to_utf16"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="value_"/>
+    <functioncall functionName="value_type"/>
+    <functioncall functionName="vformat"/>
+    <functioncall functionName="vformat_to"/>
+    <functioncall functionName="vformat_to_n"/>
+    <functioncall functionName="view"/>
+    <functioncall functionName="vis"/>
+    <functioncall functionName="visit"/>
+    <functioncall functionName="visit_format_arg"/>
+    <functioncall functionName="vprint"/>
+    <functioncall functionName="vprint_mojibake"/>
+    <functioncall functionName="vsystem_error"/>
+    <functioncall functionName="what"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="width_checker"/>
+    <functioncall functionName="write"/>
+    <functioncall functionName="write_bytes"/>
+    <functioncall functionName="write_char"/>
+    <functioncall functionName="write_codepoint"/>
+    <functioncall functionName="write_console"/>
+    <functioncall functionName="write_digits"/>
+    <functioncall functionName="write_escaped_char"/>
+    <functioncall functionName="write_escaped_cp"/>
+    <functioncall functionName="write_escaped_string"/>
+    <functioncall functionName="write_exponent"/>
+    <functioncall functionName="write_float"/>
+    <functioncall functionName="write_int"/>
+    <functioncall functionName="write_int_data"/>
+    <functioncall functionName="write_int_noinline"/>
+    <functioncall functionName="write_loc"/>
+    <functioncall functionName="write_nonfinite"/>
+    <functioncall functionName="write_padded"/>
+    <functioncall functionName="write_ptr"/>
+    <functioncall functionName="write_significand"/>
+    <functioncall functionName="zero"/>
+  </FileInfo>
+</analyzerinfo>

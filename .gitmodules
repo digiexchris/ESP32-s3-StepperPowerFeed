@@ -1,0 +1,12 @@
+[submodule "win64_tests/libs/Unity"]
+	path = win64_tests/libs/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "win64_tests/lib/Unity"]
+	path = win64_tests/lib/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "src/lib/espp"]
+	path = src/lib/espp
+	url = https://github.com/esp-cpp/espp.git^0.2.3
+[submodule "src/lib/espp/external/fmt"]
+	path = external/fmt
+	url = git@github.com:fmtlib/fmt
